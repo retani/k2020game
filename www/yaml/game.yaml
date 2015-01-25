@@ -1,0 +1,107 @@
+#Tasks:
+#  First Task: |
+#    ### Head
+#	```
+#	yoy oy
+#	```
+#	> quote
+#	> quote
+#	alright
+# Second Task: |
+#  	Hey ho
+
+
+game:
+  name: K2020
+  challenges:
+    -
+      name: Challenge 1
+      text:
+        title:
+          de: c 1 title de
+          en: c 1 title en
+          tr: c 1 title tr
+        pre:
+          de: challenge 01 pre de
+          en: challenge 01 pre en
+          tr: challenge 01 pre tr
+      tasks:
+        -
+          name: T00
+          condition:
+            code input:
+              correct: 1234
+          text:
+            title:
+              de: t 1 title de
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: t 1 pre de
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: t 1 post de
+              en: t 1 post en
+              tr: t 1 post tr       
+        -
+          name: T01
+          condition:
+            text input:
+              correct:
+                - Richtig
+                - Auch richtig
+              case sensitive: false
+          text:
+            title:
+              de: t 1 title de
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: t 1 pre de
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: t 1 post de
+              en: t 1 post en
+              tr: t 1 post tr          
+        -
+          name: T02
+          condition:
+            multiple choice:
+              -
+                correct: true
+                text:
+                  de: Richtige Antwort
+                  en: Right Answer
+                  tr: Richtige Antwörtoglu
+              -
+                correct: false
+                text:
+                  de: Falsche Antwort
+                  en: Wrong Answer
+                  tr: Falsche Antwörtoglu
+          text:
+            title:
+              de: t 2 title de
+              en: t 2 title en
+              tr: t 2 title tr
+            pre:
+              de: t 2 pre de
+              en: t 2 pre en
+              tr: t 2 pre tr
+            post:
+              de: t 2 post de
+              en: t 2 post en
+              tr: t 2 post tr           
+    -
+      name: Challenge 2
+      text:
+        title:
+          de: c 2 title de
+          en: c 2 title ed
+          tr: c 2 title tr
+        pre:
+          de: c 2 pre de
+          en: c 2 pre en
+          tr: c 2 pre tr
