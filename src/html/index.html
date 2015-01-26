@@ -37,9 +37,9 @@
           </a>
         </div>
         <div class="btn-group pull-right" ui-yield-to="navbarAction">
-          <div ui-toggle="uiSidebarRight" class="btn">
+          <!--div ui-toggle="uiSidebarRight" class="btn">
             <i class="fa fa-comment"></i> Chat
-          </div>
+          </div-->
         </div>
       </div>
 
@@ -54,7 +54,9 @@
       <!-- App Body -->
       <div class="app-body">
         <div class="app-content">
-          <ng-view></ng-view>  
+          <div class="view-animate-container" ng-class="direction">
+            <ng-view class="view-animate"></ng-view>  
+          </div>
         </div>
       </div>
 
