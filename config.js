@@ -23,7 +23,7 @@ module.exports = function(config) {
   config.weinre.boundHost = 'localhost';
 
   // Set to false to disable it:
-  // config.weinre = false;
+  config.weinre = false;
     
   // 3rd party components
   // config.vendor.js.push('.bower_components/lib/dist/lib.js');

@@ -154,6 +154,16 @@ gulp.task('fonts', function() {
 });
 
 
+/*==================================
+=            Copy yaml             =
+==================================*/
+
+gulp.task('yaml', function() {
+  return gulp.src('src/yaml/**/*')
+  .pipe(gulp.dest(path.join(config.dest, 'yaml')));
+});
+
+
 /*=================================================
 =            Copy html files to dest              =
 =================================================*/
@@ -253,7 +263,7 @@ gulp.task('weinre', function() {
 ======================================*/
 
 gulp.task('build', function(done) {
-  var tasks = ['html', 'fonts', 'images', 'less', 'js'];
+  var tasks = ['html', 'fonts', 'images', 'yaml', 'less', 'js'];
   seq('clean', tasks, done);
 });
 

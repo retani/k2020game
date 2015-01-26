@@ -1,13 +1,20 @@
 <section class="section container-fluid">
   <h1 class="page-header">Welcome to K2020</h1>
-
 </section>
 
 <section>
-  <div class="list-group">
-    <a class="list-group-item ng-binding ng-scope" ng-repeat="challenge in game.challenges">
-      {{challenge.name}}
-      <i class="fa fa-chevron-right pull-right"></i>
-    </a>
+  <div class="panel panel-default" ng-repeat="challenge in game.challenges">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{challenge.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="list-group">
+        <a class="list-group-item ng-binding ng-scope" ng-repeat="task in challenge.tasks" ng-click="goTask(task)">
+          {{task.name}}
+          <i class="fa fa-chevron-right pull-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="panel-footer"><i class="fa fa-check-square"></i></div>
   </div>
 </section>
