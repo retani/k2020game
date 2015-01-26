@@ -9,8 +9,7 @@
     </div>
     <div class="panel-body">
       <div class="list-group">
-        <a class="list-group-item ng-binding ng-scope" ng-repeat="task in challenge.tasks" ng-click="goTask(task)">
-          {{task.name}}
+        <a class="list-group-item ng-binding ng-scope" ng-repeat="task in challenge.tasks" ng-click="goTask(task)" ng-bind-html="task.text.title[lang]">
           <i class="fa fa-chevron-right pull-right"></i>
         </a>
       </div>
