@@ -1,6 +1,6 @@
 angular.module('K2020.controllers.Main', ['ngSanitize'])
 
-.controller('MainController', function($scope, $http, $location) {
+.controller('MainController', function($scope, $http, $location, $route, $rootScope) {
   // init language
   $scope.lang = "de"
 
@@ -24,5 +24,10 @@ angular.module('K2020.controllers.Main', ['ngSanitize'])
     $scope.activeTask = t
     $location.path( "/task" )
   }
+
+  //current template
+  $rootScope.$on('$routeChangeSuccess', function(){ 
+     $scope.template = $route['current']['loadedTemplateUrl']
+  });
 
 });

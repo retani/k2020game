@@ -1,10 +1,12 @@
-<section class="section container-fluid">
-  <h1 class="page-header">Welcome to Task {{activeTask.name}}</h1>
-</section>
+<div class="scrollable-content">
+  <section class="section container-fluid">
+    <h1 class="page-header">Welcome to Task {{activeTask.name}}</h1>
+  </section>
 
-<section class="section container-fluid">
-  <div class="task-pre" ng-bind-html="activeTask.text.pre[lang]">
-  </div>
-  <div class="task-post" ng-bind-html="activeTask.text.post[lang]">
-  </div>  
-</section>
+  <section class="section container-fluid">
+    <div class="task-pre" ng-bind-html="activeTask.text.pre[lang]">
+    </div>
+    <div class="task-post" ng-bind-html="activeTask.text.post[lang]">
+    </div>  
+  </section>
+</div>
