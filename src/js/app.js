@@ -7,11 +7,12 @@ var app = angular.module('K2020', [
 ])
 
 .config(function($routeProvider) {
-  $routeProvider.when('/', {templateUrl:'home.html',  reloadOnSearch: false, depth: 2});
-  $routeProvider.when('/task', {templateUrl: 'task.html', reloadOnSearch: false, depth: 1}); 
-  $routeProvider.when('/about', {templateUrl: 'about.html', reloadOnSearch: false, depth: 1}); 
+  $routeProvider.when('/', {templateUrl:'home.html',  reloadOnSearch: false, depth: 1});
+  $routeProvider.when('/task', {templateUrl: 'task.html', reloadOnSearch: false, depth: 2}); 
+  $routeProvider.when('/about', {templateUrl: 'about.html', reloadOnSearch: false, depth: 2}); 
 });
 
+/*
 app.run(function($rootScope, $window) {
   // publish current transition direction on rootScope
   $rootScope.direction = 'ltr';
@@ -27,3 +28,4 @@ app.run(function($rootScope, $window) {
       $window.history.back();
     }});
   });
+*/

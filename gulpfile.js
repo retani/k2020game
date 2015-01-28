@@ -6,7 +6,7 @@
 
 var config = {
   dest: 'www',
-  cordova: true,
+  cordova: false,
   minify_images: true,
   
   vendor: {
@@ -239,6 +239,7 @@ gulp.task('watch', function () {
   }
   gulp.watch(['./src/html/**/*'], ['html']);
   gulp.watch(['./src/less/**/*'], ['less']);
+  gulp.watch(['./src/yaml/**/*'], ['yaml']);
   gulp.watch(['./src/js/**/*', './src/templates/**/*', config.vendor.js], ['js']);
   gulp.watch(['./src/images/**/*'], ['images']);
 });

@@ -1,24 +1,11 @@
-#Tasks:
-#  First Task: |
-#    ### Head
-#	```
-#	yoy oy
-#	```
-#	> quote
-#	> quote
-#	alright
-# Second Task: |
-#  	Hey ho
-
-
 game:
   name: K2020
   challenges:
     -
-      name: Challenge 1
+      name: Tutorial
       text:
         title:
-          de: c 1 title de
+          de: Einleitung
           en: c 1 title en
           tr: c 1 title tr
         pre:
@@ -38,73 +25,359 @@ game:
               tr: t 1 title tr
             pre:
               de: |
-                Gebt bitte Eure Standortnummer ein.
-                ![Alternativtext](images/edit_standortnummer.jpg "Bildtitel hier")
+                > Gebt bitte Eure Standortnummer ein.
+
+                ![](images/edit_standortnummer.jpg)
                 Findet die Standortnummer der Bushaltestelle, an der Ihr gerade steht (siehe Foto), gebt sie unten bei 'solution' ein und drückt auf 'solve'.
               en: t 1 pre en
               tr: t 1 pre tr
             post:
-              de: t 1 post de
+              de: |
+                > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zur BVG hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
+
+                Benutzt den Zurück-Button oben links zweimal und wählt „Dringende Mission“ aus.
               en: t 1 post en
               tr: t 1 post tr       
-        -
-          name: T01
-          condition:
-            text input:
-              correct:
-                - Richtig
-                - Auch richtig
-              case sensitive: false
-          text:
-            title:
-              de: t 1 title de
-              en: t 1 title en
-              tr: t 1 title tr
-            pre:
-              de: t 1 pre de
-              en: t 1 pre en
-              tr: t 1 pre tr
-            post:
-              de: t 1 post de
-              en: t 1 post en
-              tr: t 1 post tr          
-        -
-          name: T02
-          condition:
-            multiple choice:
-              -
-                correct: true
-                text:
-                  de: Richtige Antwort
-                  en: Right Answer
-                  tr: Richtige Antwörtoglu
-              -
-                correct: false
-                text:
-                  de: Falsche Antwort
-                  en: Wrong Answer
-                  tr: Falsche Antwörtoglu
-          text:
-            title:
-              de: t 2 title de
-              en: t 2 title en
-              tr: t 2 title tr
-            pre:
-              de: t 2 pre de
-              en: t 2 pre en
-              tr: t 2 pre tr
-            post:
-              de: t 2 post de
-              en: t 2 post en
-              tr: t 2 post tr           
-    -
-      name: Challenge 2
+    -          
+      name: Dringende Mission
       text:
         title:
-          de: c 2 title de
+          de: Dringende Mission
           en: c 2 title ed
           tr: c 2 title tr
         pre:
           de: c 2 pre de
           en: c 2 pre en
           tr: c 2 pre tr
+      tasks:
+        -
+          name: BVG
+          condition:
+            code input:
+              correct: 1234
+          text:
+            title:
+              de: BVG
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Hallo Klima-Agenten! Gut, dass ihr da seid.
+                >
+                > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO2 zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
+                >
+                > Da kommt ihr ins Spiel: Könnt ihr zum lokalen Energieversorger gehen und mehr Elektrizität bereitstellen?
+                >
+                > Ihr kommt auf dem Weg dorthin an der ersten Kontaktstation der Wasserbetriebe vorbei. Richtet doch bitte Grüße von mir aus. Ihr erhaltet einen Code, der später nützlich sein könnte ...                
+
+                Findet die erste Kontaktstation der Wasserbetriebe und scannt dort den QR-Code ein.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                Die Verbindung zu den Wasserbetrieben wird hergestellt.
+                Wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr     
+        -
+          name: Wasserbetriebe 1
+          condition:
+            code input:
+              correct: 1234
+          text:
+            title:
+              de: "Erste Station: Wasserbetriebe "
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Ihr seid auf dem Weg zum Energieversorger und richtet mir Grüße von der BVG aus? Danke!
+                >
+                > Wenn Ihr schon mal hier seid: Falls Ihr später Wasser von mir braucht, ist das kein Problem. Allerdings müsst Ihr dazu die Teile des Experten-Codes sammeln und zusammenfügen. Ich sage nur so viel: Er fängt mit "H2" an. Merkt euch das gut.
+                >
+                > Jetzt aber weiter zum Energieversorger! Ich zeige Euch den Weg.
+
+                Findet die Kontaktstation zum Energieversorger und scannt dort den QR-Code ein.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                Die Verbindung zum Energieversorger wird hergestellt.
+                Bitte wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr                             
+        -
+          name: Energieversorger
+          condition:
+            multiple choice:
+              -
+                correct: true
+                text:
+                  de: Antwort 1
+                  en: Right Answer
+                  tr: Richtige Antwörtoglu
+              -
+                correct: true
+                text:
+                  de: Antwort 2
+                  en: Wrong Answer
+                  tr: Falsche Antwörtoglu
+          text:
+            title:
+              de: "Energieversorger"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Willkommen bei Vattenfall. Ihr seid hier, weil die BVG mehr Strom für Elektrobusse braucht?
+                >
+                > Super! Elektrobusse liegen natürlich ganz auf unserer Linie. Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle.
+                >
+                > Ein Problem ist das Speichern von erneuerbarer Energie, die einen immer größeren Anteil an der Erzeugung hat. Im Heizkraftwerk Buch haben wir dafür einen stillgelegten Öltank zum Wärmespeicher mit einem Inhalt von 2.000.000 Liter Wasser umgebaut.
+                >
+                > Für den Fall, dass wir später den Wärmespeicher in Betrieb nehmen müssen, braucht Ihr den zweiten Teil des Experten-Codes. Um ihn zu bekommen, sagt mir bitte: Was meint Ihr, wozu ist der neue Speicher gut?
+
+                Drückt auf ‘multiple choice task’.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
+
+                Bitte wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr        
+        -
+          name: Windzählung
+          condition:
+          condition:
+            number input:
+              correct:
+                - equals: 12
+          text:
+            title:
+              de: "Windzählung"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
+
+                Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
+
+                Bitte wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr        
+
+
+
+        -
+          name: Sonne
+          condition:
+          condition:
+            number input:
+              correct:
+                - equals: 12
+          text:
+            title:
+              de: "Sonne"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Schaut doch bitte mal nach, ob die Sonne gerade genug Energie liefert.   
+
+                Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
+
+                Bitte wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr        
+
+
+
+        -
+          name: Hochdruckdampf
+          condition:
+            code input:
+              correct: 1234
+          text:
+            title:
+              de: "Hochdruckdampf"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden Holzhackschnitzel in der für Steinkohle ausgelegten Anlage mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Aber auch die BSR hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet.  Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
+
+                Findet die Kontaktstation zur BSR und scannt dort den QR-Code ein.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                Die Verbindung zur BSR wird hergestellt.
+                
+                Bitte wählt die nächste Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr        
+
+
+
+        -
+          name: Brennstoff
+          condition:
+            number input:
+              correct: 
+                - equals: 12
+          text:
+            title:
+              de: "Brennstoff"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Hallo Klima-Agenten! Habe schon gehört, dass Ihr im Kiez unterwegs seid.
+                > 
+                > Die BVG braucht mehr Strom für Elektrobusse? 
+                >
+                > Das ist interessant! Die Hälfte unserer BSR-Müllfahrzeuge fährt ja mit Biogas, das wir aus den Bioabfällen, die wir abholen, produzieren. Aber den Hausmüll, den wir einsammeln, verbrennen wir und wandeln so Abfall in nutzbare Energie um. Die reicht dann, um ungefähr 100.000 Haushalte mit Strom und 50.000 Haushalte mit Wärme zu versorgen. Da könnten wir auch etwas für die Busse bereitstellen.
+                >
+                >Wie wäre es mit einem Tausch: Ihr helft mir bei der Müllabfuhr und ich gebe Euch einen Teil der Energie ab?
+
+                Sucht die Papierkörbe, die in diesem Straßenabschnitt zwischen Nehringstraße und Dankelmannstraße an Laternen hängen. Findet die weißen Zahlen an den Laternenmasten, addiert sie und gebt die Summe bei ‘solution’ ein.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Vielen Dank! Ihr habt mir sehr geholfen. Nun haben wir 3,9 Tonnen Hochdruckdampf, der aus der Verbrennung von 1,5 Tonnen Abfall gewonnen wurde! Mit diesem Hochdruckdampf kann jetzt Vattenfall den Strom für die Elektrobusse der BVG produzieren. 
+                >
+                > Super Leistung, Klima-Agenten! Ohne Euch wäre das nicht möglich gewesen. Diese Mission habt ihr erfolgreich durchgeführt.
+                >
+                > Habt Ihr es bemerkt? Mittlerweile scheint auch die Sonne und der Wind weht. 
+                              
+                Drückt zweimal den "Zurück"-Button, um zur nächsten Mission zu gelangen.
+              en: t 1 post en
+              tr: t 1 post tr       
+
+
+    -          
+      name: Challenge 3
+      text:
+        title:
+          de: Weitere Mission
+          en: c 2 title ed
+          tr: c 2 title tr
+        pre:
+          de: c 2 pre de
+          en: c 2 pre en
+          tr: c 2 pre tr
+      tasks:
+
+
+        -
+          name: Wetterwechsel
+          condition:
+            code input:
+              correct: 1234
+          text:
+            title:
+              de: "Wetterwechsel"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Ja, mittlerweile scheint auch die Sonne und der Wind weht. Jetzt kann Vattenfall nicht nur mit unserem Dampf viele Haushalte heizen, sondern muss auch noch die erneuerbaren Energien speichern. Da muss man wirklich flexibel bleiben. Nun wird es höchste Zeit, den Wassertank des Wärmespeichers mit zwei Millionen Liter Wasser aufzufüllen. Das Wasser hierfür werden Euch die Berliner Wasserbetriebe sicher gerne geben.
+
+                Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und scannt dort den QR-Code ein. Folgt der Karte!
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                Die Verbindung mit den Berliner Wasserbetrieben wird hergestellt.
+
+                Geht zur nächsten Aufgabe!
+              en: t 1 post en
+              tr: t 1 post tr  
+
+
+        -
+          name: Wasser
+          condition:
+            text input:
+              correct:
+                - H2O
+              case sentitive: false
+          text:
+            title:
+              de: "Wasser"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Hallo und willkommen bei den Berliner Wasserbetrieben! Ihr seid sicher die Klima-Agenten. Man spricht schon über Euch im Kiez.
+                >
+                > Ihr braucht Wasser für den Vattenfall-Wärmespeicher? Sauberes Wasser können wir gerne liefern, denn das entnehmen wir aus dem Berliner Grundwasser. Und wenn Regenwasser durch die Erde versickert, wird es natürlich gereinigt und gelangt sauber in das Grundwasser.
+                >
+                > Wir Berliner Wasserbetriebe sorgen nicht nur dafür, dass sauberes Wasser geliefert wird. Wir kümmern uns auch darum, dass Regenwasser vor Ort versickert und dadurch für ein angenehmes Klima in der Stadt sorgt.
+                >
+                > Kennt Ihr Euch mit Wasser aus?
+
+                Setzt die Teile des Experten-Codes so zusammen, dass sie die chemische Formel von Wasser ergeben und gebt sie ein.
+              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Sehr gut! Es macht Spaß, mit Euch zusammenzuarbeiten. Um Euch das nötige Wasser für den Wärmespeicher zu geben, müsst Ihr als erfahrene Klima-Agenten mir bei einer Aufgabe helfen.
+                >
+                > Nicht weit von hier gibt es einen Zugang zu einer Abwasserleitung. Bitte helft mir, diese zu finden.
+              en: t 1 post en
+              tr: t 1 post tr  
+
+
+
+
+        -
+          name: Zugang zum Abwasser
+          condition:
+            text input:
+              correct:
+                - H2O
+              case sentitive: false
+          text:
+            title:
+              de: "Zugang zum Abwasser"
+              en: t 1 title en
+              tr: t 1 title tr
+            pre:
+              de: |
+                > Mit Temperaturen zwischen 12-20°C ist Abwasser eine ganzjährige Energiequelle. Diese Energie kann als Grundlage zum klimafreundlichen Heizen und Kühlen größerer Objekte genutzt werden, wie z. B. dem Möbelhaus an der Landsberger Allee. Ein Wärmetauscher entzieht dem Abwasser in der Kanalisation 1-2°C Wärme, woraus eine Wärmepumpe eine Nutztemperatur von ca. 50°C erzeugt. 
+                >
+                > So werden aus 1.000 Liter Abwasser rund zwei Kilowattstunden Heizenergie gewonnen. Damit kann dann im Winter schön geheizt werden. Bei sehr extremen Minusgraden wäre jedoch zusätzliche Heizenergie notwendig. Im Sommer reicht diese Energiequelle aus, um das gesamte Gebäude auf moderate 24-26°C herunter zu kühlen. Hierfür wird Wärme aus dem Gebäude ins Abwasser abgeleitet.
+                >
+                > Helft uns bitte, an Abwasser heranzukommen.
+                >
+                > Gar nicht weit von hier findet Ihr ein grünes Abwasser-Schild an der Hauswand. Die Werte direkt unter dem T zeigen, wo man den Zugang zur Abwasserleitung auf dem Boden findet. Der linke Arm vom T zeigt, wie viele Meter man nach links laufen muss. Der rechte Arm zeigt an, wie weit man nach rechts laufen muss. Der untere Arm zeigt an, wie viele Meter man sich von der Mauer wegbewegen muss.
+                  
+                Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              en: t 1 pre en
+              tr: t 1 pre tr
+            post:
+              de: |
+                > Super, jetzt liefern wir das Wasser für den Wärmespeicher.
+                >
+                > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
+                >
+                > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
+
+                Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](www.k2020.berlin).
+              en: t 1 post en
+              tr: t 1 post tr  
+

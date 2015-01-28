@@ -12,7 +12,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize'])
     $scope.game = game.game
     console.log($scope.game)
     // init view
-    $scope.activeTask = $scope.game.challenges[0].tasks[0]
+    $scope.activeTask = $scope.game.challenges[2].tasks[2]
   }).error(function() {
     alert("Game data not available")
   })
