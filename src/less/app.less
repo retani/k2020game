@@ -4,5 +4,25 @@
 @import "animate-slide.less";
 
 .panel {
-  margin:10px;
+  margin:1.5em 0;
+}
+
+.task-content img {
+  width:100%;
+  display:block;
+  margin-bottom:1em;
+}
+
+.solved {
+}
+
+.current {
+  animation: glow 1s infinite 0s alternate;
+  animation-timing-function: linear;
+}
+
+/* Standard syntax */
+@keyframes glow {
+    from {text-shadow: 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C;}
+    to   {text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF, 0 0 0.2em #FFF;}
 }

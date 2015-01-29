@@ -13,7 +13,10 @@ var config = {
     js: [
       './bower_components/angular/angular.js',
       './bower_components/angular-route/angular-route.js',
-      './bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js'
+      './bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js',
+      './bower_components/angular-cookies/angular-cookies.js',
+      './bower_components/angular-sanitize/angular-sanitize.js',
+      './bower_components/angular-animate/angular-animate.js'
     ],
 
     fonts: [
@@ -69,7 +72,9 @@ var gulp           = require('gulp'),
     ngFilesort     = require('gulp-angular-filesort'),
     streamqueue    = require('streamqueue'),
     rename         = require('gulp-rename'),
-    path           = require('path');
+    path           = require('path'),
+    postcss        = require('gulp-postcss'),
+    autoprefixer   = require('autoprefixer-core');
 
 
 /*================================================
@@ -191,6 +196,7 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.resolve(__dirname, 'src/less'), path.resolve(__dirname, 'bower_components') ]
     }))
+    .pipe(postcss([ autoprefixer({ browsers: ['last 2 version'] }) ]))
     .pipe(mobilizer('app.css', {
       'app.css': {
         hover: 'exclude',

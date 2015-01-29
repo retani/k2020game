@@ -10,3 +10,13 @@ function translate_markdown_nodes(o ) {
         }
     }
 }         
+
+function add_indexes(game) {
+    for (challengeIndex in game.game.challenges) {
+        game.game.challenges[challengeIndex].index = parseInt(challengeIndex)
+        for (taskIndex in game.game.challenges[challengeIndex].tasks) {
+            game.game.challenges[challengeIndex].tasks[taskIndex].index = parseInt(taskIndex)
+            game.game.challenges[challengeIndex].tasks[taskIndex].challengeIndex = parseInt(challengeIndex)
+        }
+    }
+}         
