@@ -73,12 +73,21 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     return taskSolved(task) || taskCurrent(task)
   }
 
+  gameGetCurrentTask = function() {
+    if ($scope.gameState != undefined && $scope.gameState.gameStarted && !$scope.gameState.gameFinished) {
+      console.log($scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex])
+      return $scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex]
+    }
+    else return false
+  }
+
   $scope.gameAdvance = gameAdvance
   $scope.gameReset = gameReset
   $scope.taskSolved = taskSolved
   $scope.taskCurrent = taskCurrent
   $scope.taskAvailable = taskAvailable
   $scope.challengeAvailable = challengeAvailable
+  $scope.gameGetCurrentTask = gameGetCurrentTask
 
   gameSave = function() {
     saveString = angular.toJson($scope.gameState, false);
