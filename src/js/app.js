@@ -2,6 +2,7 @@ var app = angular.module('K2020', [
   'ngRoute',
   'mobile-angular-ui',
   'K2020.controllers.Main',
+  /*'K2020.controllers.Condition',*/
   'ngSanitize',
   'ngAnimate'
 ])

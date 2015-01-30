@@ -101,11 +101,19 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
   $scope.goTask = function ( t ) {
     $scope.activeTask = t
     $location.path( "/task" )
+    $scope.slideDirection = "inside"
   }
 
   //current template
   $rootScope.$on('$routeChangeSuccess', function(){ 
      $scope.template = $route['current']['loadedTemplateUrl']
+  });
+
+  //slide scroll direction
+  $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){ 
+     slideDistance = (prevRoute == undefined) ? 0 : currRoute.depth - prevRoute.depth
+     //$scope.slideDirection = slideDistance > 0 ? "inside" : slideDistance == 0 ? "same" : "outside"
+     console.log($scope.slideDirection)
   });
 
 });

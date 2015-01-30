@@ -32,7 +32,7 @@
           <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle" ng-show="template == 'home.html'">
             <i class="fa fa-bars"></i> Menu
           </div>
-          <a class="btn" ng-show="template == 'task.html'" ng-href="#/">
+          <a class="btn" ng-show="template == 'task.html'" ng-href="#/" ng-click="slideDirection = 'outside'">
             <i class="fa fa-chevron-left"></i> Back
           </a>
         </div>
@@ -55,7 +55,7 @@
       <div class="app-body">
         <div class="app-content">
 
-            <ng-view></ng-view>  
+            <ng-view class="slide" ng-class="'slide-direction-'+slideDirection"></ng-view>  
 
         </div>
       </div>
