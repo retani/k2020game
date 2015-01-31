@@ -5,12 +5,11 @@
     </div>
     <div class="panel-body">
       <div class="list-group">
-        <a class="list-group-item task" ng-class="{current: taskCurrent(task), solved: taskSolved(task)}" ng-repeat="task in challenge.tasks | filter:taskAvailable" ng-click="goTask(task)" ng-bind-html="task.text.title[lang]">
-          <i class="fa fa-chevron-right pull-right"></i>
+        <a class="list-group-item task" ng-class="{current: taskCurrent(task), solved: taskSolved(task)}" ng-repeat="task in challenge.tasks | filter:taskAvailable" ng-click="goTask(task)" ng-bind-html="( task.text.title[lang] | htmlToPlaintext ) + chevron_right">
         </a>
       </div>
     </div>
-    <div class="panel-footer"><i class="fa fa-check-square"></i></div>
+    <!--div class="panel-footer"><i class="fa fa-check-square"></i></div-->
   </div>
 </section>
 

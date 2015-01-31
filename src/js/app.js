@@ -4,7 +4,8 @@ var app = angular.module('K2020', [
   'K2020.controllers.Main',
   /*'K2020.controllers.Condition',*/
   'ngSanitize',
-  'ngAnimate'
+  'ngAnimate',
+  'filters'
 ])
 
 .config(function($routeProvider) {
@@ -30,3 +31,9 @@ app.run(function($rootScope, $window) {
     }});
   });
 */
+
+angular.module('filters', []).filter('htmlToPlaintext', function() {
+    return function(text) {
+      return String(text).replace(/<[^>]+>/gm, '');
+    }
+  });

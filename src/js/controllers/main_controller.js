@@ -125,4 +125,6 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
      console.log($scope.slideDirection)
   });
 
+  $scope.chevron_right = '<i class="fa fa-chevron-right pull-right"></i>'
+
 });

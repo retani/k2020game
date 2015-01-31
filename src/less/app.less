@@ -51,16 +51,16 @@
 .slide-direction-inside
 {
   &.slide.ng-enter {
-      left: 100%;
+      transform:translate3d(100%,0,0); //left: 100%;
   }
   &.slide.ng-enter-active {
-      left: 0;
+      transform:translate3d(0%,0,0); //left: 0;
   }
   &.slide.ng-leave {
-      left: 0;
+      transform:translate3d(0%,0,0); //left: 0;
   }
   &.slide.ng-leave-active {
-      left: -100%;
+      transform:translate3d(-100%,0,0); //left: -100%;
   }
 }
 
@@ -68,15 +68,63 @@
 .slide-direction-outside
 {
   &.slide.ng-enter {
-      left: -100%;
+      transform:translate3d(-100%,0,0); //left: -100%;
   }
   &.slide.ng-enter-active {
-      left: 0;
+      transform:translate3d(0%,0,0); //left: 0;
   }
   &.slide.ng-leave {
-      left: 0;
+      transform:translate3d(0%,0,0); //left: 0;
   }
   &.slide.ng-leave-active {
-      left: 100%;
+      transform:translate3d(100%,0,0); //left: 100%;
   }
+}
+
+.ng-enter {
+  visibility:hidden;
+}
+.ng-enter.ng-enter-active {
+  visibility:visible;
+}
+
+.preload-html {
+  display:none;
+}
+
+.panel .list-group {
+  margin-bottom:0;
+}
+
+.panel-heading,
+.panel .list-group-item {
+  padding:1em 1.3em;
+}
+
+.panel-body {
+  padding:0;
+}
+
+.list-group-item:last-child {
+  border:none;
+}
+
+.container-fluid {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.dashboard .panel {
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+.dashboard .panel-title {
+  //text-decoration:underline;
+  font-size:1.6em;
+  font-weight:bold;
+}
+
+.dashboard {
+  font-weight:bold;
 }
