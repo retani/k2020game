@@ -32,8 +32,14 @@ app.run(function($rootScope, $window) {
   });
 */
 
-angular.module('filters', []).filter('htmlToPlaintext', function() {
+angular.module('filters', [])
+  .filter('htmlToPlaintext', function() {
     return function(text) {
       return String(text).replace(/<[^>]+>/gm, '');
     }
-  });
+  })
+  .filter('htmlForTimedOutput', function() {
+    return function(text) {
+      return String(text).replace(/<[^>]+>/gm, '');
+    }
+  })

@@ -125,6 +125,12 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
      console.log($scope.slideDirection)
   });
 
-  $scope.chevron_right = '<i class="fa fa-chevron-right pull-right"></i>'
+  html = {
+    chevron_right: '<i class="fa fa-chevron-right pull-right"></i>',
+    check_task_solved: function(task) {if (taskSolved(task)) return '<i class="fa fa-check"></i>'},
+    check_challenge_solved: function(challenge) {if (taskSolved(challenge)) return '<i class="fa fa-check"></i>'},
+  }
+
+  $scope.html = html
 
 });
