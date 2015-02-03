@@ -7,7 +7,7 @@
 var config = {
   dest: 'www',
   cordova: false,
-  minify_images: true,
+  minify_images: false,
   
   vendor: {
     js: [
@@ -16,7 +16,8 @@ var config = {
       './bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js',
       './bower_components/angular-cookies/angular-cookies.js',
       './bower_components/angular-sanitize/angular-sanitize.js',
-      './bower_components/angular-animate/angular-animate.js'
+      './bower_components/angular-animate/angular-animate.js',
+      './bower_components/angular-localization/angular-localization.js'
     ],
 
     fonts: [
@@ -168,6 +169,14 @@ gulp.task('yaml', function() {
   .pipe(gulp.dest(path.join(config.dest, 'yaml')));
 });
 
+/*==================================
+=            Copy languages         =
+==================================*/
+
+gulp.task('languages', function() {
+  return gulp.src('src/languages/**/*')
+  .pipe(gulp.dest(path.join(config.dest, 'languages')));
+});
 
 /*=================================================
 =            Copy html files to dest              =
@@ -246,6 +255,7 @@ gulp.task('watch', function () {
   gulp.watch(['./src/html/**/*'], ['html']);
   gulp.watch(['./src/less/**/*'], ['less']);
   gulp.watch(['./src/yaml/**/*'], ['yaml']);
+  gulp.watch(['./src/languages/**/*'], ['languages']);
   gulp.watch(['./src/js/**/*', './src/templates/**/*', config.vendor.js], ['js']);
   gulp.watch(['./src/images/**/*'], ['images']);
 });
@@ -270,7 +280,7 @@ gulp.task('weinre', function() {
 ======================================*/
 
 gulp.task('build', function(done) {
-  var tasks = ['html', 'fonts', 'images', 'yaml', 'less', 'js'];
+  var tasks = ['html', 'fonts', 'images', 'yaml', 'languages', 'less', 'js'];
   seq('clean', tasks, done);
 });
 

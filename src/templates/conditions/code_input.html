@@ -1,9 +1,4 @@
 <ng-form name="forms.condition" class="condition-code-input">
-  <input type="tel" name="input" ng-minlength="4" ng-maxlength="4" size="4" min="3" ng-pattern="(activeTask.condition['code input'].correct).toString()" ng-model="conditionValue" required ng-change="gameCheckForm()">
-  <pre>form = {{conditionValue | json}}</pre>
-  <pre ng-if="conditionForm.$valid">RISCHTIG</pre>
-  <div ng-if="conditionValue == activeTask.condition['code input'].correct">CORRETK
-
-
+  <input class="form-control current" type="tel" name="input" ng-minlength="4" ng-maxlength="4" size="4" min="3" ng-pattern="(activeTask.condition['code input'].correct).toString()" ng-model="conditionValue" required ng-change="gameCheckForm()">
   </div>
 </ng-form>

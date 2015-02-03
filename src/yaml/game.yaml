@@ -1,5 +1,13 @@
 game:
   name: K2020
+  text:
+    pre:
+      de: |
+        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
+      en: |
+        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
+      tr: |
+        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
   challenges:
     -
       name: Tutorial
@@ -16,8 +24,8 @@ game:
         -
           name: T00
           condition:
-            code input:
-              correct: 1234
+            number input:
+              correct: 102010
           text:
             title:
               de: Agentensystem initialisieren ... 

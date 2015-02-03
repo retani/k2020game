@@ -6,14 +6,36 @@ var app = angular.module('K2020', [
   'ngSanitize',
   'ngAnimate',
   'filters',
+  'ngLocalize',
+  'ngLocalize.Events',
+  'ngLocalize.InstalledLanguages',
   /*'valBubble',
   'chatStyle'*/
-])
+]).value('localeConf', {
+    basePath: 'languages',
+    defaultLocale: 'de-DE',
+    sharedDictionary: 'common',
+    fileExtension: '.lang.json',
+    persistSelection: false,
+    cookieName: 'COOKIE_LOCALE_LANG',
+    observableAttrs: new RegExp('^data-(?!ng-|i18n)'),
+    delimiter: '::'
+}).value('localeSupported', [
+    'en-US',
+    'de-DE',
+    'tr-TR'
+]).value('localeFallbacks', {
+    'en': 'en-US',
+    'de': 'de-DE',
+    'tr': 'tr-TR'
+})
 
 .config(function($routeProvider) {
-  $routeProvider.when('/', {templateUrl:'home.html',  reloadOnSearch: false, depth: 1});
-  $routeProvider.when('/task', {templateUrl: 'task.html', reloadOnSearch: false, depth: 2}); 
-  $routeProvider.when('/about', {templateUrl: 'about.html', reloadOnSearch: false, depth: 2}); 
+  $routeProvider.when('/', {templateUrl:'home.html',  reloadOnSearch: false, depth: 1}); // Arbeitsmappe
+  $routeProvider.when('/task', {templateUrl: 'task.html', reloadOnSearch: false, depth: 2}); // Task
+  $routeProvider.when('/about', {templateUrl: 'about.html', reloadOnSearch: false, depth: 2}); // About
+  $routeProvider.when('/start', {templateUrl: 'start.html', reloadOnSearch: false, depth: 0}); // Start message
+  $routeProvider.when('/intro', {templateUrl: 'intro.html', reloadOnSearch: false, depth: 0}); // First page
 });
 
 /*

@@ -1,0 +1,40 @@
+<div class="scrollable-content">
+  <section class="section container-fluid">
+    <div class="logo">
+      <img src="images/k2020-logo.png">
+    </div>
+
+
+    <h2 i18n="ui.chooseLanguage">Sprache wählen</h2>
+
+    <div>
+      <!--label>
+        <input type="radio" ng-model="lang" name="language" value="de">
+        Deutsch
+      </label>
+      <label>
+        <input type="radio" ng-model="lang" name="language" value="en">
+        Englisch
+      </label>
+      <label>
+        <input type="radio" ng-model="lang" name="language" value="tr">
+        T
+      </label-->
+
+      
+      <!--label ng-repeat="(id,name) in languages">
+        <input type="radio" ng-model="$parent.lang" name="language" value="{{id}}" ng-click="setLocale(id)">
+        {{name}}
+      </label-->
+      
+<br>
+<div class="btn-group" role="group">
+  <button type="button" ng-model="$parent.lang" value="{{id}}" ng-click="setLocale(id)" class="btn btn-default" ng-class="{'active': lang==id}" ng-repeat="(id,name) in languages">{{name}}</button>
+</div>
+
+      <p>
+        <a href="#/start" class="btn btn-default" i18n="ui.startGame" ng-click="gameStart();slideDirection = 'down'"></a>
+      </p>
+
+  </section>
+</div>

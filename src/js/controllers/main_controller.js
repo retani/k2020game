@@ -1,8 +1,31 @@
-angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
+angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize','ngLocalize.Events'])
 
-.controller('MainController', function($scope, $http, $location, $route, $rootScope, $cookies) {
+.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies','localeEvents', 'locale', function($scope, $http, $location, $route, $rootScope, $cookies, localeEvents, locale) {
+  //'use strict';
+
+  // language
+  $scope.languages = {
+    'de':"Deutsch",
+    'en':"English",
+    'tr':"Türkçe"
+  }
+
   // init language
   $scope.lang = "de"
+
+  // localization
+  $scope.$watch('lang', function(l) {
+    console.log("change!!"+l)
+  });
+
+  $scope.setLocale = function (loc) {
+    locale.setLocale(loc);
+    $scope.lang = loc;
+  };
+
+  $scope.$on(localeEvents.localeChanges, function (event, data) {
+    console.log('new locale chosen: ' + data);
+  });  
 
   // load game data
   $http.get("yaml/game.yaml").success(function (data) {
@@ -16,6 +39,16 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     $scope.activeTask = $scope.game.challenges[0].tasks[0]
     // init game
     gameLoad() || gameReset()
+    // redirect to dashboard if game is running and to intro if not
+    if ($scope.gameState.gameStarted){  
+      $location.path('/');
+      $scope.setLocale($scope.gameState.language)
+      console.log("redirect to dashboard, continue game")
+    }
+    else {
+      $location.path('/intro');  
+      console.log("redirect to intro")
+    }
   }).error(function() {
     alert("Game data not available")
   })
@@ -25,11 +58,17 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     $scope.gameState = {
       challengeIndex: 0,
       taskIndex: 0,
-      gameStarted: true,
+      gameStarted: false,
       gameFinished: false
     }
     gameSave()
     console.log("game reset")
+  }
+  gameStart = function() {
+    $scope.gameState.language = $scope.lang
+    $scope.gameState.gameStarted = true
+    gameSave()
+    console.log("game start")
   }
   gameAdvance = function() {
     nextTaskIndexInChallenge =  $scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex+1]
@@ -48,12 +87,15 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     // ...and save
     gameSave()
   }
+  gameGetStartMessage = function() {
+    return $scope.game.text.pre[lang]
+  }
 
   gameCheckForm = function() {
-    console.log("XXX")
+    /*
     if ($scope.conditionForm != undefined)
       if ($scope.conditionForm.$valid) gameAdvance()
-    console.log($scope.conditionForm)
+    */
   }
 
   challengeSolved = function(challenge) {
@@ -98,6 +140,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
 
   $scope.gameAdvance = gameAdvance
   $scope.gameReset = gameReset
+  $scope.gameStart = gameStart
   $scope.taskSolved = taskSolved
   $scope.taskCurrent = taskCurrent
   $scope.taskAvailable = taskAvailable
@@ -105,6 +148,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
   $scope.gameGetCurrentTask = gameGetCurrentTask
   $scope.taskConditionGetTemplateName = taskConditionGetTemplateName
   $scope.gameCheckForm = gameCheckForm
+  $scope.gameGetStartMessage = gameGetStartMessage
 
   gameSave = function() {
     saveString = angular.toJson($scope.gameState, false);
@@ -123,6 +167,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     else return false
   }
 
+
   // location service for tasks
   $scope.goTask = function ( t ) {
     $scope.activeTask = t
@@ -139,9 +184,9 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
 
   //slide scroll direction
   $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){ 
-     slideDistance = (prevRoute == undefined) ? 0 : currRoute.depth - prevRoute.depth
+     //slideDistance = (prevRoute == undefined) ? 0 : currRoute.depth - prevRoute.depth
      //$scope.slideDirection = slideDistance > 0 ? "inside" : slideDistance == 0 ? "same" : "outside"
-     console.log($scope.slideDirection)
+     //console.log($scope.slideDirection)
   });
 
   html = {
@@ -152,21 +197,15 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
 
   $scope.html = html
 
-  // redirect to dashboard if game is running
-  $scope.$watch(function() { return $location.path(); }, function(newValue, oldValue){  
-      //if ($scope.gameState.gameStarted == true && $scope.activeTask == undefined){  
-        if ($scope.gameState == undefined){  
-              $location.path('/');  
-      }  
-  });  
-
   $scope.forms = {};
   $scope.$watch('forms.condition', function(form) {
     if(form) {
       var fform = form
       $scope.$watch('forms.condition.$valid', function(valid) {
         if(fform.$valid && !fform.$pristine) {
+          console.log("task solved (detected)")
           gameAdvance()
+          scrollTaskSolved()
           form.$setPristine()
           form.$setValidity(false)
         }
@@ -174,4 +213,14 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     }
   });
 
-});
+  scrollTaskSolved = function() {
+    var elem = angular.element(document.getElementById('task-scrollable'));
+    var scrollableContentController = elem.controller('scrollableContent');
+    // - Scroll to top of containedElement
+    var containedElement = angular.element(document.getElementById('condition-solved'));
+    scrollableContentController.scrollTo(containedElement);  
+  }
+
+  $scope.scrollTaskSolved = scrollTaskSolved
+
+}]);

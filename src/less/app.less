@@ -17,22 +17,39 @@
 .solved {
 }
 
-.current {
-  animation: glow 1s infinite 0s alternate;
+a.current {
+  animation: glow-text 1s infinite 0s alternate;
   animation-timing-function: linear;
 }
 
-/* Standard syntax */
-@keyframes glow {
+input.current:not(:focus) {
+  animation: glow-box 1s infinite 0s alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes glow-text {
     from {text-shadow: 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C;}
     to   {text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF, 0 0 0.2em #FFF;}
 }
 
+@keyframes glow-box {
+    from {box-shadow: 0 0 15px rgba(255, 238, 44, 1);}
+    to   {box-shadow: 0 0 15px rgba(255, 238, 44, 0);}
+}
 
+.condition-todo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
-
-
-
+.condition-solved {
+  text-align:center;
+  i {
+    font-size: 50vw;
+    color:@color_success;
+  }
+}
 
 .preload-html {
   display:none;
@@ -78,4 +95,8 @@
   font-weight:bold;
 }
 
-
+.logo img {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
