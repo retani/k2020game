@@ -1,0 +1,5 @@
+<ng-form name="forms.condition" class="condition-code-input">
+  <input type="number" name="input" size="2" ng-pattern="(activeTask.condition['number input'].correct).toString()" ng-model="conditionValue" required ng-change="gameCheckForm()">
+  <pre>form = {{conditionValue | json}}</pre>
+  <pre ng-if="conditionForm.$valid">RISCHTIG</pre>
+</ng-form>

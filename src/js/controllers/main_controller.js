@@ -49,6 +49,13 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     gameSave()
   }
 
+  gameCheckForm = function() {
+    console.log("XXX")
+    if ($scope.conditionForm != undefined)
+      if ($scope.conditionForm.$valid) gameAdvance()
+    console.log($scope.conditionForm)
+  }
+
   challengeSolved = function(challenge) {
     return $scope.gameState.challengeIndex > challenge.index
   }
@@ -62,11 +69,11 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
   }  
 
   taskSolved = function(task) {
-    return $scope.gameState.challengeIndex > task.challengeIndex || $scope.gameState.challengeIndex == task.challengeIndex && $scope.gameState.taskIndex > task.index
+    return $scope.gameState.challengeIndex > task.challengeIndex || $scope.gameState.challengeIndex == task.challengeIndex && $scope.gameState.taskIndex > task.index || $scope.gameState.gameFinished
   }
 
   taskCurrent = function(task) {
-    return $scope.gameState.challengeIndex == task.challengeIndex && $scope.gameState.taskIndex == task.index
+    return $scope.gameState.challengeIndex == task.challengeIndex && $scope.gameState.taskIndex == task.index && !$scope.gameState.gameFinished
   }
 
   taskAvailable = function(task) {
@@ -75,10 +82,18 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
 
   gameGetCurrentTask = function() {
     if ($scope.gameState != undefined && $scope.gameState.gameStarted && !$scope.gameState.gameFinished) {
-      console.log($scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex])
+      //console.log($scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex])
       return $scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex]
     }
     else return false
+  }
+
+  taskConditionGetTemplateName = function(task) {
+    for (var prop in task.condition) {
+      break;
+    }
+    console.log(prop)
+    return prop
   }
 
   $scope.gameAdvance = gameAdvance
@@ -88,6 +103,8 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
   $scope.taskAvailable = taskAvailable
   $scope.challengeAvailable = challengeAvailable
   $scope.gameGetCurrentTask = gameGetCurrentTask
+  $scope.taskConditionGetTemplateName = taskConditionGetTemplateName
+  $scope.gameCheckForm = gameCheckForm
 
   gameSave = function() {
     saveString = angular.toJson($scope.gameState, false);
@@ -111,6 +128,8 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
     $scope.activeTask = t
     $location.path( "/task" )
     $scope.slideDirection = "inside"
+    // find correct answer(s)
+    $scope.conditionValue = ""
   }
 
   //current template
@@ -132,5 +151,27 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies'])
   }
 
   $scope.html = html
+
+  // redirect to dashboard if game is running
+  $scope.$watch(function() { return $location.path(); }, function(newValue, oldValue){  
+      //if ($scope.gameState.gameStarted == true && $scope.activeTask == undefined){  
+        if ($scope.gameState == undefined){  
+              $location.path('/');  
+      }  
+  });  
+
+  $scope.forms = {};
+  $scope.$watch('forms.condition', function(form) {
+    if(form) {
+      var fform = form
+      $scope.$watch('forms.condition.$valid', function(valid) {
+        if(fform.$valid && !fform.$pristine) {
+          gameAdvance()
+          form.$setPristine()
+          form.$setValidity(false)
+        }
+      });
+    }
+  });
 
 });

@@ -1,0 +1,27 @@
+<div class="condition-todo" ng-if="taskCurrent(activeTask)">
+
+  <div ng-switch="taskConditionGetTemplateName(activeTask)">
+
+    <div ng-switch-when="number input">
+      <div ng-include="'conditions/number_input.html'"></div>
+    </div>
+
+    <div ng-switch-when="text input">
+      <div ng-include="'conditions/text_input.html'"></div>
+    </div>
+
+    <div ng-switch-when="code input">
+      <div ng-include="'conditions/code_input.html'"></div>
+    </div>    
+    
+    <div ng-switch-default>
+      <div ng-include="'conditions/button.html'"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="condition-solved" ng-if="taskSolved(activeTask)">
+  <i class="fa fa-check"></i>
+</div>

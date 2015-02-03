@@ -1,3 +1,6 @@
-<div class="text_input">
-  text input
-</div>
+<ng-form name="forms.condition" class="condition-text-input">
+  <input type="text" name="input" size="6" ng-pattern="(activeTask.condition['text input'].correct).join('|')" ng-model="conditionValue" required ng-change="gameCheckForm()">
+  <pre>form = {{conditionValue | json}}</pre>
+  <pre>{{(activeTask.condition['text input'].correct).join('|')}}</pre>
+  <pre ng-if="conditionForm.$valid">RISCHTIG</pre>
+</ng-form>

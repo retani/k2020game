@@ -2,10 +2,12 @@ var app = angular.module('K2020', [
   'ngRoute',
   'mobile-angular-ui',
   'K2020.controllers.Main',
-  /*'K2020.controllers.Condition',*/
+  /*'ConditionsController',*/
   'ngSanitize',
   'ngAnimate',
-  'filters'
+  'filters',
+  /*'valBubble',
+  'chatStyle'*/
 ])
 
 .config(function($routeProvider) {
@@ -38,8 +40,10 @@ angular.module('filters', [])
       return String(text).replace(/<[^>]+>/gm, '');
     }
   })
+  /*
   .filter('htmlForTimedOutput', function() {
     return function(text) {
-      return String(text).replace(/<[^>]+>/gm, '');
+      return String(text).replace(/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/gm, '');
     }
   })
+  */

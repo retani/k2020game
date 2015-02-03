@@ -9,8 +9,7 @@
       <div class="task-pre" ng-bind-html="activeTask.text.pre[lang]">
       </div>
     </div>
-    <form class="task-condition" ng-include="'conditions/button.html'">
-      <button ng-click="gameAdvance()">weiter</button>
+    <form class="task-condition" ng-include="'conditions/base.html'">
     </form>
     <div class="task-post" ng-bind-html="activeTask.text.post[lang]" ng-show="taskSolved(activeTask)">
     </div>  

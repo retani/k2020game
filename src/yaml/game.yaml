@@ -150,10 +150,8 @@ game:
         -
           name: Windzählung
           condition:
-          condition:
             number input:
-              correct:
-                - equals: 12
+              correct: 12
           text:
             title:
               de: "Windzählung"
@@ -179,10 +177,8 @@ game:
         -
           name: Sonne
           condition:
-          condition:
             number input:
-              correct:
-                - equals: 12
+              correct: 12
           text:
             title:
               de: "Sonne"
@@ -236,8 +232,7 @@ game:
           name: Brennstoff
           condition:
             number input:
-              correct: 
-                - equals: 12
+              correct: 12
           text:
             title:
               de: "Brennstoff"
@@ -315,7 +310,9 @@ game:
             text input:
               correct:
                 - H2O
-              case sentitive: false
+                - h2o
+                - H2o
+                - h2O
           text:
             title:
               de: "Wasser"
@@ -350,8 +347,8 @@ game:
           condition:
             text input:
               correct:
-                - H2O
-              case sentitive: false
+                - xxx
+                - XXX
           text:
             title:
               de: "Zugang zum Abwasser"
