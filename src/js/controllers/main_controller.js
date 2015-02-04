@@ -15,17 +15,22 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
 
   // localization
   $scope.$watch('lang', function(l) {
-    console.log("change!!"+l)
   });
 
   $scope.setLocale = function (loc) {
     locale.setLocale(loc);
     $scope.lang = loc;
+    $scope.t={}
+    for (var tra in $scope.translations) {
+      $scope.t[tra] = $filter('htmlStripOuterTag')($scope.translations[tra][$scope.lang])
+    }
+    console.log($scope.t)
   };
 
   $scope.$on(localeEvents.localeChanges, function (event, data) {
     console.log('new locale chosen: ' + data);
   });  
+
 
   // load game data
   $http.get("yaml/game.yaml").success(function (data) {
@@ -34,6 +39,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     add_indexes(game)
     translate_markdown_nodes(game)
     $scope.game = game.game
+    $scope.translations = game.translations
     console.log($scope.game)
     // init view
     $scope.activeTask = $scope.game.challenges[0].tasks[0]
@@ -47,6 +53,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     }
     else {
       $location.path('/intro');  
+      $scope.setLocale($scope.gameState.language)
       console.log("redirect to intro")
     }
   }).error(function() {
@@ -56,6 +63,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   // game state
   gameReset = function() {
     $scope.gameState = {
+      language: "de",
       challengeIndex: 0,
       taskIndex: 0,
       gameStarted: false,
@@ -142,6 +150,11 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     return prop
   }
 
+  setSlideDirection = function(dir) {
+    console.log("set slide direction "+dir)
+    $scope.slideDirection = dir
+  }
+
   $scope.gameAdvance = gameAdvance
   $scope.gameReset = gameReset
   $scope.gameStart = gameStart
@@ -154,6 +167,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   $scope.gameCheckForm = gameCheckForm
   $scope.gameGetStartMessage = gameGetStartMessage
   $scope.gameIsAtBeginning = gameIsAtBeginning
+  $scope.setSlideDirection = setSlideDirection
 
   gameSave = function() {
     saveString = angular.toJson($scope.gameState, false);
@@ -184,18 +198,18 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
 
   //current template
   $rootScope.$on('$routeChangeSuccess', function(){ 
-     $scope.template = $route['current']['loadedTemplateUrl']
+     $scope.template = $route['current']['name']
      $scope.show_nav = $route['current']['nav']
      console.log($route['current']['name'])
     switch($route['current']['name']) {
       case "home":
-        $scope.nav_text = "Aufgabenmappe"
+        $scope.nav_text = $scope.t.dashboard
         break;
       //case "task":
       //  $scope.nav_text =  $filter('htmlToPlaintext')($scope.activeTask.text.title[$scope.lang])
       //  break;
       default:
-        $scope.nav_text = "Agentensystem"
+        $scope.nav_text = $scope.t.systemName
       }
   });
 

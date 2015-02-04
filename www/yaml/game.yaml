@@ -9,9 +9,18 @@ game:
       tr: |
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!
     dashboard:
-      de: "Dies ist deine **Aufgabenmappe**. Deine erste Aufgabe lautet: **%2**."
-      en: Dies ist deine Aufgabenmappe. Deine erste Mission heißt **%1**. Wähle **%2**, deine erste Aufgabe.
-      tr: Dies ist deine Aufgabenmappe. Deine erste Mission heißt **%1**. Wähle **%2**, deine erste Aufgabe.
+      de: "Dies ist deine **Auftragsmappe**. Deine erster Auftrag lautet: **%2**."
+      en: (en)
+      tr: (tr)
+  introtask:
+    condition:
+      code input:
+        correct: 12345
+    text:
+      pre:
+        de: Sucht das K2020-Schild am Klausenerplatz und gebt den fünfstelligen Agentencode ein, um das Spiel zu starten
+        en: (en)
+        tr: (tr)
   challenges:
     -
       name: Tutorial
@@ -32,7 +41,7 @@ game:
               correct: 102010
           text:
             title:
-              de: Agentensystem initialisieren ... 
+              de: Agentensystem initialisieren
               en: t 1 title en
               tr: t 1 title tr
             pre:
@@ -40,7 +49,7 @@ game:
                 > Gebt bitte Eure Standortnummer ein.
 
                 ![](images/edit_standortnummer.jpg)
-                Findet die Standortnummer der Bushaltestelle, an der Ihr gerade steht (siehe Foto), gebt sie unten bei 'solution' ein und drückt auf 'solve'.
+                Findet die Standortnummer der Bushaltestelle, an der Ihr gerade steht (siehe Foto) und gebt sie unten ein.
               en: t 1 pre en
               tr: t 1 pre tr
             hint:
@@ -51,7 +60,7 @@ game:
               de: |
                 > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zur BVG hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
 
-                Benutzt den Zurück-Button oben links zweimal und wählt „Dringende Mission“ aus.
+                Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.
               en: t 1 post en
               tr: t 1 post tr       
     -          
@@ -70,7 +79,7 @@ game:
           name: BVG
           condition:
             code input:
-              correct: 1234
+              correct: 12345
           text:
             title:
               de: BVG
@@ -86,23 +95,23 @@ game:
                 >
                 > Ihr kommt auf dem Weg dorthin an der ersten Kontaktstation der Wasserbetriebe vorbei. Richtet doch bitte Grüße von mir aus. Ihr erhaltet einen Code, der später nützlich sein könnte ...                
 
-                Findet die erste Kontaktstation der Wasserbetriebe und scannt dort den QR-Code ein.
+                Findet die erste Kontaktstation der Wasserbetriebe und gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
                 Die Verbindung zu den Wasserbetrieben wird hergestellt.
-                Wählt die nächste Aufgabe!
+                Wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr     
         -
           name: Wasserbetriebe 1
           condition:
             code input:
-              correct: 1234
+              correct: 12345
           text:
             title:
-              de: "Erste Station: Wasserbetriebe "
+              de: "Wasserbetriebe (1)"
               en: t 1 title en
               tr: t 1 title tr
             pre:
@@ -113,13 +122,13 @@ game:
                 >
                 > Jetzt aber weiter zum Energieversorger! Ich zeige Euch den Weg.
 
-                Findet die Kontaktstation zum Energieversorger und scannt dort den QR-Code ein.
+                Findet die Kontaktstation zum Energieversorger gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
                 Die Verbindung zum Energieversorger wird hergestellt.
-                Bitte wählt die nächste Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr                             
         -
@@ -153,14 +162,13 @@ game:
                 >
                 > Für den Fall, dass wir später den Wärmespeicher in Betrieb nehmen müssen, braucht Ihr den zweiten Teil des Experten-Codes. Um ihn zu bekommen, sagt mir bitte: Was meint Ihr, wozu ist der neue Speicher gut?
 
-                Drückt auf ‘multiple choice task’.
               en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
                 > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
 
-                Bitte wählt die nächste Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr        
         -
@@ -175,8 +183,9 @@ game:
               tr: t 1 title tr
             pre:
               de: |
-                > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
+                > Jetzt konzentrieren wir uns wieder darauf, Strom für die BVG bereitzustellen: Könnt Ihr bitte auf der Windanzeige nachschauen, ob gerade genug Wind weht?
 
+                ![](images/kachel_wind.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
@@ -186,9 +195,9 @@ game:
               tr: Anzahl
             post:
               de: |
-                > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
+                > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
 
-                Bitte wählt die nächste Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr        
 
@@ -208,6 +217,7 @@ game:
               de: |
                 > Schaut doch bitte mal nach, ob die Sonne gerade genug Energie liefert.   
 
+                ![](images/kachel_sonne.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
@@ -219,7 +229,7 @@ game:
               de: |
                 > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
 
-                Bitte wählt die nächste Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr        
 
@@ -229,7 +239,7 @@ game:
           name: Hochdruckdampf
           condition:
             code input:
-              correct: 1234
+              correct: 12345
           text:
             title:
               de: "Hochdruckdampf"
@@ -239,14 +249,14 @@ game:
               de: |
                 > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden Holzhackschnitzel in der für Steinkohle ausgelegten Anlage mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Aber auch die BSR hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet.  Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
 
-                Findet die Kontaktstation zur BSR und scannt dort den QR-Code ein.
+                Findet die Kontaktstation zur BSR und gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
                 Die Verbindung zur BSR wird hergestellt.
                 
-                Bitte wählt die nächste Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr        
 
@@ -256,7 +266,7 @@ game:
           name: Brennstoff
           condition:
             number input:
-              correct: 12
+              correct: 39
           text:
             title:
               de: "Brennstoff"
@@ -270,9 +280,9 @@ game:
                 >
                 > Das ist interessant! Die Hälfte unserer BSR-Müllfahrzeuge fährt ja mit Biogas, das wir aus den Bioabfällen, die wir abholen, produzieren. Aber den Hausmüll, den wir einsammeln, verbrennen wir und wandeln so Abfall in nutzbare Energie um. Die reicht dann, um ungefähr 100.000 Haushalte mit Strom und 50.000 Haushalte mit Wärme zu versorgen. Da könnten wir auch etwas für die Busse bereitstellen.
                 >
-                >Wie wäre es mit einem Tausch: Ihr helft mir bei der Müllabfuhr und ich gebe Euch einen Teil der Energie ab?
+                > Wie wäre es mit einem Tausch: Ihr helft mir bei der Müllabfuhr und ich gebe Euch einen Teil der Energie ab?
 
-                Sucht die Papierkörbe, die in diesem Straßenabschnitt zwischen Nehringstraße und Dankelmannstraße an Laternen hängen. Findet die weißen Zahlen an den Laternenmasten, addiert sie und gebt die Summe bei ‘solution’ ein.
+                Sucht die Papierkörbe, die in diesem Straßenabschnitt zwischen Nehringstraße und Dankelmannstraße an Laternen hängen. Findet die weißen Zahlen an den Laternenmasten, addiert sie und gebt die Summe ein.
               en: t 1 pre en
               tr: t 1 pre tr
             hint:
@@ -287,7 +297,7 @@ game:
                 >
                 > Habt Ihr es bemerkt? Mittlerweile scheint auch die Sonne und der Wind weht. 
                               
-                Drückt zweimal den "Zurück"-Button, um zur nächsten Mission zu gelangen.
+                Geht zurück, um zur nächsten Mission zu gelangen.
               en: t 1 post en
               tr: t 1 post tr       
 
@@ -296,7 +306,7 @@ game:
       name: Challenge 3
       text:
         title:
-          de: Weitere Mission
+          de: Mission Zukunft
           en: c 2 title ed
           tr: c 2 title tr
         pre:
@@ -310,7 +320,7 @@ game:
           name: Wetterwechsel
           condition:
             code input:
-              correct: 1234
+              correct: 12345
           text:
             title:
               de: "Wetterwechsel"
@@ -320,14 +330,14 @@ game:
               de: |
                 > Ja, mittlerweile scheint auch die Sonne und der Wind weht. Jetzt kann Vattenfall nicht nur mit unserem Dampf viele Haushalte heizen, sondern muss auch noch die erneuerbaren Energien speichern. Da muss man wirklich flexibel bleiben. Nun wird es höchste Zeit, den Wassertank des Wärmespeichers mit zwei Millionen Liter Wasser aufzufüllen. Das Wasser hierfür werden Euch die Berliner Wasserbetriebe sicher gerne geben.
 
-                Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und scannt dort den QR-Code ein. Folgt der Karte!
+                Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und gebt dort den Agentencode ein. Folgt der Karte!
               en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
                 Die Verbindung mit den Berliner Wasserbetrieben wird hergestellt.
 
-                Geht zur nächsten Aufgabe!
+                Bitte wählt den nächsten Auftrag!
               en: t 1 post en
               tr: t 1 post tr  
 
@@ -375,8 +385,11 @@ game:
           condition:
             text input:
               correct:
-                - xxx
-                - XXX
+                - entw. l. h.
+                - entw. l.h.
+                - entw.l.h.
+                - entw l h
+                - entwlh
           text:
             title:
               de: "Zugang zum Abwasser"
@@ -392,7 +405,8 @@ game:
                 >
                 > Gar nicht weit von hier findet Ihr ein grünes Abwasser-Schild an der Hauswand. Die Werte direkt unter dem T zeigen, wo man den Zugang zur Abwasserleitung auf dem Boden findet. Der linke Arm vom T zeigt, wie viele Meter man nach links laufen muss. Der rechte Arm zeigt an, wie weit man nach rechts laufen muss. Der untere Arm zeigt an, wie viele Meter man sich von der Mauer wegbewegen muss.
                   
-                Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              en: t 1 pre en
+                Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              
+              en: t 1 pre en
               tr: t 1 pre tr
             post:
               de: |
@@ -402,7 +416,49 @@ game:
                 >
                 > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
 
-                Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](www.k2020.berlin).
+                Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](http://www.k2020.berlin).
               en: t 1 post en
               tr: t 1 post tr  
+translations:
+  chooseLanguage:
+    de: "Sprache wählen"
+    en: "Choose Language"
+    tr: "(tr)"
+  startGame:
+    de: "Spiel starten"
+    en: "Start Game"
+    tr: "(tr)"
+  continue:
+    de: "Weiter"
+    en: "Continue"
+    tr: "(tr)"
+  back:
+    de: "Zurück"
+    en: "Back"
+    tr: "(tr)"
+  menu:
+    de: "Menü"
+    en: "Menu"
+    tr: "(tr)"
+  dashboard:
+    de: "Auftragsmappe"
+    en: "(en)"
+    tr: "(tr)"
+  systemName:
+    de: "Agentensystem"
+    en: "(en)"
+    tr: "(tr)"
+  gotoWebsite:
+    de: "Gehe zu K2020.berlin"
+    en: "Visit K2020.berlin"
+    tr: "(tr)"
+  restart:
+    de: "Neu starten"
+    en: "Restart Game"
+    tr: "(tr)"
+  codeInputHint:
+    de: "Agentencode"
+    en: "(en)"
+    tr: "(tr)"
+
 

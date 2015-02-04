@@ -62,6 +62,11 @@ angular.module('filters', [])
       return String(text).replace(/<[^>]+>/gm, '');
     }
   })
+  .filter('htmlStripOuterTag', function() {
+    return function(text) {
+      return String(text).replace(/^<[^>]+>/gm, '').replace(/<[^>]+>$/gm, '');
+    }
+  })  
   /*
   .filter('htmlForTimedOutput', function() {
     return function(text) {
