@@ -31,11 +31,11 @@ var app = angular.module('K2020', [
 })
 
 .config(function($routeProvider) {
-  $routeProvider.when('/', {templateUrl:'home.html',  reloadOnSearch: false, depth: 1}); // Arbeitsmappe
-  $routeProvider.when('/task', {templateUrl: 'task.html', reloadOnSearch: false, depth: 2}); // Task
-  $routeProvider.when('/about', {templateUrl: 'about.html', reloadOnSearch: false, depth: 2}); // About
-  $routeProvider.when('/start', {templateUrl: 'start.html', reloadOnSearch: false, depth: 0}); // Start message
-  $routeProvider.when('/intro', {templateUrl: 'intro.html', reloadOnSearch: false, depth: 0}); // First page
+  $routeProvider.when('/', {name: "home", templateUrl:'home.html',  reloadOnSearch: false, depth: 1, nav: true}); // Arbeitsmappe
+  $routeProvider.when('/task', {name: "task", templateUrl: 'task.html', reloadOnSearch: false, depth: 2, nav: true}); // Task
+  $routeProvider.when('/about', {name: "about", templateUrl: 'about.html', reloadOnSearch: false, depth: 2, nav: false}); // About
+  $routeProvider.when('/start', {name: "start", templateUrl: 'start.html', reloadOnSearch: false, depth: 0, nav: true}); // Start message
+  $routeProvider.when('/intro', {name: "intro", templateUrl: 'intro.html', reloadOnSearch: false, depth: 0, nav: false}); // First page
 });
 
 /*

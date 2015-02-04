@@ -17,12 +17,12 @@
 .solved {
 }
 
-a.current {
+a.current:not(.btn) {
   animation: glow-text 1s infinite 0s alternate;
   animation-timing-function: linear;
 }
 
-input.current:not(:focus) {
+input.current:not(:focus), .btn.current {
   animation: glow-box 1s infinite 0s alternate;
   animation-timing-function: linear;
 }
@@ -99,4 +99,52 @@ input.current:not(:focus) {
   margin-left:auto;
   margin-right:auto;
   display:block;
+}
+
+.btn-default.active, .btn-default.active:focus {
+  background-color: @color_dark !important;
+  border-color: @color_dark !important;
+}
+
+.template-intro {
+  background-color:white;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .language-select, .start {
+    text-align:center;
+    margin-top:2em;
+  }
+
+  .start {
+    margin-top:3em;
+    margin-bottom:3em;
+    .btn {
+      //background-color: @color_light;
+      font-weight:bold;
+      padding:1.5em;
+    }
+  }
+}
+
+.template-start {
+  background-color:white;
+
+  .button {
+    text-align: center;
+  }
+}
+
+.dashboard {
+}
+
+.dashboard-hint {
+  padding:1em 1.3em;
+  background-color: #FFFEFE;
+  font-weight: normal;
+  strong {
+    font-weight: bold;
+  }
 }

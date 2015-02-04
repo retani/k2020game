@@ -1,7 +1,9 @@
+<div class="dashboard-hint" ng-bind-html="(game.text.dashboard[lang]).replace('%1',(game.challenges[0].text.title[lang] | htmlToPlaintext)).replace('%2',(game.challenges[0].tasks[0].text.title[lang] | htmlToPlaintext))" ng-if="gameIsAtBeginning()"></div>
+
 <section class="scrollable-content container-fluid dashboard">
   <div class="panel panel-default" ng-repeat="challenge in game.challenges | filter:challengeAvailable">
     <div class="panel-heading challenge">
-      <h3 class="panel-title" ng-bind-html="html.check_challenge_solved(challenge) + ' ' + challenge.name"></h3>
+      <h3 class="panel-title" ng-bind-html="html.check_challenge_solved(challenge) + ' ' + (challenge.text.title[lang] | htmlToPlaintext)"></h3>
     </div>
     <div class="panel-body">
       <div class="list-group">

@@ -7,7 +7,11 @@ game:
       en: |
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
       tr: |
-        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
+        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!
+    dashboard:
+      de: "Dies ist deine **Aufgabenmappe**. Deine erste Aufgabe lautet: **%2**."
+      en: Dies ist deine Aufgabenmappe. Deine erste Mission heißt **%1**. Wähle **%2**, deine erste Aufgabe.
+      tr: Dies ist deine Aufgabenmappe. Deine erste Mission heißt **%1**. Wähle **%2**, deine erste Aufgabe.
   challenges:
     -
       name: Tutorial
@@ -39,6 +43,10 @@ game:
                 Findet die Standortnummer der Bushaltestelle, an der Ihr gerade steht (siehe Foto), gebt sie unten bei 'solution' ein und drückt auf 'solve'.
               en: t 1 pre en
               tr: t 1 pre tr
+            hint:
+              de: Standortnummer
+              en: Standortnummer
+              tr: Standortnummer
             post:
               de: |
                 > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zur BVG hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
@@ -172,6 +180,10 @@ game:
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
+            hint:
+              de: Anzahl
+              en: Anzahl
+              tr: Anzahl
             post:
               de: |
                 > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
@@ -199,6 +211,10 @@ game:
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
+            hint:
+              de: Anzahl
+              en: Anzahl
+              tr: Anzahl              
             post:
               de: |
                 > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
@@ -259,6 +275,10 @@ game:
                 Sucht die Papierkörbe, die in diesem Straßenabschnitt zwischen Nehringstraße und Dankelmannstraße an Laternen hängen. Findet die weißen Zahlen an den Laternenmasten, addiert sie und gebt die Summe bei ‘solution’ ein.
               en: t 1 pre en
               tr: t 1 pre tr
+            hint:
+              de: Anzahl
+              en: Anzahl
+              tr: Anzahl              
             post:
               de: |
                 > Vielen Dank! Ihr habt mir sehr geholfen. Nun haben wir 3,9 Tonnen Hochdruckdampf, der aus der Verbrennung von 1,5 Tonnen Abfall gewonnen wurde! Mit diesem Hochdruckdampf kann jetzt Vattenfall den Strom für die Elektrobusse der BVG produzieren. 

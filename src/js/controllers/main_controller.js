@@ -1,6 +1,6 @@
 angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize','ngLocalize.Events'])
 
-.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies','localeEvents', 'locale', function($scope, $http, $location, $route, $rootScope, $cookies, localeEvents, locale) {
+.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', '$filter', 'localeEvents', 'locale', function($scope, $http, $location, $route, $rootScope, $cookies, $filter, localeEvents, locale) {
   //'use strict';
 
   // language
@@ -130,6 +130,10 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     else return false
   }
 
+  gameIsAtBeginning = function() {
+    return $scope.gameState.gameStarted && $scope.gameState.challengeIndex == 0 && $scope.gameState.taskIndex == 0
+  }
+
   taskConditionGetTemplateName = function(task) {
     for (var prop in task.condition) {
       break;
@@ -149,6 +153,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   $scope.taskConditionGetTemplateName = taskConditionGetTemplateName
   $scope.gameCheckForm = gameCheckForm
   $scope.gameGetStartMessage = gameGetStartMessage
+  $scope.gameIsAtBeginning = gameIsAtBeginning
 
   gameSave = function() {
     saveString = angular.toJson($scope.gameState, false);
@@ -180,6 +185,18 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   //current template
   $rootScope.$on('$routeChangeSuccess', function(){ 
      $scope.template = $route['current']['loadedTemplateUrl']
+     $scope.show_nav = $route['current']['nav']
+     console.log($route['current']['name'])
+    switch($route['current']['name']) {
+      case "home":
+        $scope.nav_text = "Aufgabenmappe"
+        break;
+      //case "task":
+      //  $scope.nav_text =  $filter('htmlToPlaintext')($scope.activeTask.text.title[$scope.lang])
+      //  break;
+      default:
+        $scope.nav_text = "Agentensystem"
+      }
   });
 
   //slide scroll direction
@@ -192,7 +209,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   html = {
     chevron_right: '<i class="fa fa-chevron-right pull-right"></i>',
     check_task_solved: function(task) {if (taskSolved(task)) return '<i class="fa fa-check"></i>'},
-    check_challenge_solved: function(challenge) {if (taskSolved(challenge)) return '<i class="fa fa-check"></i>'},
+    check_challenge_solved: function(challenge) {if (challengeSolved(challenge)) return '<i class="fa fa-check"></i>'},
   }
 
   $scope.html = html
