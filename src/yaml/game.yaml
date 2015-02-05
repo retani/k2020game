@@ -8,6 +8,15 @@ game:
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
       tr: |
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!
+    post: 
+      de: |
+        > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
+        >
+        > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
+
+        Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](http://www.k2020.berlin).
+      en: (en)
+      tr: (tr)
     dashboard:
       de: "Dies ist deine **Auftragsmappe**. Deine erster Auftrag lautet: **%2**."
       en: (en)
@@ -348,9 +357,6 @@ game:
             text input:
               correct:
                 - H2O
-                - h2o
-                - H2o
-                - h2O
           text:
             title:
               de: "Wasser"
@@ -411,7 +417,9 @@ game:
             post:
               de: |
                 > Super, jetzt liefern wir das Wasser für den Wärmespeicher.
-                >
+                
+                []()
+
                 > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
                 >
                 > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
@@ -421,8 +429,8 @@ game:
               tr: t 1 post tr  
 translations:
   chooseLanguage:
-    de: "Sprache wählen"
-    en: "Choose Language"
+    de: "Wählt eine Sprache"
+    en: "Choose a Language"
     tr: "(tr)"
   startGame:
     de: "Spiel starten"

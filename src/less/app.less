@@ -27,6 +27,26 @@ input.current:not(:focus), .btn.current {
   animation-timing-function: linear;
 }
 
+input[type=text], input[type=number], input[type=tel] {
+  color: @color_light;
+  font-weight:bold;
+  font-size:160%;
+  padding: 3px 6px;
+  height:auto;
+}
+
+input[type=tel] {
+  letter-spacing:0.3em;
+}
+
+input[type=text] {
+  text-transform:uppercase;
+}
+
+::-webkit-input-placeholder { font-weight:normal; color:#f00; text-align:center; letter-spacing:normal; font-size:1em; text-transform:uppercase; color:#eee; }
+::-moz-placeholder { font-weight:normal; color:#f00; text-align:center; letter-spacing:normal; font-size:100%; text-transform:uppercase; color:#eee;} /* firefox 19+ */
+:-ms-input-placeholder { font-weight:normal; color:#f00; text-align:center; letter-spacing:normal; font-size:100%; text-transform:uppercase; color:#eee;} /* ie */
+input:-moz-placeholder { font-weight:normal; color:#f00; text-align:center; letter-spacing:normal; font-size:100%; text-transform:uppercase; color:#eee;}
 
 @keyframes glow-text {
     from {text-shadow: 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C, 0 0 0.2em #FFEE2C;}
@@ -46,7 +66,7 @@ input.current:not(:focus), .btn.current {
 .condition-solved {
   text-align:center;
   i {
-    font-size: 50vw;
+    font-size: 12em;
     color:@color_success;
   }
 }
@@ -128,8 +148,8 @@ width:100%;
 }
 
 .btn-default.active, .btn-default.active:focus {
-  background-color: @color_dark !important;
-  border-color: @color_dark !important;
+  background-color: @color_light !important;
+  border-color: @color_light !important;
 }
 
 .template-intro {
@@ -142,6 +162,12 @@ width:100%;
   .language-select, .start {
     text-align:center;
     margin-top:2em;
+  }
+
+  .introtask {
+    max-width:416px;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .start {
@@ -173,4 +199,16 @@ width:100%;
   strong {
     font-weight: bold;
   }
+}
+
+.round_number {
+  margin-right:0.3em;
+  display:inline-block;
+  border-radius: 0.55em;
+  height:1.1em;
+  width:1.1em;
+  background-color: @color_dark;
+  color:white;
+  font-style:normal;
+  padding:0 0 0 0;
 }

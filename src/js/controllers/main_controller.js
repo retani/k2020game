@@ -52,8 +52,10 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
       console.log("redirect to dashboard, continue game")
     }
     else {
-      $location.path('/intro');  
+      $location.path('/intro');
       $scope.setLocale($scope.gameState.language)
+      gameReset()
+      $scope.activeTask = $scope.game.introtask
       console.log("redirect to intro")
     }
   }).error(function() {
@@ -64,6 +66,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   gameReset = function() {
     $scope.gameState = {
       language: "de",
+      introtaskSolved: false,
       challengeIndex: 0,
       taskIndex: 0,
       gameStarted: false,
@@ -107,11 +110,11 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   }
 
   challengeSolved = function(challenge) {
-    return $scope.gameState.challengeIndex > challenge.index
+    return $scope.gameState.challengeIndex > challenge.index || $scope.gameState.gameFinished
   }
 
   challengeCurrent = function(challenge) {
-    return $scope.gameState.challengeIndex == challenge.index
+    return $scope.gameState.challengeIndex == challenge.index && !$scope.gameState.gameFinished
   }
 
   challengeAvailable = function(challenge) {
@@ -119,7 +122,9 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   }  
 
   taskSolved = function(task) {
-    return $scope.gameState.challengeIndex > task.challengeIndex || $scope.gameState.challengeIndex == task.challengeIndex && $scope.gameState.taskIndex > task.index || $scope.gameState.gameFinished
+    introTaskSolved = ( $scope.gameState.gameStarted == false && $scope.gameState.introtaskSolved )
+    regularTaskSolved = ( $scope.gameState.challengeIndex > task.challengeIndex  || $scope.gameState.challengeIndex == task.challengeIndex  && $scope.gameState.taskIndex > task.index  || $scope.gameState.gameFinished)
+    return (regularTaskSolved || introTaskSolved)
   }
 
   taskCurrent = function(task) {
@@ -140,6 +145,10 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
 
   gameIsAtBeginning = function() {
     return $scope.gameState.gameStarted && $scope.gameState.challengeIndex == 0 && $scope.gameState.taskIndex == 0
+  }
+
+  gameIsFinished = function() {
+    return $scope.gameState.gameFinished
   }
 
   taskConditionGetTemplateName = function(task) {
@@ -167,6 +176,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   $scope.gameCheckForm = gameCheckForm
   $scope.gameGetStartMessage = gameGetStartMessage
   $scope.gameIsAtBeginning = gameIsAtBeginning
+  $scope.gameIsFinished = gameIsFinished
   $scope.setSlideDirection = setSlideDirection
 
   gameSave = function() {
@@ -186,6 +196,10 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     else return false
   }
 
+  // regexp for condition
+  regexForCondition = function() {
+    return RegExp("^"+($scope.activeTask.condition['text input'].correct).join('|')+'$', 'i')
+  }
 
   // location service for tasks
   $scope.goTask = function ( t ) {
@@ -194,6 +208,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     $scope.slideDirection = "inside"
     // find correct answer(s)
     $scope.conditionValue = ""
+    $scope.regexForCondition = regexForCondition()
   }
 
   //current template
@@ -208,6 +223,9 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
       //case "task":
       //  $scope.nav_text =  $filter('htmlToPlaintext')($scope.activeTask.text.title[$scope.lang])
       //  break;
+      case "intro":
+        $scope.activeTask = $scope.game.introtask
+        break;
       default:
         $scope.nav_text = $scope.t.systemName
       }
@@ -235,21 +253,27 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
       $scope.$watch('forms.condition.$valid', function(valid) {
         if(fform.$valid && !fform.$pristine) {
           console.log("task solved (detected)")
-          gameAdvance()
+          if ($scope.gameState.gameStarted) {
+            gameAdvance()
+            
+          }
+          else {
+            $scope.gameState.introtaskSolved = true
+          }
           scrollTaskSolved()
           form.$setPristine()
-          form.$setValidity(false)
+          form.$setValidity(false)            
         }
       });
     }
   });
 
   scrollTaskSolved = function() {
-    var elem = angular.element(document.getElementById('task-scrollable'));
+    var elem = angular.element(document.querySelector('.scrollable-content'));
     var scrollableContentController = elem.controller('scrollableContent');
     // - Scroll to top of containedElement
     var containedElement = angular.element(document.getElementById('condition-solved'));
-    scrollableContentController.scrollTo(containedElement);  
+    scrollableContentController.scrollTo(containedElement);
   }
 
   $scope.scrollTaskSolved = scrollTaskSolved

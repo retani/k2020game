@@ -7,16 +7,22 @@
     </div>
 
     <div class="language-select">
-      <h3>{{ t.chooseLanguage }}</h3>
+      <h3><i class="round_number">1</i><span ng-bind="t.chooseLanguage"></span></h3>
 
-        
         <div class="btn-group" role="group">
           <button type="button" ng-model="$parent.lang" value="{{id}}" ng-click="setLocale(id)" class="btn btn-default" ng-class="{'active': lang==id}" ng-repeat="(id,name) in languages">{{name}}</button>
         </div>
-      </div>
+      </div>   
 
       <div class="start">
-        <a href="#/start" class="btn btn-default btn-lg current" ng-click="gameStart();slideDirection = 'down'">{{ t.startGame }}</a>
+
+        <div class="introtask">
+          <h3><i class="round_number">2</i><span ng-bind-html="(activeTask.text.pre[lang] | htmlStripOuterTag)"></span></h3>
+          <form class="task-condition" ng-include="'conditions/base.html'">
+          </form>   
+        </div>
+
+        <a href="#/start" ng-if="taskSolved(activeTask)" class="btn btn-default btn-lg current" ng-click="gameStart();slideDirection = 'down'">{{ t.startGame }}</a>
       </div>
 
   </section>

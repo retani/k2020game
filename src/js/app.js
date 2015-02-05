@@ -66,7 +66,15 @@ angular.module('filters', [])
     return function(text) {
       return String(text).replace(/^<[^>]+>/gm, '').replace(/<[^>]+>$/gm, '');
     }
-  })  
+  })
+  .filter('htmlBlockquotesToBubbles', function() {
+    return function(text) {
+      return String(text).replace(/<blockquote>/gm,
+       '<div class="bubble left"><span class="tail">&nbsp;</span><blockquote>')
+      .replace(/<\/blockquote>/gm,
+       '</blockquote></div>');
+    }
+  })    
   /*
   .filter('htmlForTimedOutput', function() {
     return function(text) {

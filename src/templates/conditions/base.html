@@ -1,4 +1,4 @@
-<div class="condition-todo" ng-if="taskCurrent(activeTask)">
+<div class="condition-todo" ng-if="!taskSolved(activeTask)">
 
   <div ng-switch="taskConditionGetTemplateName(activeTask)">
 
