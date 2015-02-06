@@ -274,6 +274,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     // - Scroll to top of containedElement
     var containedElement = angular.element(document.getElementById('condition-solved'));
     scrollableContentController.scrollTo(containedElement);
+    window.setTimeout( function() {document.getElementById('scrollable').scrollTop+=100}, 50);
   }
 
   $scope.scrollTaskSolved = scrollTaskSolved
