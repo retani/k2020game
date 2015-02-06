@@ -85,12 +85,13 @@ game:
                 Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.
               en: |
                 > Thank you! The connection is working perfectly. The agent system has been initialized. You have established contact to the BVG. They have a problem. Can you help? Connecting...
-              
+                
                 Go back to your task folder and select the next task.
               tr: |
                 > Teşekkürler! Bağlantı sorunsuz çalışıyor. Ajan sistemi kurulmuştur. Ve hâlihazırda BVG'ye bağlantıyı da kurdunuz. Onun, sizin yardımcı olabileceğiniz bir problemi var. Sizi bağlıyorum...
                 
-    -           TRANSL
+                TRANSL
+    -           
       name: Dringende Mission
       text:
         title:

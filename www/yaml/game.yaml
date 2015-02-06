@@ -5,9 +5,9 @@ game:
       de: |
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
       en: |
-        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
+        > Welcome dear climate agents. I am your K2020 contact person. We at K2020 think that the best way to save the climate is to get involved on large as well as small scale. Your mission today will bring you to the neighbourhood of Klausenerplatz. For the mission you’ll need appr. one hour. I’ll get back to you with further instructions later. Good luck!        
       tr: |
-        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!
+        > TRANSL Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!
     post: 
       de: |
         > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
@@ -15,7 +15,12 @@ game:
         > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
 
         Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](http://www.k2020.berlin).
-      en: (en)
+      en: |
+        > Dear climate agents: you did a great job solving your climate missions. You decoded the expert code, determined the strength of wind and sun, obtained high-pressure steam, and filled a huge heat reservoir with water.
+        >
+        > Thank you for helping us make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood by 20% by 2020 (compared to 1990). The climate thanks you!
+        
+        And now, if you want to continue to help us, just stop in at the climate protection management office Klausenerplatz! You can find more information about climate protection management in the neighborhood at [www.k2020.berlin](http://www.k2020.berlin).
       tr: (tr)
     dashboard:
       de: "Dies ist deine **Auftragsmappe**. Deine erster Auftrag lautet: **%2**."
@@ -52,7 +57,7 @@ game:
             title:
               de: Agentensystem initialisieren
               en: Initiate Agent System
-              tr: t 1 title tr
+              tr: Ajan sistemini kurunuz
             pre:
               de: |
                 > Gebt bitte Eure Standortnummer ein.
@@ -64,7 +69,11 @@ game:
                 
                 ![](images/edit_standortnummer.jpg)
                 Find the location number of the bus stop at which you are standing right now (see picture) and enter it below
-              tr: t 1 pre tr
+              tr: |
+                > Lütfen lokasyon numaranızı giriniz.
+                
+                ![](images/edit_standortnummer.jpg)
+                Şuan yanında bulunduğunuz durağın lokasyon numarasını bulunuz (bkz. fotoğraf) TRANSL
             hint:
               de: Standortnummer
               en: Location Number
@@ -76,10 +85,13 @@ game:
                 Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.
               en: |
                 > Thank you! The connection is working perfectly. The agent system has been initialized. You have established contact to the BVG. They have a problem. Can you help? Connecting...
-              
-                Go back to your Task Folder and select the next Task.
-              tr: t 1 post tr       
-    -          
+                
+                Go back to your task folder and select the next task.
+              tr: |
+                > Teşekkürler! Bağlantı sorunsuz çalışıyor. Ajan sistemi kurulmuştur. Ve hâlihazırda BVG'ye bağlantıyı da kurdunuz. Onun, sizin yardımcı olabileceğiniz bir problemi var. Sizi bağlıyorum...
+                
+                TRANSL
+    -           
       name: Dringende Mission
       text:
         title:
@@ -124,7 +136,17 @@ game:
                 
                 ![](images/k2020Karte1.png)
                 Find the first contact station for the water works and enter the Agent Code.
-              tr: t 1 pre tr
+              tr: |
+                > Merhaba iklim-ajanları! İyi ki buradasınız.
+                >
+                > Otobüse binmek, aracınızı kullanmaktan çok daha iklim için daha dosthanedir, fakat CO2'dan daha fazla tasarruf etmek için artık elektrikli otobüsleri de test ediyoruz. 204 numaralı hat ile tüm bir otobüs hattını 2015 yılında elektrikliye çeviriyoruz. Ve bununla da daha devam edeceğiz. Fakat bunun için daha fazla elektriğe ihtiyacımız var.
+                >
+                > Burada siz devreye giriyorsunuz: Lütfen yerel enerji tedarikçisine gidip, daha fazla elektrik sağlayabilir misiniz?
+                >
+                > Oraya giderken su işletmelerinin ilk iletişim istasyonundan geçeceksiniz, lütfen selamlarımı iletiniz. O, size daha sonra işinize yarayacak bir kod verecek...
+                
+                ![](images/k2020Karte1.png)
+                Su işletmelerinin ilk iletişim istasyonunu bulup, TRANSL
             post:
               de: |
                 Die Verbindung zu den Wasserbetrieben wird hergestellt.
@@ -132,7 +154,9 @@ game:
               en: |
                 Connecting to the water works.
                 Please select the next task!
-              tr: t 1 post tr     
+              tr: |
+                Su işletmeleri ile bağlantı kurulacak.
+                Sonraki görevi seçiniz!
         -
           name: Wasserbetriebe 1
           condition:
@@ -142,7 +166,7 @@ game:
             title:
               de: "Wasserbetriebe (1)"
               en: "Water works (1)"
-              tr: t 1 title tr
+              tr: "Istasyon su işletmeleri (1)"
             pre:
               de: |
                 > Ihr seid auf dem Weg zum Energieversorger und richtet mir Grüße von der BVG aus? Danke!
@@ -162,7 +186,15 @@ game:
                 
                 ![](images/k2020Karte2.png)
                 Find the contact station for the energy supplier and enter the Agent Code.
-              tr: t 1 pre tr
+              tr: |
+                > Enerji tedarikçisine gitmek için yola çıktınız ve bana BVG'den selam getirir misiniz? Teşekkürler!
+                >
+                > Hazır siz buraya gelmişken: ileride benden su isteyecek olursanız, hiç sorun yok. Bunun için de uzman-kodunun parçalarını toplayıp, birleştirmeniz gerekmektedir. Sadece şunu söyleyebilirim: O, "H2" ile başlar. Bunu iyice aklınızda tutun.
+                >
+                > Fakat şimdi enerji tedarikçisine gitmeye devam! Size yolu göstereyim.
+                
+                ![](images/k2020Karte2.png)
+                Enerji tedarikçinin iletişim istasyonunu bulun TRANLS
             post:
               de: |
                 Die Verbindung zum Energieversorger wird hergestellt.
@@ -170,7 +202,9 @@ game:
               en: |
                 Connecting to the energy supplier.
                 Please select the next task!
-              tr: t 1 post tr                             
+              tr: |
+                Enerji tedarikçisine bağlantı kurulacak.
+                Lütfen, sonraki görevi seçiniz!
         -
           name: Energieversorger
           condition:
@@ -191,7 +225,7 @@ game:
             title:
               de: "Energieversorger"
               en: "Energy supplier"
-              tr: t 1 title tr
+              tr: "Enerji tedarikçisi"
             pre:
               de: |
                 > Willkommen bei Vattenfall. Ihr seid hier, weil die BVG mehr Strom für Elektrobusse braucht?
@@ -210,7 +244,14 @@ game:
                 > One of the problems with renewable energies (which are becoming more and more important sources) is how to store the generated energy. For this purpose we have converted a decommissioned oil tank in the Buch heating plant into heat reservoir with a content of 2,000,000 liters or water.
                 >
                 > In case we need to start up the heat reservoir, you need the second part of the expert code. To get it, please tell us: What do you think? What does the new reservoir do?
-              tr: t 1 pre tr
+              tr: |
+                > Vattenfall'a hoş geldiniz. BVG'nin elektrikli otobüsler için daha fazla enerjiye ihtiyacı olduğu için mi buradasınız?
+                >
+                > Süper, elektrikli otobüsler tamda bizim işimiz. Elektrik enerjisi çeşitli kaynaklardan elde edilmektedir: bunlar güneş, rüzgâr ve su, gaz ve kömürdür.
+                >
+                > Üretimde her zaman daha büyük paya sahip olan yenilenebilir enerjinin depolanması, bir problemdir. Biz bunun için, “Buch” termoelektrik santralinde iptal edilmiş bir yağ tankını, 2.000.000 litre su içeren bir ısı deposuna dönüştürdük.
+                >
+                > Bizin, ısı deposunu ileride çalıştırmak zorunda kalma durumumuz için, sizin uzman-kodunun ikinci parçasına ihtiyacınız var. Koda erişmek için bana lütfen söyleyin: Yeni deponun neye yaradığını düşünüyorsunuz?
             post:
               de: |
                 > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
@@ -220,7 +261,10 @@ game:
                 > Correct! The second part of the expert code is the letter "O". Remember that.
                 
                 Please select the next task!
-              tr: t 1 post tr        
+              tr: |
+                > Doğru! Uzman-kodunun ikinci parçası "O" harfidir. Bunu iyice aklınızda tutun!
+                
+                Lütfen, sonraki görevi seçiniz!
         -
           name: Windzählung
           condition:
@@ -230,7 +274,7 @@ game:
             title:
               de: "Windzählung"
               en: "Wind measurement"
-              tr: t 1 title tr
+              tr: "Rüzgâr sayımı"
             pre:
               de: |
                 > Jetzt konzentrieren wir uns wieder darauf, Strom für die BVG bereitzustellen: Könnt Ihr bitte auf der Windanzeige nachschauen, ob gerade genug Wind weht?
@@ -242,11 +286,15 @@ game:
                 
                 ![](images/windanzeige.jpg)
                 Find the tiles on the image in a house entrance close by. Count the tiles and enter the number below!
-              tr: t 1 pre tr
+              tr: |
+                > Fakat şimdi tekrar BVG için elektrik üretme işine konsantre oluyoruz: Rüzgar göstergesinde, şuan yeterli rüzgar olup olmadığına bakabilir misiniz?
+                
+                ![](images/windanzeige.jpg)
+                Resimdeki gibi olan ve yakınlardaki bir bina girişinde bulunan fayansı bulunuz. Fayansları sayarak, sayıyı aşağıya giriniz!
             hint:
               de: Anzahl
               en: Number of tiles
-              tr: Anzahl
+              tr: TRANSL
             post:
               de: |
                 > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
@@ -256,7 +304,10 @@ game:
                 > Thank you. Unfortunately this is not quite enough. The wind is currently too weak. No problem...
                 
                 Please select the next task!
-              tr: t 1 post tr        
+              tr: |
+                > Teşekkür! Maalesef bu daha tam yeterli değil. Rüzgâr şuan yeterince kuvvetli esmiyor. Fakat bu sorun değil...
+                
+                Sonraki görevi seçiniz!
 
 
 
@@ -269,7 +320,7 @@ game:
             title:
               de: "Sonne"
               en: "Sun"
-              tr: t 1 title tr
+              tr: "Güneş"
             pre:
               de: |
                 > Schaut doch bitte mal nach, ob die Sonne gerade genug Energie liefert.   
@@ -281,11 +332,15 @@ game:
                 
                 ![](images/sonnenanzeige.jpg)
                 Find the tiles on the image in a house entrance close by. Count the tiles and enter the number below!
-              tr: t 1 pre tr
+              tr: |
+                > Lütfen güneşin şuan yeterli enerji sağlayıp sağlamadığını kontrol ediniz.
+                
+                ![](images/sonnenanzeige.jpg)
+                Resimdeki gibi olan ve yakınlardaki bir bina girişinde bulunan fayansı bulunuz. Fayansları sayarak, sayıyı aşağıya giriniz!
             hint:
               de: Anzahl
               en: Number of tiles
-              tr: Anzahl              
+              tr: TRANSL              
             post:
               de: |
                 > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
@@ -295,7 +350,10 @@ game:
                 > At the moment there is not enough wind and the sun is not strong enough. Still, no problem. We just have to get the power from the heating plant.
                 
                 Please select the next task!
-              tr: t 1 post tr        
+              tr: |
+                > Şuan, ne yeterince rüzgâr esiyor, ne de yeterince güneş var. Fakat bu da sorun değil. O zaman elektriği, termoelektrik santralinden sağlamak zorundayız.
+                
+                Sonraki görevi seçiniz
 
 
 
@@ -308,7 +366,7 @@ game:
             title:
               de: "Hochdruckdampf"
               en: "High-pressure steam"
-              tr: t 1 title tr
+              tr: "Yüksek basınç buharı"
             pre:
               de: |
                 > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden Holzhackschnitzel in der für Steinkohle ausgelegten Anlage mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Aber auch die BSR hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet.  Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
@@ -320,7 +378,11 @@ game:
                 
                 ![](images/k2020Karte3.png)
                 Find the contact station for BSR and enter the Agent Code.
-              tr: t 1 pre tr
+              tr: |
+                > Reuter von Vattenfall termoelektrik santrali, elektrik ve bölgesel ısıtma sistemini sağlar. 2009 yılından bu yana, taş kömürü için genişletilmiş tesiste, odun parçaları da yakılmakta. Tesis, 30.000 t odun için genişletilmiştir. Fakat BSR de yardım ediyor. Saat başına yaklaşık 125 bin ton duman yakındaki Ruhleben ismindeki atık ısıtma tesisinden Reuter termoelektrik santraline iletilmekte. BSR’ye Duman temin edebilirler mi diye sorabilir misiniz lütfen?
+                
+                ![](images/k2020Karte3.png)
+                BSR'ye iletişim istasyonunu bulunuz TRANSL
             post:
               de: |
                 Die Verbindung zur BSR wird hergestellt.
@@ -330,7 +392,10 @@ game:
                 Connecting to BSR.
                 
                 Please select the next task!
-              tr: t 1 post tr        
+              tr: |
+                BSR ile bağlantı kuruluyor.
+                
+                Sonraki görevi seçiniz
 
 
 
@@ -343,7 +408,7 @@ game:
             title:
               de: "Brennstoff"
               en: "Fuel"
-              tr: t 1 title tr
+              tr: "Yakıt"
             pre:
               de: |
                 > Hallo Klima-Agenten! Habe schon gehört, dass Ihr im Kiez unterwegs seid.
@@ -368,11 +433,21 @@ game:
                 ![](images/PapierkorbCode.jpg)
                 Look for the trash bins which are attached to the light poles located in this section of the street between Nehringstraße and Dankelmannstraße. Find the white numbers on the light poles, add them, and enter the total below.
                 
-              tr: t 1 pre tr
+              tr: |
+                > Merhaba iklim-ajanları! Kiez'de hareket halinde olduğunuzu duydum.
+                >
+                > BVG'nin, elektrikli otobüsleri için daha fazla elektriğe mi ihtiyaç var? 
+                >
+                > Bu enteresan! Çöp arabalarımızın yarısı, topladığımız organik atıklardan elde ettiğimiz biyogaz ile çalışmakta. Fakat topladığımız ev atıklarını yakıyoruz ve böylece atıkları kullanılabilir enerjiye dönüştürüyoruz. Bu da ortalama 100.000 eve elektrik ve 50.000 eve de merkezi ısı dağıtmaya yetiyor. Burada otobüsler için de bir şeyler yapabiliriz.
+                >
+                > Bir değiş tokuşa ne dersiniz: Siz bana çöp toplamada yardım edin ve ben de enerjinin bir kısmını size vereyim?
+                
+                ![](images/PapierkorbCode.jpg)
+                Nehringstraße ve Dankelmannstraße arasında bulunan sokak lambalarında asılı çöp kutularını bulunuz. Lamba direklerindeki beyaz rakamları bulup, bunları toplayınız ve TRANSL
             hint:
               de: Anzahl
               en: Total sum
-              tr: Anzahl              
+              tr: TRANSL              
             post:
               de: |
                 > Vielen Dank! Ihr habt mir sehr geholfen. Nun haben wir 3,9 Tonnen Hochdruckdampf, der aus der Verbrennung von 1,5 Tonnen Abfall gewonnen wurde! Mit diesem Hochdruckdampf kann jetzt Vattenfall den Strom für die Elektrobusse der BVG produzieren. 
@@ -390,7 +465,14 @@ game:
                 > Did you notice? In the meantime the sun is shining and the wind has picked up.
                 
                 Click 'Back' to get to the next mission.
-              tr: t 1 post tr       
+              tr: |
+                > Teşekkürler! Bana çok yardım ettiniz. Artık 1,5 ton atığı yakarak elde ettiğimiz 3,9 ton yüksek basınç buharımız var. Vattenfall şimdi bu yüksek basınç buhar ile BVG'nin elektrikli otobüsleri için elektrik üretebilir.
+                >
+                > İklim-Ajanları, performansınız süper! Bu, sizsiz mümkün olmayacaktı. Bu görevi, başarıyla tamamladınız.
+                >
+                > Fark ettiniz mi? Bu arada güneş çıktı ve rüzgâr da artık esiyor.
+                
+                Sonraki göreve geçmek için, iki kez "Geri"-Butonuna basınız.
 
 
     -          
@@ -399,7 +481,7 @@ game:
         title:
           de: Mission Zukunft
           en: Mission Future
-          tr: c 2 title tr
+          tr: TRANSL
         pre:
           de: c 2 pre de
           en: c 2 pre en
@@ -416,7 +498,7 @@ game:
             title:
               de: "Wetterwechsel"
               en: "Changing weather"
-              tr: t 1 title tr
+              tr: "Hava değişikliği"
             pre:
               de: |
                 > Ja, mittlerweile scheint auch die Sonne und der Wind weht. Jetzt kann Vattenfall nicht nur mit unserem Dampf viele Haushalte heizen, sondern muss auch noch die erneuerbaren Energien speichern. Da muss man wirklich flexibel bleiben. Nun wird es höchste Zeit, den Wassertank des Wärmespeichers mit zwei Millionen Liter Wasser aufzufüllen. Das Wasser hierfür werden Euch die Berliner Wasserbetriebe sicher gerne geben.
@@ -428,7 +510,11 @@ game:
                 
                 ![](images/k2020Karte4.png)
                 Look for the second contact station of the Berlin water works and enter the Agent Code. Follow the map!
-              tr: t 1 pre tr
+              tr: |
+                > Evet, bu arada güneş çıktı ve rüzgâr da artık esiyor. Vattenfall şimdi bizim buharımızla sadece birçok evi ısıtmakla kalmıyor, aynı zamanda yenilenebilir enerjiyi depolamak zorunda. Burada gerçekten esnek olunmalıdır. Şimdi artık su deponuzun su tankını, 2 milyon litre su ile doldurma vakti çoktan geldi. Gerekli suyu, Berlin su işletmeleri memnuniyetle size vereceklerdir.
+                
+                ![](images/k2020Karte4.png)
+                Şimdi Berlin su işletmelerinin ikinci iletişim istasyonunu bulup, TRANSL. Haritayı takip ediniz!
             post:
               de: |
                 Die Verbindung mit den Berliner Wasserbetrieben wird hergestellt.
@@ -438,7 +524,10 @@ game:
                 Connecting to the Berlin water works.
 
                 Continue to the next task!
-              tr: t 1 post tr  
+              tr: |
+                Berlin su işletmelerine bağlantı kuruluyor.
+                
+                Sonraki göreve gidiniz!
 
 
         -
@@ -451,7 +540,7 @@ game:
             title:
               de: "Wasser"
               en: "Water"
-              tr: t 1 title tr
+              tr: "Su"
             pre:
               de: |
                 > Hallo und willkommen bei den Berliner Wasserbetrieben! Ihr seid sicher die Klima-Agenten. Man spricht schon über Euch im Kiez.
@@ -473,7 +562,16 @@ game:
                 > Do you know about water?
                 
                 Put the parts of the expert code together to get the chemical formula of water. Then enter it.
-              tr: t 1 pre tr
+              tr: |
+                > Merhaba, Berlin su işletmelerine hoş geldiniz! Siz kesin iklim ajanlarısınız. Kiez'de hakkınızda konuşuluyor.
+                >
+                > Vattenfall ısı deposu için suya mı ihtiyacınız var? Memnuniyetle temiz su sağlayabiliriz, zira biz suyu Berlin'in yeraltı suyundan elde ediyoruz –ve yağmur suları topraktan yeraltına süzülürken temizleniyor ve temiz şekilde yeraltı suyuna karışıyor.
+                > 
+                > Biz Berlin su işletmeleri, sadece temiz su sağlamakla kalmıyoruz, aynı zamanda yağmur suyunun yerinde toprağa sızarak şehirde rahat bir iklim oluşturmasını da sağlıyoruz.
+                >
+                > Su hakkında bilgiye sahip misiniz?
+                
+                Şimdi uzman-kod parçalarını, TRANSL. Ve bunları giriniz.
             post:
               de: |
                 > Sehr gut! Es macht Spaß, mit Euch zusammenzuarbeiten. Um Euch das nötige Wasser für den Wärmespeicher zu geben, müsst Ihr als erfahrene Klima-Agenten mir bei einer Aufgabe helfen.
@@ -483,7 +581,10 @@ game:
                 > Very good! It is a pleasure working with you. In order to provide you with the required water for the heat reservoir, you as experienced climate agents must first help us with a problem.
                 >
                 > Not far from here, there is an access hatch to a waste water pipe. Please help us find it.
-              tr: t 1 post tr  
+              tr: |
+                > Çok iyi! Sizinle çalışmak bir zevkti. Isı deposu için gerekli suyu size verebilmem için, siz usta iklim-ajanları bana bir görevde yardım etmelisiniz.
+                >
+                > Buraya uzak olmayan bir atık su boru şebeke girişi bulunmaktadır. Lütfen bulmama yardım edin.
 
 
 
@@ -501,8 +602,8 @@ game:
           text:
             title:
               de: "Zugang zum Abwasser"
-              en: "Access to wast water"
-              tr: t 1 title tr
+              en: "Access to waste water"
+              tr: "Atık su girişi"
             pre:
               de: |
                 > Mit Temperaturen zwischen 12-20°C ist Abwasser eine ganzjährige Energiequelle. Diese Energie kann als Grundlage zum klimafreundlichen Heizen und Kühlen größerer Objekte genutzt werden, wie z. B. dem Möbelhaus an der Landsberger Allee. Ein Wärmetauscher entzieht dem Abwasser in der Kanalisation 1-2°C Wärme, woraus eine Wärmepumpe eine Nutztemperatur von ca. 50°C erzeugt. 
@@ -527,7 +628,17 @@ game:
                 ![](images/Abwasser.jpg)
                 Look for the sign and find the access hatch to the waste water pipe using the information on the sign. Enter the letter of the metal lid here.
               
-              tr: t 1 pre tr
+              tr: |
+                > Atık su, 12-20°C arası ısıyla bütün yıl boyunca bir enerji kaynağıdır. Bu enerji, büyük objelerin iklim dostu ısıtılması ve soğutulmasında kullanılabilir, örneğin Landberger Allee'de bir mobilya evi gibi. Bir ısı eşanjörü, kanalizasyondaki atık sudan 1-20°C ısı çeker ve bir ısı pompası, bu ısıdan takriben 50°C kullanılabilir ısı üretir. 
+                >
+                > Böylece 1.000 Litre atık sudan ortalama 2 kWh ısıtma enerjisi elde edilmekte. Böylece kışın iyi ısıtma sağlanabilir. Yüksek eksi derecelerde ancak ekstra ısıtılma sağlanması gerekmektedir. Bu enerji kaynağı, yazın tüm binanın ılımlı şekilde 24-26°C soğutulmaya yetiyor. Bunun için binadaki ısı, atık suya aktarılıyor.
+                >
+                > Lütfen atık suya ulaşmamıza yardım edin.
+                >
+                > Yakınlarda bir yerde, bina duvarında yeşil bir atık su-levhası göreceksiniz. Hemen 'T' altındaki değerler, yer üstündeki atık su kanal girişlerini gösterir. T'nin sol kolu, kaç metre sola yürünmesi gerektiğini gösterir, sağ kolu kaç metre sağa yürünmesi gerektiğini gösterir, alt kol ise duvardan kaç metre ilerlenmesi gerektiğini gösterir.
+                
+                ![](images/Abwasser.jpg)
+                Levhayı bulup, levhadaki uzaklık ölçülerine göre atık su kanal girişini bulunuz. Metal kapaktaki harfleri buraya giriniz.
             post:
               de: |
                 > Super, jetzt liefern wir das Wasser für den Wärmespeicher.
@@ -549,7 +660,16 @@ game:
                 > Thank you for helping us make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood by 20% by 2020 (compared to 1990). The climate thanks you!
                 
                 And now, if you want to continue to help us, just stop in at the climate protection management office Klausenerplatz! You can find more information about climate protection management in the neighborhood at [www.k2020.berlin](http://www.k2020.berlin).
-              tr: t 1 post tr  
+              tr: |
+                > Süper, şimdi ısı deposu için suyu gönderiyoruz.
+                
+                []()
+                
+                > Sevgili İklim-Ajanları, üstlendiğiniz iklim-görevini süper bir şekilde yerine getirdiniz. Uzman-kodunu çözdünüz, rüzgâr ve güneş kuvvetlerini belirlediniz, yüksek basınç buharı sağladınız ve büyük bir ısı deposunu su ile doldurdunuz.
+                >
+                > Kiez ve tüm Berlin'i çok az da olsa, daha iklim dostu yapmamızda bize yardım ettiğiniz için teşekkür ederiz. Berlin'i 2050 yılında iklim nötr yapma hedefinden henüz çok uzak olsak bile, her bir küçük yardım buna yardımcı olacaktır. Sizin yardımlarınız sayesinde, Klausenerplatz-Kiez'de karbondioksit emisyonunu 2020 yılına kadar, 1990 yılına kıyasla %20 düşürme hedefine daha çok yaklaştık. İklim size teşekkür eder!
+                
+                Ve şimdi, daha çok yardım etmek istiyorsanız, sadece Klausenerplatz'da bulunan iklim koruma idaresine başvurunuz! Kiez'deki iklim koruma idaresi hakkında daha fazla bilgiye [www.k2020.berlin](http://www.k2020.berlin) internet adresinde bulabilirsiniz.
 translations:
   chooseLanguage:
     de: "Wählt eine Sprache"
