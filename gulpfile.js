@@ -7,7 +7,7 @@
 var config = {
   dest: 'www',
   cordova: false,
-  minify_images: false,
+  minify_images: true,
   
   vendor: {
     js: [

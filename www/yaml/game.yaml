@@ -104,6 +104,7 @@ game:
                 >
                 > Ihr kommt auf dem Weg dorthin an der ersten Kontaktstation der Wasserbetriebe vorbei. Richtet doch bitte Grüße von mir aus. Ihr erhaltet einen Code, der später nützlich sein könnte ...                
 
+                ![](images/k2020Karte1.png)
                 Findet die erste Kontaktstation der Wasserbetriebe und gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
@@ -131,6 +132,7 @@ game:
                 >
                 > Jetzt aber weiter zum Energieversorger! Ich zeige Euch den Weg.
 
+                ![](images/k2020Karte2.png)
                 Findet die Kontaktstation zum Energieversorger gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
@@ -148,14 +150,14 @@ game:
                 correct: true
                 text:
                   de: Antwort 1
-                  en: Right Answer
-                  tr: Richtige Antwörtoglu
+                  en: (en)
+                  tr: (tr)
               -
                 correct: true
                 text:
                   de: Antwort 2
-                  en: Wrong Answer
-                  tr: Falsche Antwörtoglu
+                  en: (en)
+                  tr: (tr)
           text:
             title:
               de: "Energieversorger"
@@ -194,7 +196,7 @@ game:
               de: |
                 > Jetzt konzentrieren wir uns wieder darauf, Strom für die BVG bereitzustellen: Könnt Ihr bitte auf der Windanzeige nachschauen, ob gerade genug Wind weht?
 
-                ![](images/kachel_wind.jpg)
+                ![](images/windanzeige.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
@@ -226,7 +228,7 @@ game:
               de: |
                 > Schaut doch bitte mal nach, ob die Sonne gerade genug Energie liefert.   
 
-                ![](images/kachel_sonne.jpg)
+                ![](images/sonnenanzeige.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: t 1 pre en
               tr: t 1 pre tr
@@ -258,6 +260,7 @@ game:
               de: |
                 > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden Holzhackschnitzel in der für Steinkohle ausgelegten Anlage mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Aber auch die BSR hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet.  Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
 
+                ![](images/k2020Karte3.png)
                 Findet die Kontaktstation zur BSR und gebt dort den Agentencode ein.
               en: t 1 pre en
               tr: t 1 pre tr
@@ -291,6 +294,7 @@ game:
                 >
                 > Wie wäre es mit einem Tausch: Ihr helft mir bei der Müllabfuhr und ich gebe Euch einen Teil der Energie ab?
 
+                ![](images/PapierkorbCode.jpg)
                 Sucht die Papierkörbe, die in diesem Straßenabschnitt zwischen Nehringstraße und Dankelmannstraße an Laternen hängen. Findet die weißen Zahlen an den Laternenmasten, addiert sie und gebt die Summe ein.
               en: t 1 pre en
               tr: t 1 pre tr
@@ -339,6 +343,7 @@ game:
               de: |
                 > Ja, mittlerweile scheint auch die Sonne und der Wind weht. Jetzt kann Vattenfall nicht nur mit unserem Dampf viele Haushalte heizen, sondern muss auch noch die erneuerbaren Energien speichern. Da muss man wirklich flexibel bleiben. Nun wird es höchste Zeit, den Wassertank des Wärmespeichers mit zwei Millionen Liter Wasser aufzufüllen. Das Wasser hierfür werden Euch die Berliner Wasserbetriebe sicher gerne geben.
 
+                ![](images/k2020Karte4.png)
                 Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und gebt dort den Agentencode ein. Folgt der Karte!
               en: t 1 pre en
               tr: t 1 pre tr
@@ -410,7 +415,8 @@ game:
                 > Helft uns bitte, an Abwasser heranzukommen.
                 >
                 > Gar nicht weit von hier findet Ihr ein grünes Abwasser-Schild an der Hauswand. Die Werte direkt unter dem T zeigen, wo man den Zugang zur Abwasserleitung auf dem Boden findet. Der linke Arm vom T zeigt, wie viele Meter man nach links laufen muss. Der rechte Arm zeigt an, wie weit man nach rechts laufen muss. Der untere Arm zeigt an, wie viele Meter man sich von der Mauer wegbewegen muss.
-                  
+                
+                ![](images/Abwasser.jpg)
                 Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              
               en: t 1 pre en
               tr: t 1 pre tr
