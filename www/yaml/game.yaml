@@ -24,7 +24,7 @@ game:
   introtask:
     condition:
       code input:
-        correct: 12345
+        correct: 47928
     text:
       pre:
         de: Sucht das K2020-Schild am Klausenerplatz und gebt den fünfstelligen Agentencode ein, um das Spiel zu starten
@@ -88,7 +88,7 @@ game:
           name: BVG
           condition:
             code input:
-              correct: 12345
+              correct: 31425
           text:
             title:
               de: BVG
@@ -118,7 +118,7 @@ game:
           name: Wasserbetriebe 1
           condition:
             code input:
-              correct: 12345
+              correct: 95284
           text:
             title:
               de: "Wasserbetriebe (1)"
@@ -250,7 +250,7 @@ game:
           name: Hochdruckdampf
           condition:
             code input:
-              correct: 12345
+              correct: 53716
           text:
             title:
               de: "Hochdruckdampf"
@@ -333,7 +333,7 @@ game:
           name: Wetterwechsel
           condition:
             code input:
-              correct: 12345
+              correct: 64752
           text:
             title:
               de: "Wetterwechsel"
