@@ -148,14 +148,14 @@ game:
                 correct: true
                 text:
                   de: Antwort 1
-                  en: Right Answer
-                  tr: Richtige Antwörtoglu
+                  en: (en)
+                  tr: (tr)
               -
                 correct: true
                 text:
                   de: Antwort 2
-                  en: Wrong Answer
-                  tr: Falsche Antwörtoglu
+                  en: (en)
+                  tr: (tr)
           text:
             title:
               de: "Energieversorger"
