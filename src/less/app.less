@@ -8,10 +8,29 @@
   margin:1.5em 0;
 }
 
-.task-content img {
-  width:100%;
-  display:block;
-  margin-bottom:1em;
+.task-headline {
+  h3 {
+    font-size:18px;
+    margin-bottom:0;
+  }
+}
+
+.task-content {
+
+  .task-pre, .task-condition, .task-post {
+    padding-left:8px;
+    padding-right:4px;
+
+    > p {
+      margin-left:1px;
+    }
+  }
+
+  img {
+    width:100%;
+    display:block;
+    margin-bottom:1em;
+  }
 }
 
 .solved {
