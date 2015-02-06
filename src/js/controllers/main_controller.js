@@ -197,8 +197,17 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   }
 
   // regexp for condition
-  regexForCondition = function() {
-    return RegExp("^"+($scope.activeTask.condition['text input'].correct).join('|')+'$', 'i')
+  regexForCondition = function(t) {
+    var conditionType = $scope.taskConditionGetTemplateName(t)
+    var condition = $scope.activeTask.condition[conditionType]
+    switch(conditionType) {
+      case "text input":
+        r = RegExp("^"+(condition.correct).join('|')+'$', 'i')
+        break;
+      default:
+        r = RegExp("")
+    }
+    return r
   }
 
   // location service for tasks
@@ -208,7 +217,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     $scope.slideDirection = "inside"
     // find correct answer(s)
     $scope.conditionValue = ""
-    $scope.regexForCondition = regexForCondition()
+    $scope.regexForCondition = regexForCondition(t)
   }
 
   //current template

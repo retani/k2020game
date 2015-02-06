@@ -1,0 +1,15 @@
+<ng-form name="forms.condition" class="condition-multiple-choice">
+  
+  <label class="btn btn-default" style="width:100%">
+    {{(activeTask.condition['multiple choice'][0].text[lang] | htmlToPlaintext )}}
+    <input ng-hide="true" class="form-control current" type="radio" name="input" ng-model="conditionValue" value="0" required>
+  </label>
+
+  <br><br>
+
+  <label class="btn btn-default" style="width:100%">
+    {{(activeTask.condition['multiple choice'][1].text[lang] | htmlToPlaintext )}}
+    <input ng-hide="true" class="form-control current" type="radio" name="input" ng-model="conditionValue" value="1" required>
+  </label>
+
+</ng-form>
