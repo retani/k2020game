@@ -587,6 +587,10 @@ translations:
     de: "Neu starten"
     en: "Restart Game"
     tr: "(tr)"
+  restartConfirm:
+    de: "Spielverlauf löschen und von vorne Anfangen?"
+    en: "Restart Game?"
+    tr: "(tr)"        
   codeInputHint:
     de: "Agentencode"
     en: "Agent code"

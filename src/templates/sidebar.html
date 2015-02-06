@@ -5,7 +5,7 @@
   <div class="scrollable-content">
     <div class="list-group" ui-turn-off='uiSidebarLeft'>
       <a class="list-group-item" href="#/" ng-bind="t.dashboard"><i class="fa fa-chevron-right pull-right"></i></a>
-      <a class="list-group-item" href="#/intro" ng-click="gameReset()" ng-bind="t.restart"><i class="fa fa-chevron-right pull-right"></i></a>
+      <a class="list-group-item" ng-really-message="{{t.restartConfirm}}" ng-really-click="gameReset(); location.path('intro')" ng-bind="t.restart"><i class="fa fa-chevron-right pull-right"></i></a>
       <a class="list-group-item" href="http://k2020.berlin" ng-bind="t.gotoWebsite"><i class="fa fa-chevron-right pull-right"></i></a>
     </div>
   </div>

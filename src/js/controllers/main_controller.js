@@ -122,7 +122,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   }  
 
   taskSolved = function(task) {
-    introTaskSolved = ( $scope.gameState.gameStarted == false && $scope.gameState.introtaskSolved )
+    introTaskSolved = ( $scope.gameState.gameStarted == false && $scope.gameState.introtaskSolved || task == $scope.game.introtask && $scope.gameState.gameStarted)
     regularTaskSolved = ( $scope.gameState.challengeIndex > task.challengeIndex  || $scope.gameState.challengeIndex == task.challengeIndex  && $scope.gameState.taskIndex > task.index  || $scope.gameState.gameFinished)
     return (regularTaskSolved || introTaskSolved)
   }
@@ -220,6 +220,8 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     $scope.regexForCondition = regexForCondition(t)
   }
 
+  $scope.location  = $location
+
   //current template
   $rootScope.$on('$routeChangeSuccess', function(){ 
      $scope.template = $route['current']['name']
@@ -241,7 +243,7 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   });
 
   //slide scroll direction
-  $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){ 
+  $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
      //slideDistance = (prevRoute == undefined) ? 0 : currRoute.depth - prevRoute.depth
      //$scope.slideDirection = slideDistance > 0 ? "inside" : slideDistance == 0 ? "same" : "outside"
      //console.log($scope.slideDirection)
