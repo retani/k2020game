@@ -117,7 +117,7 @@ game:
               de: |
                 > Hallo Klima-Agenten! Gut, dass ihr da seid.
                 >
-                > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO2 zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
+                > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO<sub>2</sub> zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
                 >
                 > Da kommt ihr ins Spiel: Könnt ihr zum lokalen Energieversorger gehen und mehr Elektrizität bereitstellen?
                 >
@@ -128,7 +128,7 @@ game:
               en: |
                 > Welcome climate agents! We are glad you are here.
                 >
-                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO2 we are already testing electric buses. In 2015 we will convert a complete bus line to electricity, the 204 line. And we want to keep going in this fashion. However, for that we need more electric power.
+                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO<sub>2</sub> we are already testing electric buses. In 2015 we will convert a complete bus line to electricity, the 204 line. And we want to keep going in this fashion. However, for that we need more electric power.
                 >
                 > This is where you come in: can you go to the local energy supplier and provide more electricity?
                 >
@@ -139,7 +139,7 @@ game:
               tr: |
                 > Merhaba iklim-ajanları! İyi ki buradasınız.
                 >
-                > Otobüse binmek, aracınızı kullanmaktan çok daha iklim için daha dosthanedir, fakat CO2'dan daha fazla tasarruf etmek için artık elektrikli otobüsleri de test ediyoruz. 204 numaralı hat ile tüm bir otobüs hattını 2015 yılında elektrikliye çeviriyoruz. Ve bununla da daha devam edeceğiz. Fakat bunun için daha fazla elektriğe ihtiyacımız var.
+                > Otobüse binmek, aracınızı kullanmaktan çok daha iklim için daha dosthanedir, fakat CO<sub>2</sub>'dan daha fazla tasarruf etmek için artık elektrikli otobüsleri de test ediyoruz. 204 numaralı hat ile tüm bir otobüs hattını 2015 yılında elektrikliye çeviriyoruz. Ve bununla da daha devam edeceğiz. Fakat bunun için daha fazla elektriğe ihtiyacımız var.
                 >
                 > Burada siz devreye giriyorsunuz: Lütfen yerel enerji tedarikçisine gidip, daha fazla elektrik sağlayabilir misiniz?
                 >

@@ -64,7 +64,8 @@ angular.module('filters', [])
   })
   .filter('htmlStripOuterTag', function() {
     return function(text) {
-      return String(text).replace(/^<[^>]+>/gm, '').replace(/<[^>]+>$/gm, '');
+      if (text == undefined) return ""
+      else return String(text).replace(/^<[^>]+>/gm, '').replace(/<[^>]+>$/gm, '');
     }
   })
   .filter('htmlBlockquotesToBubbles', function() {
