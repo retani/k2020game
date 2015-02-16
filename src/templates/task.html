@@ -6,8 +6,8 @@
   <section class="section container-fluid task-content">
     <div class="task-pre" ng-bind-html="(activeTask.text.pre[lang] | htmlBlockquotesToBubbles )">
     </div>
-    <form class="task-condition" ng-include="'conditions/base.html'">
-    </form>
+    <div class="task-condition" ng-include="'conditions/base.html'">
+    </div>
     <div class="task-post" ng-bind-html="(activeTask.text.post[lang] | htmlBlockquotesToBubbles )" ng-show="taskSolved(activeTask)">
     </div>  
   </section>

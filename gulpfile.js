@@ -15,9 +15,12 @@ var config = {
       './bower_components/angular-route/angular-route.js',
       './bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.js',
       './bower_components/angular-cookies/angular-cookies.js',
+      './bower_components/angular-cookie/angular-cookie.js',
       './bower_components/angular-sanitize/angular-sanitize.js',
       './bower_components/angular-animate/angular-animate.js',
-      './bower_components/angular-localization/angular-localization.js'
+      './bower_components/angular-localization/angular-localization.js',
+      './bower_components/angulartics/src/angulartics.js',
+      './bower_components/angulartics/src/angulartics-ga.js',
     ],
 
     fonts: [

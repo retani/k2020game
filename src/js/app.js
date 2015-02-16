@@ -5,10 +5,13 @@ var app = angular.module('K2020', [
   /*'ConditionsController',*/
   'ngSanitize',
   'ngAnimate',
+  'ipCookie',
   'filters',
   'ngLocalize',
   'ngLocalize.Events',
   'ngLocalize.InstalledLanguages',
+  'angulartics', 
+  'angulartics.google.analytics'
   /*'valBubble',
   'chatStyle'*/
 ]).value('localeConf', {

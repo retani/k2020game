@@ -1,6 +1,6 @@
-angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize','ngLocalize.Events'])
+angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie', 'ngLocalize','ngLocalize.Events'])
 
-.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', '$filter', 'localeEvents', 'locale', function($scope, $http, $location, $route, $rootScope, $cookies, $filter, localeEvents, locale) {
+.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', 'ipCookie', '$filter', 'localeEvents', 'locale', '$analytics', function($scope, $http, $location, $route, $rootScope, $cookies, ipCookie, $filter, localeEvents, locale, $analytics) {
   //'use strict';
 
   // language
@@ -80,19 +80,23 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
     $scope.gameState.gameStarted = true
     gameSave()
     console.log("game start")
+    $analytics.eventTrack('gameStart');
   }
   gameAdvance = function() {
     nextTaskIndexInChallenge =  $scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex+1]
     nextChallengeIndex       =  $scope.game.challenges[$scope.gameState.challengeIndex+1]
     if (nextTaskIndexInChallenge != undefined) {
       $scope.gameState.taskIndex++
+      $analytics.eventTrack('gameAdvance', {  challenge: $scope.gameState.challengeIndex, task: $scope.gameState.taskIndex });
     }
     else if (nextChallengeIndex != undefined) { // assuming every challenge has tasks
       $scope.gameState.challengeIndex++
       $scope.gameState.taskIndex = 0
+      $analytics.eventTrack('gameAdvance', {  challenge: $scope.gameState.challengeIndex, task: $scope.gameState.taskIndex });
     }
     else {
       $scope.gameState.gameFinished = true
+      $analytics.eventTrack('gameFinished');
     }
     console.log($scope.gameState)
     // ...and save
@@ -180,15 +184,19 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies','ngLocalize'
   $scope.setSlideDirection = setSlideDirection
 
   gameSave = function() {
-    saveString = angular.toJson($scope.gameState, false);
-    $cookies.K2020game = saveString
+    //saveString = angular.toJson($scope.gameState, false);
+    //$cookies.K2020game = saveString
+    ipCookie("K2020game", $scope.gameState, { expires: 2, expirationUnit: 'hours' })
     console.log("game saved")
   }
 
   gameLoad = function() {
-    saveString = $cookies.K2020game;
+    saveString = ipCookie("K2020game")
+    console.log(saveString)
+    //saveString = $cookies.K2020game;
+    //console.log(saveString)
     if (saveString != undefined) {
-      $scope.gameState = JSON.parse(saveString)
+      $scope.gameState = saveString
       console.log("game loaded")
       console.log($scope.gameState)
       return true
