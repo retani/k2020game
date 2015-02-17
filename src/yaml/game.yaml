@@ -516,10 +516,10 @@ game:
                 ![](images/k2020Karte4.png)
                 Look for the second contact station of the Berlin water works and enter the Agent Code. Follow the map!
               tr: |
-                > Evet, bu arada güneş çıktı ve rüzgâr da artık esiyor. Vattenfall şimdi bizim buharımızla sadece birçok evi ısıtmakla kalmıyor, aynı zamanda yenilenebilir enerjiyi depolamak zorunda. Burada gerçekten esnek olunmalıdır. Şimdi artık su deponuzun su tankını, 2 milyon litre su ile doldurma vakti çoktan geldi. Gerekli suyu, Berlin su işletmeleri memnuniyetle size vereceklerdir.
+                > Evet, bu arada güneş çıktı ve rüzgâr da artık esiyor. Vattenfall şimdi bizim buharımızla sadece birçok evi ısıtmakla kalmıyor, aynı zamanda yenilenebilir enerjiyi depolamak zorunda. Şimdi gerçekten esnek olmak lazım. Şimdi artık su deponuzun su tankını, 2 milyon litre su ile doldurma vakti çoktan geldi. Gerekli suyu, Berlin su işletmeleri memnuniyetle size verecekdir.
                 
                 ![](images/k2020Karte4.png)
-                Şimdi Berlin su işletmelerinin ikinci iletişim istasyonunu bulup ve Ajan Kodunu girin. Haritayı takip ediniz!
+                Şimdi Berlin su işletmelerinin ikinci iletişim istasyonunu bulun ve Ajan Kodunu girin. Haritayı takip edin!
             post:
               de: |
                 Die Verbindung mit den Berliner Wasserbetrieben wird hergestellt.
@@ -530,7 +530,7 @@ game:
 
                 Continue to the next task!
               tr: |
-                Berlin su işletmelerine bağlantı kuruluyor.
+                Berlin su işletmeleriyle bağlantı kuruluyor.
                 
                 Sonraki göreve gidiniz!
 
@@ -568,15 +568,15 @@ game:
                 
                 Put the parts of the expert code together to get the chemical formula of water. Then enter it.
               tr: |
-                > Merhaba, Berlin su işletmelerine hoş geldiniz! Siz kesin iklim ajanlarısınız. Kiez'de hakkınızda konuşuluyor.
+                > Merhaba, Berlin su işletmelerine hoş geldiniz! Siz kesin iklim ajanlarısınız. Mahallede hakkınızda konuşuluyor.
                 >
-                > Vattenfall ısı deposu için suya mı ihtiyacınız var? Memnuniyetle temiz su sağlayabiliriz, zira biz suyu Berlin'in yeraltı suyundan elde ediyoruz –ve yağmur suları topraktan yeraltına süzülürken temizleniyor ve temiz şekilde yeraltı suyuna karışıyor.
+                > Vattenfall ısı deposu için suya mı ihtiyacınız var? Memnuniyetle temiz su sağlayabiliriz, zira biz suyu Berlin'in yeraltı suyundan elde ediyoruz –yağmur suları topraktan yeraltına süzülürken temizleniyor ve temiz bir şekilde yeraltı suyuna karışıyor.
                 > 
-                > Biz Berlin su işletmeleri, sadece temiz su sağlamakla kalmıyoruz, aynı zamanda yağmur suyunun yerinde toprağa sızarak şehirde rahat bir iklim oluşturmasını da sağlıyoruz.
+                > Biz Berlin su işletmelerinde, sadece temiz su sağlamakla kalmıyoruz, aynı zamanda yerel yağmur suyunun toprağa düştüğü yerde sızmasını kontrol ederek şehirde rahat bir iklim oluşturmasını da sağlıyoruz.
                 >
                 > Su hakkında bilgiye sahip misiniz?
                 
-                Şimdi suyun kimyasal formülünü bulmak için uzman-kod parçalarını bir araya getirin. Ve bunları giriniz.
+                Şimdi suyun kimyasal formülünü bulmak için uzman-kod parçalarını bir araya getirin. Ve bulduğunuz kodu girin.
             post:
               de: |
                 > Sehr gut! Es macht Spaß, mit Euch zusammenzuarbeiten. Um Euch das nötige Wasser für den Wärmespeicher zu geben, müsst Ihr als erfahrene Klima-Agenten mir bei einer Aufgabe helfen.
@@ -593,7 +593,7 @@ game:
               tr: |
                 > Çok iyi! Sizinle çalışmak bir zevkti. Isı deposu için gerekli suyu size verebilmem için, siz usta iklim-ajanları bana bir görevde yardım etmelisiniz.
                 >
-                > Buraya uzak olmayan bir atık su boru şebeke girişi bulunmaktadır. Lütfen bulmama yardım edin.
+                > Yakınlarda bir atık su şebekesinin giriş kapağı bulunmaktadır. Lütfen bulmama yardım edin.
                 
                 Sonraki görevi seçiniz
 
@@ -637,16 +637,16 @@ game:
                 Look for the sign and find the access hatch to the waste water pipe using the information on the sign. Enter the letter of the metal lid here.
               
               tr: |
-                > Atık su, 12-20°C arası ısıyla bütün yıl boyunca bir enerji kaynağıdır. Bu enerji, büyük objelerin iklim dostu ısıtılması ve soğutulmasında kullanılabilir, örneğin Landberger Allee'de bir mobilya evi gibi. Bir ısı eşanjörü, kanalizasyondaki atık sudan 1-20°C ısı çeker ve bir ısı pompası, bu ısıdan takriben 50°C kullanılabilir ısı üretir. 
+                > Atık su, 12-20°C arası ısıyla bütün yıl boyunca bir enerji kaynağıdır. Bu enerji, büyük objelerin iklim dostu olarak ısıtılması ve soğutulmasında kullanılabilir, örneğin Landberger Allee'de bir mobilya dükkanı gibi. Bir ısı eşanjörü, kanalizasyondaki atık sudan 1-20°C ısı çeker ve bir ısı pompası, bu ısıdan takriben 50°C kullanılabilir ısı üretir. 
                 >
-                > Böylece 1.000 Litre atık sudan ortalama 2 kWh ısıtma enerjisi elde edilmekte. Böylece kışın iyi ısıtma sağlanabilir. Yüksek eksi derecelerde ancak ekstra ısıtılma sağlanması gerekmektedir. Bu enerji kaynağı, yazın tüm binanın ılımlı şekilde 24-26°C soğutulmaya yetiyor. Bunun için binadaki ısı, atık suya aktarılıyor.
+                > Böylece 1.000 Litre atık sudan ortalama 2 kWh ısıtma enerjisi elde edilir. Böylece kışın iyi ısıtma sağlanabilir. Ancak aşırı eksi derecelerde ekstra ısıtılma sağlanması gerekmektedir. Bu enerji kaynağı, yazın tüm binanın ılımlı şekilde 24-26°C soğutulmasına yetiyor. Bunun için binadaki ısı, atık suya aktarılıyor.
                 >
-                > Lütfen atık suya ulaşmamıza yardım edin.
+                > Lütfen atık suya ulaşmamıza yardımcı olun.
                 >
-                > Yakınlarda bir yerde, bina duvarında yeşil bir atık su-levhası göreceksiniz. Hemen 'T' altındaki değerler, yer üstündeki atık su kanal girişlerini gösterir. T'nin sol kolu, kaç metre sola yürünmesi gerektiğini gösterir, sağ kolu kaç metre sağa yürünmesi gerektiğini gösterir, alt kol ise duvardan kaç metre ilerlenmesi gerektiğini gösterir.
+                > Yakınlarda bir yerde, bina duvarında yeşil bir atık su-levhası göreceksiniz. 'T'nin tam altındaki değerler, yer üstündeki atık su kanal girişlerini gösterir. T'nin sol kolu, kaç metre sola, sağ kolu kaç metre sağa yürünmesi, alt kol ise duvardan kaç metre uzaklaşılması gerektiğini gösterir.
                 
                 ![](images/Abwasser.jpg)
-                Levhayı bulup, levhadaki uzaklık ölçülerine göre atık su kanal girişini bulunuz. Metal kapaktaki harfleri buraya giriniz.
+                Levhayı bulup, levhadaki uzaklık ölçülerine göre atık su kanal girişini bulun. Metal kapaktaki harfleri buraya girin.
             post:
               de: |
                 > Super, jetzt liefern wir das Wasser für den Wärmespeicher.
@@ -673,11 +673,11 @@ game:
                 
                 []()
                 
-                > Sevgili İklim-Ajanları, üstlendiğiniz iklim-görevini süper bir şekilde yerine getirdiniz. Uzman-kodunu çözdünüz, rüzgâr ve güneş kuvvetlerini belirlediniz, yüksek basınç buharı sağladınız ve büyük bir ısı deposunu su ile doldurdunuz.
+                > Sevgili İklim-Ajanları, üstlendiğiniz iklim-görevini çok harika bir şekilde yerine getirdiniz. Uzman-kodunu çözdünüz, rüzgâr ve güneş kuvvetlerini belirlediniz, yüksek basınç buharı sağladınız ve büyük bir ısı deposunu su ile doldurdunuz.
                 >
-                > Kiez ve tüm Berlin'i çok az da olsa, daha iklim dostu yapmamızda bize yardım ettiğiniz için teşekkür ederiz. Berlin'i 2050 yılında iklim nötr yapma hedefinden henüz çok uzak olsak bile, her bir küçük yardım buna yardımcı olacaktır. Sizin yardımlarınız sayesinde, Klausenerplatz-Kiez'de karbondioksit emisyonunu 2020 yılına kadar, 1990 yılına kıyasla %20 düşürme hedefine daha çok yaklaştık. İklim size teşekkür eder!
+                > Bu mahalledyi ve hatta tüm Berlin'i çok az da olsa, daha iklim dostu yapmamızda bize yardım ettiğiniz için teşekkür ederiz. Berlin'i 2050 yılında iklim nötr yapma hedefinden henüz çok uzak olsak bile, her bir küçük çaba buna yardımcı olacaktır. Sizin yardımlarınız sayesinde, Klausenerplatz Mahallesinde'de karbondioksit emisyonunu 2020 yılına kadar, 1990 yılına kıyasla %20 düşürme hedefine daha çok yaklaştık. İklim size teşekkür eder!
                 
-                Ve şimdi, daha çok yardım etmek istiyorsanız, sadece Klausenerplatz'da bulunan iklim koruma idaresine başvurunuz! Kiez'deki iklim koruma idaresi hakkında daha fazla bilgiye [www.k2020.berlin](http://www.k2020.berlin) internet adresinde bulabilirsiniz.
+                Ve şimdi, daha çok yardım etmek istiyorsanız, sadece Klausenerplatz'da bulunan iklim koruma idaresine başvurmanız yeter! Mahalledeki iklim koruma idaresi hakkında daha fazla bilgiye [www.k2020.berlin](http://www.k2020.berlin) internet adresinden ulaşabilirsiniz.
 translations:
   chooseLanguage:
     de: "Wählt eine Sprache"
