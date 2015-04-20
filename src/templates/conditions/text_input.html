@@ -1,3 +1,3 @@
 <ng-form name="forms.condition" class="condition-text-input">
-  <input class="form-control current" type="text" name="input" size="6" ng-pattern="regexForCondition" ng-model="conditionValue" required ng-change="gameCheckForm()">
+  <input class="form-control current" type="text" name="input" size="6" ng-pattern="regexForCondition" ng-model="conditionValue" required ng-keyup="gameCheckForm()">
 </ng-form>

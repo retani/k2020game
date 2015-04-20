@@ -1,4 +1,4 @@
-<div class="condition-todo" ng-if="!taskSolved(activeTask)">
+<div class="condition-todo" ng-class="{'has-error': inputInvalidated}" ng-if="!taskSolved(activeTask)">
 
   <div ng-switch="taskConditionGetTemplateName(activeTask)">
 

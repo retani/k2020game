@@ -87,15 +87,15 @@ game:
               de: |
                 > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zur BVG hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
 
-                Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.
+                *Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.*
               en: |
                 > Thank you! The connection is working perfectly. The agent system has been initialized. You have established contact to the BVG. They have a problem. Can you help? Connecting...
                 
-                Go back to your task folder and select the next task.
+                *Go back to your task folder and select the next task.*
               tr: |
                 > Teşekkürler! Bağlantı sorunsuz çalışıyor. Ajan sistemi kurulmuştur. BVG'ye bağlantıyı da kurdunuz. BVG’nin bir sorunu var. Yardımcı olabilir misiniz? Sizi bağlıyorum...
                 
-                Görev dosyanına dönün ve bir sonraki görevinizi seçin.
+                *Görev dosyanına dönün ve bir sonraki görevinizi seçin.*
     -           
       name: Dringende Mission
       text:
@@ -155,13 +155,13 @@ game:
             post:
               de: |
                 Die Verbindung zu den Wasserbetrieben wird hergestellt.
-                Wählt den nächsten Auftrag!
+                *Wählt den nächsten Auftrag!*
               en: |
                 Connecting to the water works.
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 Su işletmeleri ile bağlantı kurulacak.
-                Sonraki görevi seçiniz!
+                *Sonraki görevi seçiniz!*
         -
           name: Wasserbetriebe 1
           condition:
@@ -203,13 +203,13 @@ game:
             post:
               de: |
                 Die Verbindung zum Energieversorger wird hergestellt.
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 Connecting to the energy supplier.
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 Enerji tedarikçisine bağlantı kurulacak.
-                Lütfen, sonraki görevi seçiniz!
+                *Lütfen, sonraki görevi seçiniz!*
         -
           name: Energieversorger
           condition:
@@ -261,15 +261,15 @@ game:
               de: |
                 > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 > Correct! The second part of the expert code is the letter "O". Remember that.
                 
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 > Doğru! Uzman-kodunun ikinci parçası "O" harfidir. Bunu aklınızda tutun!
                 
-                Lütfen, sonraki görevi seçiniz!
+                *Lütfen, sonraki görevi seçiniz!*
         -
           name: Windzählung
           condition:
@@ -304,15 +304,15 @@ game:
               de: |
                 > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 > Thank you. Unfortunately this is not quite enough. The wind is currently too weak. No problem...
                 
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 > Teşekkürler! Maalesef bu yeterli değil. Rüzgâr şu an çok zayıf esiyor. Fakat bu sorun değil... 
                 
-                Sonraki görevi seçiniz!
+                *Sonraki görevi seçiniz!*
 
 
 
@@ -350,15 +350,15 @@ game:
               de: |
                 > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 > At the moment there is not enough wind and the sun is not strong enough. Still, no problem. We just have to get the power from the heating plant.
                 
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 > Şuan, ne yeterince rüzgâr esiyor, ne de yeterince güneş var. Fakat bu da sorun değil. Bu durumda elektriği, termoelektrik santralinden sağlamak zorundayız.
                 
-                Sonraki görevi seçiniz
+                *Sonraki görevi seçiniz*
 
 
 
@@ -392,15 +392,15 @@ game:
               de: |
                 Die Verbindung zur BSR wird hergestellt.
                 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 Connecting to BSR.
                 
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 BSR ile bağlantı kuruluyor.
                 
-                Sonraki görevi seçiniz
+                *Sonraki görevi seçiniz*
 
 
 
@@ -461,7 +461,7 @@ game:
                 >
                 > Habt Ihr es bemerkt? Mittlerweile scheint auch die Sonne und der Wind weht. 
                               
-                Geht zurück, um zur nächsten Mission zu gelangen.
+                *Geht zurück, um zur nächsten Mission zu gelangen.*
               en: |
                 > Thank you very much! You helped us a lot. Now we have 3.9 tons of high pressure steam which we generated from incinerating 1.5 tons of trash! This high pressure stream will help Vattenfall to generate the power for the electric buses of the BVG.
                 >
@@ -469,7 +469,7 @@ game:
                 >
                 > Did you notice? In the meantime the sun is shining and the wind has picked up.
                 
-                Click 'Back' to get to the next mission.
+                *Click 'Back' to get to the next mission.*
               tr: |
                 > Teşekkürler! Bize çok yardımcı oldunuz. Artık 1,5 ton atığı yakarak elde ettiğimiz 3,9 ton yüksek basınç buharımız var. Vattenfall şimdi bu yüksek basınç buhar ile BVG'nin elektrikli otobüsleri için elektrik üretebilir.
                 >
@@ -477,7 +477,7 @@ game:
                 >
                 > Fark ettiniz mi? Bu arada güneş çıktı ve rüzgâr da artık esiyor.
                 
-                Sonraki göreve geçmek için, iki kez "Geri"-tuşuna basınız.
+                *Sonraki göreve geçmek için, iki kez "Geri"-tuşuna basınız.*
 
 
     -          
@@ -524,15 +524,15 @@ game:
               de: |
                 Die Verbindung mit den Berliner Wasserbetrieben wird hergestellt.
 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 Connecting to the Berlin water works.
 
-                Continue to the next task!
+                *Continue to the next task!*
               tr: |
                 Berlin su işletmeleriyle bağlantı kuruluyor.
                 
-                Sonraki göreve gidiniz!
+                *Sonraki göreve gidiniz!*
 
 
         -
@@ -583,19 +583,19 @@ game:
                 >
                 > Nicht weit von hier gibt es einen Zugang zu einer Abwasserleitung. Bitte helft mir, diese zu finden.
                 
-                Bitte wählt den nächsten Auftrag!
+                *Bitte wählt den nächsten Auftrag!*
               en: |
                 > Very good! It is a pleasure working with you. In order to provide you with the required water for the heat reservoir, you as experienced climate agents must first help us with a problem.
                 >
                 > Not far from here, there is an access hatch to a waste water pipe. Please help us find it.
                 
-                Please select the next task!
+                *Please select the next task!*
               tr: |
                 > Çok iyi! Sizinle çalışmak bir zevkti. Isı deposu için gerekli suyu size verebilmem için, siz usta iklim-ajanları bana bir görevde yardım etmelisiniz.
                 >
                 > Yakınlarda bir atık su şebekesinin giriş kapağı bulunmaktadır. Lütfen bulmama yardım edin.
                 
-                Sonraki görevi seçiniz
+                *Sonraki görevi seçiniz*
 
         -
           name: Zugang zum Abwasser

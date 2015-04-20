@@ -1,6 +1,6 @@
 angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie', 'ngLocalize','ngLocalize.Events'])
 
-.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', 'ipCookie', '$filter', 'localeEvents', 'locale', '$analytics', function($scope, $http, $location, $route, $rootScope, $cookies, ipCookie, $filter, localeEvents, locale, $analytics) {
+.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', 'ipCookie', '$filter', 'localeEvents', 'locale', '$analytics', '$timeout', function($scope, $http, $location, $route, $rootScope, $cookies, ipCookie, $filter, localeEvents, locale, $analytics, $timeout) {
   //'use strict';
 
   // language
@@ -80,24 +80,25 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie',
     $scope.gameState.gameStarted = true
     gameSave()
     console.log("game start")
-    $analytics.eventTrack('gameStart');
+    $analytics.eventTrack('gameStart', {category: "game"});
   }
   gameAdvance = function() {
     nextTaskIndexInChallenge =  $scope.game.challenges[$scope.gameState.challengeIndex].tasks[$scope.gameState.taskIndex+1]
     nextChallengeIndex       =  $scope.game.challenges[$scope.gameState.challengeIndex+1]
     if (nextTaskIndexInChallenge != undefined) {
       $scope.gameState.taskIndex++
-      $analytics.eventTrack('gameAdvance', {  challenge: $scope.gameState.challengeIndex, task: $scope.gameState.taskIndex });
+      $analytics.eventTrack('gameAdvance', {  category: "game", label: $scope.gameState.challengeIndex + "/" + $scope.gameState.taskIndex });
     }
     else if (nextChallengeIndex != undefined) { // assuming every challenge has tasks
       $scope.gameState.challengeIndex++
       $scope.gameState.taskIndex = 0
-      $analytics.eventTrack('gameAdvance', {  challenge: $scope.gameState.challengeIndex, task: $scope.gameState.taskIndex });
+      $analytics.eventTrack('gameAdvance', {  category: "game", label: $scope.gameState.challengeIndex + "/" + $scope.gameState.taskIndex });
     }
     else {
       $scope.gameState.gameFinished = true
-      $analytics.eventTrack('gameFinished');
+      $analytics.eventTrack('gameFinished', {category: "game"});
     }
+    $scope.inputInvalidated = false
     console.log($scope.gameState)
     // ...and save
     gameSave()
@@ -106,11 +107,17 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie',
     return $scope.game.text.pre[lang]
   }
 
+  var invalidator
   gameCheckForm = function() {
-    /*
-    if ($scope.conditionForm != undefined)
-      if ($scope.conditionForm.$valid) gameAdvance()
-    */
+    console.log("gameCheckForm")
+    $scope.inputInvalidated = false
+    if (typeof(invalidator) != "undefined") {
+      $timeout.cancel(invalidator)
+    }
+    invalidator = $timeout(function(){
+      if (document.querySelector(".task-condition input") != null && document.querySelector(".task-condition input").value != "")
+        $scope.inputInvalidated = true
+    },2000)
   }
 
   challengeSolved = function(challenge) {

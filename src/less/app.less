@@ -24,6 +24,11 @@
     > p {
       margin-left:1px;
     }
+
+    em {
+      font-weight: bold;
+      font-style: normal;
+    }
   }
 
   img {
@@ -80,12 +85,19 @@ input:-moz-placeholder { font-weight:normal; color:#f00; text-align:center; lett
 .condition-todo {
   padding-top: 1em;
   padding-bottom: 1em;
+
+  &.has-error {
+    input {
+      background-color: #a94442;
+    }
+  }
 }
 
 .condition-solved {
   text-align:center;
   i {
-    font-size: 12em;
+    font-size: 8em;
+    padding-bottom: 10px;
     color:@color_success;
   }
 }
