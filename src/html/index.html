@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
     <title>K2020</title>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
     <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
@@ -20,6 +19,33 @@
       ga('create', 'UA-378438-10', 'auto');
       ga('send', 'pageview');
     </script>        
+    <!--[if lte IE 9]>
+      <style type="text/css">
+        .sidebar-left-in, .sidebar-right-in { display: block !important; z-index:10}
+      </style>
+      <script type="text/javascript">
+        function toggleSidebar(state) {
+          elems = document.getElementsByClassName("sidebar")
+          elem = elems.item(0)
+          if (state==true) {
+            elem.style.zIndex = 10
+            document.body.style.marginLeft = "290px"
+            }
+          else {
+            elem.style.zIndex = 0
+            document.body.style.marginLeft = "0px"
+          }
+        }
+        function initIE() {
+          //document.getElementsByClassName("sidebar-toggle").item(0).onclick = toggleSidebar
+          setInterval(function() {
+            if (window.location.hash.indexOf("uiSidebar") > -1) toggleSidebar(true)
+            else toggleSidebar(false)
+          },400)
+        }
+        window.onload = initIE;
+      </script>
+    <![endif]-->    
   </head>
   <body ng-app="K2020" ng-controller="MainController">
 

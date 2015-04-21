@@ -181,6 +181,16 @@ gulp.task('languages', function() {
   .pipe(gulp.dest(path.join(config.dest, 'languages')));
 });
 
+/*==================================
+=            Copy static js         =
+==================================*/
+
+gulp.task('js-static', function() {
+  return gulp.src('src/js-static/**/*')
+  .pipe(gulp.dest(path.join(config.dest, 'js-static')));
+});
+
+
 /*=================================================
 =            Copy html files to dest              =
 =================================================*/
@@ -283,7 +293,7 @@ gulp.task('weinre', function() {
 ======================================*/
 
 gulp.task('build', function(done) {
-  var tasks = ['html', 'fonts', 'images', 'yaml', 'languages', 'less', 'js'];
+  var tasks = ['html', 'fonts', 'images', 'yaml', 'languages', 'less', 'js', 'js-static'];
   seq('clean', tasks, done);
 });
 
