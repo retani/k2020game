@@ -3,7 +3,7 @@ game:
   text:
     pre:
       de: |
-        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt euch in Klausenerplatz-Kiez. Für diese Missionen braucht ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
+        > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt Euch in den Klausenerplatz-Kiez. Für diese Missionen braucht Ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
       en: |
         > Welcome dear climate agents. I am your K2020 contact person. We at K2020 think that the best way to save the climate is to get involved on large as well as small scale. Your mission today will bring you to the neighbourhood of Klausenerplatz. For the mission you’ll need appr. one hour. I’ll get back to you with further instructions later. Good luck!        
       tr: |
@@ -85,7 +85,7 @@ game:
               tr: Lokasyon Numarası
             post:
               de: |
-                > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zur BVG hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
+                > Danke! Die Verbindung funktioniert einwandfrei. Das Agentensystem ist initialisiert. Und Ihr habt auch schon den Kontakt zu den Berliner Verkehrsbetrieben (BVG) hergestellt. Die hat nämlich ein Problem, bei dem Ihr helfen könnt. Ich verbinde Euch...
 
                 *Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.*
               en: |
@@ -115,16 +115,16 @@ game:
               correct: 31425
           text:
             title:
-              de: BVG
+              de: Verkehr
               en: BVG
               tr: BVG
             pre:
               de: |
-                > Hallo Klima-Agenten! Gut, dass ihr da seid.
+                > Hallo Klima-Agenten! Gut, dass Ihr da seid.
                 >
                 > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO₂ zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
                 >
-                > Da kommt ihr ins Spiel: Könnt ihr zum lokalen Energieversorger gehen und mehr Elektrizität bereitstellen?
+                > Da kommt Ihr ins Spiel: Könnt Ihr zum lokalen Energieversorger gehen und mehr Elektrizität bereitstellen?
                 >
                 > Ihr kommt auf dem Weg dorthin an der ersten Kontaktstation der Wasserbetriebe vorbei. Richtet doch bitte Grüße von mir aus. Ihr erhaltet einen Code, der später nützlich sein könnte ...                
 
@@ -176,12 +176,12 @@ game:
               de: |
                 > Ihr seid auf dem Weg zum Energieversorger und richtet mir Grüße von der BVG aus? Danke!
                 >
-                > Wenn Ihr schon mal hier seid: Falls Ihr später Wasser von mir braucht, ist das kein Problem. Allerdings müsst Ihr dazu die Teile des Experten-Codes sammeln und zusammenfügen. Ich sage nur so viel: Er fängt mit "H2" an. Merkt euch das gut.
+                > Wenn Ihr schon mal hier seid: Falls Ihr später Wasser von mir braucht, ist das kein Problem. Allerdings müsst Ihr dazu die Teile des Experten-Codes sammeln und zusammenfügen. Ich sage nur so viel: Er fängt mit "H2" an. Merkt Euch das gut.
                 >
                 > Jetzt aber weiter zum Energieversorger! Ich zeige Euch den Weg.
 
                 ![](images/k2020Karte2.png)
-                Findet die Kontaktstation zum Energieversorger gebt dort den Agentencode ein.
+                Findet die Kontaktstation zum Energieversorger und gebt dort den Agentencode ein.
               en: |
                 > You are on the way to the energy supplier and BVG sends its regards? Thank you!
                 >
@@ -217,13 +217,13 @@ game:
               -
                 correct: true
                 text:
-                  de: Um die Energieversorgung zu optimalisieren
+                  de: Um die Energieerzeugung zu optimieren
                   en: To optimise energy supply
                   tr: Enerji kaynağını esnetebilmek için
               -
                 correct: true
                 text:
-                  de: Um die Energieversorgung zu flexibilisieren
+                  de: Um die Energieerzeugung zu flexibilisieren
                   en: To flexibilise energy supply
                   tr: Enerji kaynağını en uygun hale getirmek için
           text:
@@ -235,11 +235,11 @@ game:
               de: |
                 > Willkommen bei Vattenfall. Ihr seid hier, weil die BVG mehr Strom für Elektrobusse braucht?
                 >
-                > Super! Elektrobusse liegen natürlich ganz auf unserer Linie. Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle.
+                > Super! Elektrobusse liegen natürlich ganz auf unserer Linie! Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle. Wusstet Ihr schon, dass wir nicht nur Strom, sondern auch Fernwärme erzeugen?  Und  dass diese Schule im Kiez von Vattenfall mit Fernwärme versorgt wird, so wie insgesamt rund eine Million Wohneinheiten in Berlin?
                 >
-                > Ein Problem ist das Speichern von erneuerbarer Energie, die einen immer größeren Anteil an der Erzeugung hat. Im Heizkraftwerk Buch haben wir dafür einen stillgelegten Öltank zum Wärmespeicher mit einem Inhalt von 2.000.000 Liter Wasser umgebaut.
+                > Fernwärme wird nach dem umweltschonenden Prinzip der Kraft-Wärme-Kopplung (KWK) erzeugt. Dabei wird Strom und Wärme in einem Prozess produziert. Dadurch können Brennstoffe eingespart werden. Auch schont es die Umwelt, weil deutlich weniger CO2 entsteht. Jede Wohnung, die neu an die Fernwärme angeschlossen wird, vermeidet über 1 Tonne CO2 im Jahr.
                 >
-                > Für den Fall, dass wir später den Wärmespeicher in Betrieb nehmen müssen, braucht Ihr den zweiten Teil des Experten-Codes. Um ihn zu bekommen, sagt mir bitte: Was meint Ihr, wozu ist der neue Speicher gut?
+                > Was meint Ihr, wozu ist KWK gut?
 
               en: |
                 > Welcome to Vattenfall. You are here because the BVG needs more power for its electric buses?
@@ -259,7 +259,7 @@ game:
                 > İleride ısı deposunu çalıştırmak zorunda kalırsak, sizde bulunan uzman-kodunun ikinci parçasına ihtiyacınız olucak. Koda erişmek için lütfen bize söyleyin: Yeni deponun neye yaradığını düşünüyorsunuz?
             post:
               de: |
-                > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt euch das gut!
+                > Korrekt! Der zweite Teil des Experten-Codes ist der Buchstabe O. Merkt Euch das gut!
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
@@ -277,7 +277,7 @@ game:
               correct: 14
           text:
             title:
-              de: "Windzählung"
+              de: "Wind"
               en: "Wind measurement"
               tr: "Rüzgâr sayımı"
             pre:
@@ -302,7 +302,7 @@ game:
               tr: Fayansların sayısı
             post:
               de: |
-                > Danke. Leider reicht das noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
+                > Danke. Leider reicht die Energie noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
@@ -348,7 +348,7 @@ game:
               tr: Fayansların sayısı              
             post:
               de: |
-                > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber auch das ist kein Problem. So muss der Strom eben aus einem Heizkraftwerk kommen.
+                > Zurzeit weht weder genug Wind, noch scheint die Sonne ausreichend. Aber das ist kein Problem. Denn wir haben ja die Stromversorgung aus den effizienten KWK Anlagen in Berlin.
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
@@ -374,10 +374,10 @@ game:
               tr: "Yüksek basınç buharı"
             pre:
               de: |
-                > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden Holzhackschnitzel in der für Steinkohle ausgelegten Anlage mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Aber auch die BSR hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet.  Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
+                > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden auch Holzhackschnitzel mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Holz ist als nachwachsender Energieträger klimaneutral, da es bei der Erzeugung nur so viel CO2 freisetzt, wie es während seines Wachstums gebunden hat. Aber auch die Berliner Stadtreinigung (BSR) hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet. Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
 
                 ![](images/k2020Karte3.png)
-                Findet die Kontaktstation zur BSR und gebt dort den Agentencode ein.
+                Findet die Kontaktstation zur Berliner Stadtreinigung (BSR) und gebt dort den Agentencode ein.
               en: |
                 > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009 we have been burning wood chips along with the intended fuel of stone coal. The plant is designed for 30,000 tons of wood. But BSR also helps. Every hour about 125 tons of steam are piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you ask BSR whether they can deliver more steam?
                 
@@ -420,7 +420,7 @@ game:
                 > 
                 > Die BVG braucht mehr Strom für Elektrobusse? 
                 >
-                > Das ist interessant! Die Hälfte unserer BSR-Müllfahrzeuge fährt ja mit Biogas, das wir aus den Bioabfällen, die wir abholen, produzieren. Aber den Hausmüll, den wir einsammeln, verbrennen wir und wandeln so Abfall in nutzbare Energie um. Die reicht dann, um ungefähr 100.000 Haushalte mit Strom und 50.000 Haushalte mit Wärme zu versorgen. Da könnten wir auch etwas für die Busse bereitstellen.
+                > Das ist interessant! Die Hälfte unserer BSR-Müllfahrzeuge fährt ja mit Biogas, das wir aus den Bioabfällen, die wir abholen, produzieren. Nicht weiterverwertbare Anteile des Hausmülls, den wir einsammeln, verbrennen wir und wandeln so Abfall in nutzbare Energie um. Diese Energie reicht dann, um ungefähr 100.000 Haushalte mit Strom und 50.000 Haushalte mit Wärme zu versorgen. Da könnten wir auch etwas für die Busse bereitstellen.
                 >
                 > Wie wäre es mit einem Tausch: Ihr helft mir bei der Müllabfuhr und ich gebe Euch einen Teil der Energie ab?
 
@@ -455,13 +455,12 @@ game:
               tr: Toplam              
             post:
               de: |
-                > Vielen Dank! Ihr habt mir sehr geholfen. Nun haben wir 3,9 Tonnen Hochdruckdampf, der aus der Verbrennung von 1,5 Tonnen Abfall gewonnen wurde! Mit diesem Hochdruckdampf kann jetzt Vattenfall den Strom für die Elektrobusse der BVG produzieren. 
+                > Vielen Dank! Ihr habt mir sehr geholfen. Nun haben wir 3,9 Tonnen Hochdruckdampf, der aus der Verbrennung von 1,5 Tonnen Abfall gewonnen wurde! 
                 >
-                > Super Leistung, Klima-Agenten! Ohne Euch wäre das nicht möglich gewesen. Diese Mission habt ihr erfolgreich durchgeführt.
-                >
-                > Habt Ihr es bemerkt? Mittlerweile scheint auch die Sonne und der Wind weht. 
+                > Super Leistung, Klima-Agenten! Ohne Euch wäre das nicht möglich gewesen. Diese Mission habt Ihr erfolgreich durchgeführt. Aber wartet – die Berliner Wasserbetriebe haben noch eine wichtige Mission für Euch!
+                 
                               
-                *Geht zurück, um zur nächsten Mission zu gelangen.*
+                *Drückt "zurück", um zur nächsten Mission zu gelangen.*
               en: |
                 > Thank you very much! You helped us a lot. Now we have 3.9 tons of high pressure steam which we generated from incinerating 1.5 tons of trash! This high pressure stream will help Vattenfall to generate the power for the electric buses of the BVG.
                 >
@@ -484,7 +483,7 @@ game:
       name: Challenge 3
       text:
         title:
-          de: Mission Zukunft
+          de: Mission Wasser
           en: Mission Future
           tr: Görev Gelecek
         pre:
@@ -501,12 +500,12 @@ game:
               correct: 64752
           text:
             title:
-              de: "Wetterwechsel"
+              de: "Klimaschutz"
               en: "Changing weather"
               tr: "Hava değişikliği"
             pre:
               de: |
-                > Ja, mittlerweile scheint auch die Sonne und der Wind weht. Jetzt kann Vattenfall nicht nur mit unserem Dampf viele Haushalte heizen, sondern muss auch noch die erneuerbaren Energien speichern. Da muss man wirklich flexibel bleiben. Nun wird es höchste Zeit, den Wassertank des Wärmespeichers mit zwei Millionen Liter Wasser aufzufüllen. Das Wasser hierfür werden Euch die Berliner Wasserbetriebe sicher gerne geben.
+                > Die Berliner Wasserbetriebe (BWB) ist das erste Wasserversorgungsunternehmen in Europa, das den Wärmeaustausch an Druckrohrleitungen technologisch beherrscht, im industriellen Stil einsetzen kann und damit Wärme aus Abwasser gewinnt. So wird bereits vorhandene Energie genutzt und das Klima geschont. Aber die Berliner Wasserbetriebe kümmern sich natürlich auch um die Versorgung Berlins mit Trinkwasser.
 
                 ![](images/k2020Karte4.png)
                 Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und gebt dort den Agentencode ein. Folgt der Karte!
@@ -543,14 +542,14 @@ game:
                 - H2O
           text:
             title:
-              de: "Wasser"
+              de: "Wasserkreislauf"
               en: "Water"
               tr: "Su"
             pre:
               de: |
                 > Hallo und willkommen bei den Berliner Wasserbetrieben! Ihr seid sicher die Klima-Agenten. Man spricht schon über Euch im Kiez.
                 >
-                > Ihr braucht Wasser für den Vattenfall-Wärmespeicher? Sauberes Wasser können wir gerne liefern, denn das entnehmen wir aus dem Berliner Grundwasser. Und wenn Regenwasser durch die Erde versickert, wird es natürlich gereinigt und gelangt sauber in das Grundwasser.
+                > Sauberes Wasser können wir gerne liefern, denn das entnehmen wir aus dem Berliner Grundwasser. Und wenn Regenwasser durch die Erde versickert, wird es natürlich gereinigt und gelangt sauber in das Grundwasser.
                 >
                 > Wir Berliner Wasserbetriebe sorgen nicht nur dafür, dass sauberes Wasser geliefert wird. Wir kümmern uns auch darum, dass Regenwasser vor Ort versickert und dadurch für ein angenehmes Klima in der Stadt sorgt.
                 >
@@ -579,9 +578,9 @@ game:
                 Şimdi suyun kimyasal formülünü bulmak için uzman-kod parçalarını bir araya getirin. Ve bulduğunuz kodu girin.
             post:
               de: |
-                > Sehr gut! Es macht Spaß, mit Euch zusammenzuarbeiten. Um Euch das nötige Wasser für den Wärmespeicher zu geben, müsst Ihr als erfahrene Klima-Agenten mir bei einer Aufgabe helfen.
+                > Sehr gut! Es macht Spaß, mit Euch zusammenzuarbeiten Wie Ihr wisst, aus dem Wasser der Haushalte wird ja nach der Verwendung Abwasser.
                 >
-                > Nicht weit von hier gibt es einen Zugang zu einer Abwasserleitung. Bitte helft mir, diese zu finden.
+                > Nicht weit von hier gibt es einen Zugang zu einer Abwasserleitung. Bitte helft mir diese zu finden.
                 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
@@ -609,18 +608,18 @@ game:
                 - entwlh
           text:
             title:
-              de: "Zugang zum Abwasser"
+              de: "Abwasser"
               en: "Access to waste water"
               tr: "Atık su girişi"
             pre:
               de: |
-                > Mit Temperaturen zwischen 12-20°C ist Abwasser eine ganzjährige Energiequelle. Diese Energie kann als Grundlage zum klimafreundlichen Heizen und Kühlen größerer Objekte genutzt werden, wie z. B. dem Möbelhaus an der Landsberger Allee. Ein Wärmetauscher entzieht dem Abwasser in der Kanalisation 1-2°C Wärme, woraus eine Wärmepumpe eine Nutztemperatur von ca. 50°C erzeugt. 
+                > Mit Temperaturen zwischen 12-20°C ist Abwasser eine ganzjährige Energiequelle. Diese Energie kann auch als Grundlage für klimafreundliches Heizen und Kühlen größerer Objekte genutzt werden, wie z. B. dem Möbelhaus an der Landsberger Allee. Ein Wärmetauscher entzieht dem Abwasser in der Kanalisation 1-2°C Wärme, woraus eine Wärmepumpe eine Nutztemperatur von ca. 50°C erzeugt. 
                 >
-                > So werden aus 1.000 Liter Abwasser rund zwei Kilowattstunden Heizenergie gewonnen. Damit kann dann im Winter schön geheizt werden. Bei sehr extremen Minusgraden wäre jedoch zusätzliche Heizenergie notwendig. Im Sommer reicht diese Energiequelle aus, um das gesamte Gebäude auf moderate 24-26°C herunter zu kühlen. Hierfür wird Wärme aus dem Gebäude ins Abwasser abgeleitet.
+                > Damit kann dann im Winter schön geheizt werden. Bei sehr extremen Minusgraden wäre jedoch zusätzliche Heizenergie notwendig. Im Sommer reicht diese Energiequelle aus, um das gesamte Gebäude auf moderate 24-26°C herunter zu kühlen. Hierfür wird Wärme aus dem Gebäude ins Abwasser abgeleitet.
                 >
                 > Helft uns bitte, an Abwasser heranzukommen.
                 >
-                > Gar nicht weit von hier findet Ihr ein grünes Abwasser-Schild an der Hauswand. Die Werte direkt unter dem T zeigen, wo man den Zugang zur Abwasserleitung auf dem Boden findet. Der linke Arm vom T zeigt, wie viele Meter man nach links laufen muss. Der rechte Arm zeigt an, wie weit man nach rechts laufen muss. Der untere Arm zeigt an, wie viele Meter man sich von der Mauer wegbewegen muss. Vorsicht: wo keine Zahlen unter dem T stehen, sind 0 Meter gemeint"
+                > Gar nicht weit von hier findet Ihr ein grünes Abwasser-Schild an der Hauswand. Die Werte direkt unter dem T zeigen, wo man den Zugang zur Abwasserleitung auf dem Boden findet. Der linke Arm vom T zeigt, wie viele Meter man nach links laufen muss. Der rechte Arm zeigt an, wie weit man nach rechts laufen muss. Der untere Arm zeigt an, wie viele Meter man sich von der Mauer wegbewegen muss. Vorsicht: wo keine Zahlen unter dem T stehen, sind 0 Meter gemeint."
                 
                 ![](images/Abwasser.jpg)
                 Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              
@@ -649,15 +648,14 @@ game:
                 Levhayı bulup, levhadaki uzaklık ölçülerine göre atık su kanal girişini bulun. Metal kapaktaki harfleri buraya girin.
             post:
               de: |
-                > Super, jetzt liefern wir das Wasser für den Wärmespeicher.
+                > Super, Ihr habt Euren Klima-Auftrag toll gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt, Wohnungen aus Eurem Kiez an die Fernwärme angeschlossen und Wärme aus dem Abwasser gewonnen.
                 
                 []()
 
-                > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
-                >
-                > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
+             
+                > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt aber jeder kleine Beitrag hilft. Durch Eure Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß deutlich zu senken, wieder etwas näher gekommen. Das Klima dankt Euch!
 
-                Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](http://www.k2020.berlin).
+                Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de ).
               en: |
                 > Great! Now we can deliver the water for the heat reservoir.
                 
