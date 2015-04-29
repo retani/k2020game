@@ -5,18 +5,18 @@ game:
       de: |
         > Willkommen, liebe Klima-Agenten! Ich bin Eure Kontaktperson zu K2020. Wir von K2020 finden, dass man das Klima am Besten im Großen und Kleinen retten kann. Euer heutiger Einsatz bringt Euch in den Klausenerplatz-Kiez. Für diese Missionen braucht Ihr ca. eine Stunde. Alles Weitere später. Viel Erfolg!        
       en: |
-        > Welcome dear climate agents. I am your K2020 contact person. We at K2020 think that the best way to save the climate is to get involved on large as well as small scale. Your mission today will bring you to the neighbourhood of Klausenerplatz. For the mission you’ll need appr. one hour. I’ll get back to you with further instructions later. Good luck!        
+        > Welcome climate agents! I am your K2020 contact person. We at K2020 think that the best way to save the climate is to get involved on a large as well as a small scale. Your mission today will bring you to the neighbourhood of Klausenerplatz. For the mission you’ll need approximately one hour. I’ll get back to you with further instructions later. Good luck!        
       tr: |
         > Sevgili klima ajanları, hoşgeldiniz. Ben sizlerin K2020 irtibat görevlinizim. Biz K2020’de iklimi kurtarmanın en iyi yolunun büyük çapta olduğu kadar küçük çapta da katılım olduğuna inanıyoruz. Bugünkü göreviniz sizi Klausenerplatz mahallesine götürecek. Görev için yaklaşık bir saate ihtiyacınız olacak. Diğer talimatlar için yakında sizinle tekrar iletişime geçeceğim. Bol şanslar!
     post: 
       de: |
         > Liebe Klima-Agenten, Ihr habt Euren Klima-Auftrag super gelöst. Ihr habt den Experten-Code geknackt, Wind- und Sonnenstärke ermittelt, Hochdruckdampf besorgt und einen riesigen Wärmespeicher mit Wasser gefüllt.
         >
-        > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt, aber jeder kleine Beitrag hilft. Dank Eurer Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß um 20 % im Vergleich zu 1990 zu senken, viel näher gekommen. Das Klima dankt Euch!
+        > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt aber jeder kleine Beitrag hilft. Durch Eure Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß deutlich zu senken, wieder etwas näher gekommen. Das Klima dankt Euch!
 
         Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr unter [www.k2020.berlin](http://www.k2020.berlin).
       en: |
-        > Dear climate agents: you did a great job solving your climate missions. You decoded the expert code, determined the strength of wind and sun, obtained high-pressure steam, and filled a huge heat reservoir with water.
+        > Dear climate agents: you did a great job solving your climate missions. You decoded the Expert Code, determined the strength of wind and sun, obtained high-pressure steam, and filled a huge heat reservoir with water.
         >
         > Thank you for helping us make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood by 20% by 2020 (compared to 1990). The climate thanks you!
         
@@ -73,7 +73,7 @@ game:
                 > Please enter your location number.
                 
                 ![](images/edit_standortnummer.jpg)
-                Find the location number of the bus stop at which you are standing right now (see picture) and enter it below
+                Find the location number of the bus stop at which you are standing right now (see picture) and enter it below.
               tr: |
                 > Lütfen lokasyon numaranızı giriniz.
                 
@@ -89,7 +89,7 @@ game:
 
                 *Geht zurück zur Auftragsmappe und wählt den nächsten Auftrag.*
               en: |
-                > Thank you! The connection is working perfectly. The agent system has been initialized. You have established contact to the BVG. They have a problem. Can you help? Connecting...
+                > Thank you! The connection is working perfectly. The agent system has been initialized. You have established contact to the public transport authority, BVG. They have a problem. Can you help? I am connecting you now...
                 
                 *Go back to your task folder and select the next task.*
               tr: |
@@ -116,7 +116,7 @@ game:
           text:
             title:
               de: Verkehr
-              en: BVG
+              en: Public transport
               tr: BVG
             pre:
               de: |
@@ -131,16 +131,16 @@ game:
                 ![](images/k2020Karte1.png)
                 Findet die erste Kontaktstation der Wasserbetriebe und gebt dort den Agentencode ein.
               en: |
-                > Welcome climate agents! We are glad you are here.
+                > Welcome climate agents! Glad to have you here.
                 >
-                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO₂ we are already testing electric buses. In 2015 we will convert a complete bus line to electricity, the 204 line. And we want to keep going in this fashion. However, for that we need more electric power.
+                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO₂, we are currently testing electric buses. In 2015, we will convert a complete bus line – the #204 - to electricity. And we want to expand this in the future. However, for that we need more electric power.
                 >
-                > This is where you come in: can you go to the local energy supplier and provide more electricity?
+                > This is where you come into play: can you go to the local energy supplier and provide more electricity?
                 >
-                > On your way you will pass the first contact station of the water works. Please tell them hi from us. They will give you a code that could come in handy later on...
+                > On your way there, you will pass the first contact station of the waterworks. Please tell them hello from us. They will give you a code that could come in handy later on...
                 
                 ![](images/k2020Karte1.png)
-                Find the first contact station for the water works and enter the Agent Code.
+                Find the first contact station for the waterworks and enter the Agent Code.
               tr: |
                 > Merhaba iklim-ajanları! İyi ki buradasınız.
                 >
@@ -157,7 +157,7 @@ game:
                 Die Verbindung zu den Wasserbetrieben wird hergestellt.
                 *Wählt den nächsten Auftrag!*
               en: |
-                Connecting to the water works.
+                Connecting to the waterworks.
                 *Please select the next task!*
               tr: |
                 Su işletmeleri ile bağlantı kurulacak.
@@ -170,7 +170,7 @@ game:
           text:
             title:
               de: "Wasserbetriebe"
-              en: "Water works"
+              en: "Waterworks"
               tr: "Su işletmeleri"
             pre:
               de: |
@@ -185,7 +185,7 @@ game:
               en: |
                 > You are on the way to the energy supplier and BVG sends its regards? Thank you!
                 >
-                > Since you are already here: if you need water from us later on, no problem. However, you have to collect and put together the parts of the expert code. We will tell you only this much: It starts with "H2". Remember that.
+                > Since you are already here: in case you need water from us later on, no problem. However, you have to collect and put together the parts of the Expert Code. We will tell you only this much: It starts with "H2". Remember that.
                 >
                 > On to the energy supplier! Let me show you the way.
                 
@@ -218,13 +218,13 @@ game:
                 correct: true
                 text:
                   de: Um die Energieerzeugung zu optimieren
-                  en: To optimise energy supply
+                  en: To optimize the energy supply
                   tr: Enerji kaynağını esnetebilmek için
               -
                 correct: true
                 text:
                   de: Um die Energieerzeugung zu flexibilisieren
-                  en: To flexibilise energy supply
+                  en: To optimize the energy supply
                   tr: Enerji kaynağını en uygun hale getirmek için
           text:
             title:
@@ -242,13 +242,11 @@ game:
                 > Was meint Ihr, wozu ist KWK gut?
 
               en: |
-                > Welcome to Vattenfall. You are here because the BVG needs more power for its electric buses?
+                > Welcome to Vattenfall.  Electric buses are of course totally in line with our business. Electric energy comes from many sources, including the sun, wind, water, gas, and coal. Did you know that we not only produce electricity but also district heating? And that Vattenfall provides district heating to this neighborhood school as well as to about one million living quarters in Berlin?
                 >
-                > Great! Electric buses are of course part of our line. Electric energy comes from many sources, including the sun, wind, water, gas, and coal.
+                > District heating is produced by employing the environmentally friendly principle of cogeneration of heat and power (CHP). This means heat and power are produced in the same process. This saves fuel and protects the environment as significantly less CO2 is produced. Each living unit which is connected to district heating prevents 1 ton of CO2 annually.
                 >
-                > One of the problems with renewable energies (which are becoming more and more important sources) is how to store the generated energy. For this purpose we have converted a decommissioned oil tank in the Buch heating plant into heat reservoir with a content of 2,000,000 liters or water.
-                >
-                > In case we need to start up the heat reservoir, you need the second part of the expert code. To get it, please tell us: What do you think? What does the new reservoir do?
+                > What do you think is the benefit of CHP?
               tr: |
                 > Vattenfall'a hoş geldiniz. BVG'nin elektrikli otobüsler için daha fazla enerjiye ihtiyacı olduğu için mi buradasınız?
                 >
@@ -263,7 +261,7 @@ game:
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                > Correct! The second part of the expert code is the letter "O". Remember that.
+                > Correct! The second part of the Expert Code is the letter "O". Remember that.
                 
                 *Please select the next task!*
               tr: |
@@ -278,7 +276,7 @@ game:
           text:
             title:
               de: "Wind"
-              en: "Wind measurement"
+              en: "Wind"
               tr: "Rüzgâr sayımı"
             pre:
               de: |
@@ -287,10 +285,10 @@ game:
                 ![](images/windanzeige.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge ganz in der Nähe auf der anderen Straßenseite. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: |
-                > But let's now again concentrate on providing power for the BVG: Can you please check the wind sensor to see whether the wind is strong enough?
+                > Let's concentrate now again on providing power to the BVG: Can you please check the wind sensor to see whether the wind is strong enough?
                 
                 ![](images/windanzeige.jpg)
-                Find the tiles on the image in a house entrance close by on the opposite side of the street. Count the tiles and enter the number below!
+                Find the tiles on the image at a house entrance close by on the opposite side of the street. Count the tiles and enter the number below!
               tr: |
                 > Fakat şimdi tekrar BVG için elektrik üretme işine konsantre olalım: Rüzgar göstergesinde, şu anki rüzgarın yeteri kadar kuvvetli olup olmadığına bakabilir misiniz?
                 
@@ -306,7 +304,7 @@ game:
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                > Thank you. Unfortunately this is not quite enough. The wind is currently too weak. No problem...
+                > Thank you. Unfortunately there is not quite enough energy. The wind is currently too weak. No problem...
                 
                 *Please select the next task!*
               tr: |
@@ -333,10 +331,10 @@ game:
                 ![](images/sonnenanzeige.jpg)
                 Findet die Kacheln auf dem Bild in einem der Hauseingänge in der Nähe. Zählt die Kacheln und gebt die Anzahl unten ein!
               en: |
-                > Check whether the sun is currently delivering enough energy.
+                > Please check whether the sun is currently delivering enough energy.
                 
                 ![](images/sonnenanzeige.jpg)
-                Find the tiles on the image in a house entrance close by. Count the tiles and enter the number below!
+                Find the tiles on the image at another house entrance close by. Count the tiles and enter the number below!
               tr: |
                 > Lütfen güneşin şuan yeterli enerji sağlayıp sağlamadığını kontrol ediniz.
                 
@@ -352,7 +350,7 @@ game:
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                > At the moment there is not enough wind and the sun is not strong enough. Still, no problem. We just have to get the power from the heating plant.
+                > At the moment there is neither enough wind nor enough sunshine. But that is not a problem as we have enough electricity from the efficient cogenerated heat and power (CHP) units in Berlin.
                 
                 *Please select the next task!*
               tr: |
@@ -379,10 +377,10 @@ game:
                 ![](images/k2020Karte3.png)
                 Findet die Kontaktstation zur Berliner Stadtreinigung (BSR) und gebt dort den Agentencode ein.
               en: |
-                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009 we have been burning wood chips along with the intended fuel of stone coal. The plant is designed for 30,000 tons of wood. But BSR also helps. Every hour about 125 tons of steam are piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you ask BSR whether they can deliver more steam?
+                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009, wood chips have been used as part of the fuel mix. The plant is dimensioned for 30,000 tons of wood. Wood is a renewal and climate-neutral energy source because only as much CO2 is released during burning as has been captured during its natural growth. The Berlin waste management company (BSR) also helps. Every hour about 125 tons of steam is piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you please ask BSR whether they can deliver some more steam?
                 
                 ![](images/k2020Karte3.png)
-                Find the contact station for BSR and enter the Agent Code.
+                Find the contact station for Berlin waste management company (BSR) and enter the Agent Code.
               tr: |
                 > Reuter von Vattenfall termoelektrik santrali, elektrik ve bölgesel ısıtma sistemini sağlar. 2009 yılından bu yana, taş kömürü için genişletilmiş tesiste, odun parçaları da yakılmakta. Tesis, 30.000 t odun için genişletilmiştir. Fakat BSR de yardım ediyor. Saat başına yaklaşık 125 bin ton duman yakındaki Ruhleben ismindeki atık ısıtma tesisinden Reuter termoelektrik santraline iletilmekte. BSR’ye Duman temin edebilirler mi diye sorabilir misiniz lütfen?
                 
@@ -394,7 +392,7 @@ game:
                 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                Connecting to BSR.
+                Connecting to BSR...
                 
                 *Please select the next task!*
               tr: |
@@ -431,12 +429,12 @@ game:
                 >
                 > The BVG needs more power for its electric buses?
                 >
-                > Interesting! Half of our BSR garbage truck run on bio gas which we produce from the bio waste we pick up. But we incinerate the domestic trash we collect and in this way convert trash into usable energy. It is enough to supply about 100,000 households with power and 50,000 households with heat. I am sure we could spare some for the buses.
+                > Interesting! Half of our BSR garbage trucks run on biogas which we produce from the biowaste we collect. The non-recyclable household waste we collect is then burned, converting trash into usable energy. This energy is sufficient to supply about 100,000 households with power and 50,000 households with heat. I am sure we could spare some for the buses.
                 >
-                > How about a trade? You help us pick up the trash and we give you some of the energy?
+                > How about a trade: You help us pick up the trash and we give you some of the energy?
                 
                 ![](images/PapierkorbCode.jpg)
-                Look for the trash bins which are attached to the light poles located in this section of the street between Nehringstraße and Dankelmannstraße. Find the white numbers on the light poles, add them, and enter the total below.
+                Look for the trash bins which are attached to the light poles located in this section of the street between Nehringstraße and Dankelmannstraße. Find the white numbers on the light poles, add them up, and enter the total below.
                 
               tr: |
                 > Merhaba iklim-ajanları! Mahallede hareket halinde olduğunuzu duydum.
@@ -460,13 +458,12 @@ game:
                 > Super Leistung, Klima-Agenten! Ohne Euch wäre das nicht möglich gewesen. Diese Mission habt Ihr erfolgreich durchgeführt. Aber wartet – die Berliner Wasserbetriebe haben noch eine wichtige Mission für Euch!
                  
                               
-                *Drückt "zurück", um zur nächsten Mission zu gelangen.*
+                *Drückt 'zurück', um zur nächsten Mission zu gelangen.*
               en: |
-                > Thank you very much! You helped us a lot. Now we have 3.9 tons of high pressure steam which we generated from incinerating 1.5 tons of trash! This high pressure stream will help Vattenfall to generate the power for the electric buses of the BVG.
+                > Thanks so much! You helped us a lot. Now we have 3.9 tons of high-pressure steam which we generated from incinerating 1.5 tons of trash!
                 >
-                > Great job, climate agents! We couldn't have done it without you. You completed this mission successfully.
-                >
-                > Did you notice? In the meantime the sun is shining and the wind has picked up.
+                > Great job, climate agents! We couldn't have done it without you. You have successfully completed this mission. But wait – the Berlin water and wastewater company still has an important mission for you!
+               
                 
                 *Click 'Back' to get to the next mission.*
               tr: |
@@ -484,7 +481,7 @@ game:
       text:
         title:
           de: Mission Wasser
-          en: Mission Future
+          en: Water Mission
           tr: Görev Gelecek
         pre:
           de: c 2 pre de
@@ -501,7 +498,7 @@ game:
           text:
             title:
               de: "Klimaschutz"
-              en: "Changing weather"
+              en: "Climate protection"
               tr: "Hava değişikliği"
             pre:
               de: |
@@ -510,10 +507,10 @@ game:
                 ![](images/k2020Karte4.png)
                 Sucht nun die zweite Kontaktstation der Berliner Wasserbetriebe und gebt dort den Agentencode ein. Folgt der Karte!
               en: |
-                > Yes, in the meanwhile the sun is shining and the wind has picked up. Now Vattenfall will be able to use steam to supply many households with heat, but now they also have to store the renewable energies. You really have to stay flexible. It is high time to fill the water tank of their heat reservoir with 2 million liters of water. The Berlin water works will certainly be glad to give you the water for this.
+                > The Berlin water and wastewater company (BWB) is the first waterworks company in Europe to master the heat exchange technology for pressure mains and employ it at industrial scale in order to extract heat out of wastewater.  In this manner, an existing energy source can be used and the climate can be protected. But the BWB doesn’t just take care of the city’s wastewater; it also supplies Berlin with its drinking water.
                 
                 ![](images/k2020Karte4.png)
-                Look for the second contact station of the Berlin water works and enter the Agent Code. Follow the map!
+                Look for the second contact station of the Berlin waterworks and enter the Agent Code. Follow the map!
               tr: |
                 > Evet, bu arada güneş çıktı ve rüzgâr da artık esiyor. Vattenfall şimdi bizim buharımızla sadece birçok evi ısıtmakla kalmıyor, aynı zamanda yenilenebilir enerjiyi depolamak zorunda. Şimdi gerçekten esnek olmak lazım. Şimdi artık su deponuzun su tankını, 2 milyon litre su ile doldurma vakti çoktan geldi. Gerekli suyu, Berlin su işletmeleri memnuniyetle size verecekdir.
                 
@@ -525,7 +522,7 @@ game:
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                Connecting to the Berlin water works.
+                Connecting to the Berlin waterworks.
 
                 *Continue to the next task!*
               tr: |
@@ -543,7 +540,7 @@ game:
           text:
             title:
               de: "Wasserkreislauf"
-              en: "Water"
+              en: "Water cycle"
               tr: "Su"
             pre:
               de: |
@@ -557,15 +554,15 @@ game:
 
                 Setzt die Teile des Experten-Codes so zusammen, dass sie die chemische Formel von Wasser ergeben und gebt sie ein.
               en: |
-                > Hello and welcome to the Berlin water works! You must be the climate agents. They are talking about you in the neighborhood.
+                > Hello and welcome to the Berlin waterworks! You must be the climate agents. They are talking about you in the neighborhood.
                 >
-                > You need water for the Vattenfall heat reservoir? We will be glad to supply clean water. We take it from the Berlin ground water – and when rain water seeps through the earth it is cleaned naturally and reaches the ground water clean.
+                > We will be glad to supply you with clean water. We take it from the Berlin groundwater. And when rain water seeps through the soil it is cleaned naturally, reaching the groundwater in a clean state.
                 > 
-                > We at the Berlin water works not only make sure that clean water is delivered. We also make sure that rain water seep into the earth locally and thus creates a pleasant climate in the city.
+                > We at the Berlin waterworks not only ensure the delivery of clean drinking water. We also make sure that rain water is able to seep into the earth locally because this helps to create a pleasant climate in the city.
                 >
-                > Do you know about water?
+                > What do you know about water?
                 
-                Put the parts of the expert code together to get the chemical formula of water. Then enter it.
+                Put the parts of the Expert Code together to get the chemical formula of water. Then enter it.
               tr: |
                 > Merhaba, Berlin su işletmelerine hoş geldiniz! Siz kesin iklim ajanlarısınız. Mahallede hakkınızda konuşuluyor.
                 >
@@ -584,9 +581,9 @@ game:
                 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
-                > Very good! It is a pleasure working with you. In order to provide you with the required water for the heat reservoir, you as experienced climate agents must first help us with a problem.
+                > Very good! It is a pleasure working with you.  So, after households use their water, it turns into wastewater.
                 >
-                > Not far from here, there is an access hatch to a waste water pipe. Please help us find it.
+                > Not far from here, there is an access hatch to a sewage pipe. Please help us find it.
                 
                 *Please select the next task!*
               tr: |
@@ -609,7 +606,7 @@ game:
           text:
             title:
               de: "Abwasser"
-              en: "Access to waste water"
+              en: "Wastewater"
               tr: "Atık su girişi"
             pre:
               de: |
@@ -624,16 +621,16 @@ game:
                 ![](images/Abwasser.jpg)
                 Sucht das Schild und lokalisiert den Zugang zur Abwasserleitung anhand der Entfernungsangaben auf dem Schild. Gebt die Buchstaben von dem Metalldeckel hier ein.              
               en: |
-                > With temperatures between 12-20°C, waste water is an energy source year-round. This energy can be used as basis for the climate-friendly heating and cooling of large objects, such as a furniture store in the Landsberger Allee. A heat exchanger takes out 1-2°C of heat from the waste water in the sewage system which lets a heat pump generate a useful temperature of about 50°C.
+                > With temperatures between 12-20°C, wastewater is an energy source year-round. This energy can also be used as basis for climate-friendly heating and cooling of large buildings, such as the furniture store in the Landsberger Allee. A heat exchanger extracts 1-2°C of heat from the wastewater in the sewage system allowing the heat pump to generate a temperature of about 50°C.
                 >
-                > In this way, we can generate about 2 kWh of heating energy from 1,000 liters of waste water. This lets us heat the building quite nicely in the winter. However, when it gets really cold, we need additional heating. In the summer this energy source is sufficient to cool the entire building to a moderate 24-26°C. For this purpose we conduct heat out of the building into the waste water.
+                > This allows for comfortable heating of a building in the winter. In times of extreme cold, additional heating is needed. In the summer, this energy source is sufficient to cool an entire building to a moderate 24-26°C. This is achieved by conducting heat out of the building into the wastewater.
                 >
-                > Please help us get to the waste water.
+                > Please help us get to the wastewater.
                 > 
-                > Not far from here you will find a green waste water sign on a building wall. The values right under the 'T' show you where the access hatch to the waste water pipe is on the ground. The left arm of the T shows you how much Meters you have to go to the left, the right arm show you how much Meters you have to go to the right, and the bottom arm how far you have to move away from the wall. Beware: no numbers under the T mean zero Meters.
+                > Not far from here, you will find a green sewage sign on a building wall. The values under the 'T' show you where the access hatch to the sewage pipe is on the ground. The left arm of the T shows you how many meters you have to go to the left; the right arm shows you how many meters you have to go to the right, and the bottom arm shows how far you have to move away from the wall. Beware: if there are no numbers under the T, this means zero meters.
                 
                 ![](images/Abwasser.jpg)
-                Look for the sign and find the access hatch to the waste water pipe using the information on the sign. Enter the letter of the metal lid here.
+                Look for the sign and find the access hatch to the sewage pipe using the information on the sign. Enter the letter of the metal lid here.
               
               tr: |
                 > Atık su, 12-20°C arası ısıyla bütün yıl boyunca bir enerji kaynağıdır. Bu enerji, büyük objelerin iklim dostu olarak ısıtılması ve soğutulmasında kullanılabilir, örneğin Landberger Allee'de bir mobilya dükkanı gibi. Bir ısı eşanjörü, kanalizasyondaki atık sudan 1-20°C ısı çeker ve bir ısı pompası, bu ısıdan takriben 50°C kullanılabilir ısı üretir. 
@@ -657,15 +654,14 @@ game:
 
                 Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de ).
               en: |
-                > Great! Now we can deliver the water for the heat reservoir.
+                > Super, you did a great job solving your climate mission. You decoded the Expert Code, determined the strength of the wind and sun, secured high-pressure steam, connected your neighborhood’s living quarters to district heating, and extracted heat from wastewater.
                 
                 []()
                 
-                > Dear climate agents: you did a great job solving your climate mission. You decoded the expert code, determined the strength of wind and sun, obtained high-pressure steam, and filled a huge heat reservoir with water.
-                >
-                > Thank you for helping us make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood by 20% by 2020 (compared to 1990). The climate thanks you!
+              
+                > Thank you for helping us to make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood. Our climate thanks you!
                 
-                And now, if you want to continue to help us, just stop in at the climate protection management office Klausenerplatz! You can find more information about climate protection management in the neighborhood at [www.k2020.berlin](http://www.k2020.berlin).
+               And now, if you want to continue to help, just stop in at the climate protection management office Klausenerplatz! [Here](http://www.k2020.berlin) you can find more information about climate protection management in the neighborhood.
               tr: |
                 > Süper, şimdi ısı deposu için suyu gönderiyoruz.
                 
