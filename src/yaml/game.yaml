@@ -121,7 +121,7 @@ Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutz
               de: |
                 > Hallo Klima-Agenten! Gut, dass Ihr da seid.
                 >
-                > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO₂ zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
+                > Busfahren ist schon wesentlich klimaschonender, als mit dem Auto zu fahren. Aber um noch mehr CO<sub>2</sub> zu sparen, testen wir jetzt Elektrobusse. 2015 stellen wir mit der Linie 204 eine komplette Buslinie auf Elektrizität um. Und wir wollen damit auch weitermachen. Dafür brauchen wir jedoch mehr Strom. 
                 >
                 > Da kommt Ihr ins Spiel: Könnt Ihr zum lokalen Energieversorger gehen und mehr Elektrizität bereitstellen?
                 >
@@ -132,7 +132,7 @@ Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutz
               en: |
                 > Welcome climate agents! Glad to have you here.
                 >
-                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO₂, we are currently testing electric buses. In 2015, we will convert a complete bus line – the #204 - to electricity. And we want to expand this in the future. However, for that we need more electric power.
+                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO<sub>2</sub>, we are currently testing electric buses. In 2015, we will convert a complete bus line – the #204 - to electricity. And we want to expand this in the future. However, for that we need more electric power.
                 >
                 > This is where you come into play: can you go to the local energy supplier and provide more electricity?
                 >
@@ -236,14 +236,14 @@ Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutz
                 >
                 > Super! Elektrobusse liegen natürlich ganz auf unserer Linie! Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle. Wusstet Ihr schon, dass wir nicht nur Strom, sondern auch Fernwärme erzeugen?  Und  dass diese Schule im Kiez von Vattenfall mit Fernwärme versorgt wird, so wie insgesamt rund eine Million Wohneinheiten in Berlin?
                 >
-                > Fernwärme wird nach dem umweltschonenden Prinzip der Kraft-Wärme-Kopplung (KWK) erzeugt. Dabei wird Strom und Wärme in einem Prozess produziert. Dadurch können Brennstoffe eingespart werden. Auch schont es die Umwelt, weil deutlich weniger CO2 entsteht. Jede Wohnung, die neu an die Fernwärme angeschlossen wird, vermeidet über 1 Tonne CO2 im Jahr.
+                > Fernwärme wird nach dem umweltschonenden Prinzip der Kraft-Wärme-Kopplung (KWK) erzeugt. Dabei wird Strom und Wärme in einem Prozess produziert. Dadurch können Brennstoffe eingespart werden. Auch schont es die Umwelt, weil deutlich weniger CO<sub>2</sub> entsteht. Jede Wohnung, die neu an die Fernwärme angeschlossen wird, vermeidet über 1 Tonne CO<sub>2</sub> im Jahr.
                 >
                 > Was meint Ihr, wozu ist KWK gut?
 
               en: |
                 > Welcome to Vattenfall.  Electric buses are of course totally in line with our business. Electric energy comes from many sources, including the sun, wind, water, gas, and coal. Did you know that we not only produce electricity but also district heating? And that Vattenfall provides district heating to this neighborhood school as well as to about one million living quarters in Berlin?
                 >
-                > District heating is produced by employing the environmentally friendly principle of cogeneration of heat and power (CHP). This means heat and power are produced in the same process. This saves fuel and protects the environment as significantly less CO2 is produced. Each living unit which is connected to district heating prevents 1 ton of CO2 annually.
+                > District heating is produced by employing the environmentally friendly principle of cogeneration of heat and power (CHP). This means heat and power are produced in the same process. This saves fuel and protects the environment as significantly less CO<sub>2</sub> is produced. Each living unit which is connected to district heating prevents 1 ton of CO<sub>2</sub> annually.
                 >
                 > What do you think is the benefit of CHP?
               tr: |
@@ -370,12 +370,12 @@ Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutz
               tr: "Yüksek basınçlı buhar"
             pre:
               de: |
-                > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden auch Holzhackschnitzel mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Holz ist als nachwachsender Energieträger klimaneutral, da es bei der Erzeugung nur so viel CO2 freisetzt, wie es während seines Wachstums gebunden hat. Aber auch die Berliner Stadtreinigung (BSR) hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet. Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
+                > Das Heizkraftwerk Reuter von Vattenfall liefert Strom und Fernwärme. Seit 2009 werden auch Holzhackschnitzel mitverbrannt. Ausgelegt ist die Anlage für 30.000 Tonnen Holz. Holz ist als nachwachsender Energieträger klimaneutral, da es bei der Erzeugung nur so viel CO<sub>2</sub> freisetzt, wie es während seines Wachstums gebunden hat. Aber auch die Berliner Stadtreinigung (BSR) hilft mit. Stündlich werden etwa 125 Tonnen Dampf aus dem nahegelegenen Müllheizkraftwerk Ruhleben ins Heizkraftwerk Reuter geleitet. Könnt Ihr bitte mal bei der BSR nachfragen, ob sie mehr Dampf liefern können?
 
                 ![](images/k2020Karte3.png)
                 Findet die Kontaktstation zur Berliner Stadtreinigung (BSR) und gebt dort den Agentencode ein.
               en: |
-                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009, wood chips have been used as part of the fuel mix. The plant is dimensioned for 30,000 tons of wood. Wood is a renewal and climate-neutral energy source because only as much CO2 is released during burning as has been captured during its natural growth. The Berlin waste management company (BSR) also helps. Every hour about 125 tons of steam is piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you please ask BSR whether they can deliver some more steam?
+                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009, wood chips have been used as part of the fuel mix. The plant is dimensioned for 30,000 tons of wood. Wood is a renewal and climate-neutral energy source because only as much CO<sub>2</sub> is released during burning as has been captured during its natural growth. The Berlin waste management company (BSR) also helps. Every hour about 125 tons of steam is piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you please ask BSR whether they can deliver some more steam?
                 
                 ![](images/k2020Karte3.png)
                 Find the contact station for Berlin waste management company (BSR) and enter the Agent Code.
@@ -456,7 +456,7 @@ Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutz
                 > Super Leistung, Klima-Agenten! Ohne Euch wäre das nicht möglich gewesen. Diese Mission habt Ihr erfolgreich durchgeführt. Aber wartet – die Berliner Wasserbetriebe haben noch eine wichtige Mission für Euch!
                  
                               
-                *Drückt 'zurück', um zur nächsten Mission zu gelangen.*
+                *Drückt 'Zurück', um zur nächsten Mission zu gelangen.*
               en: |
                 > Thanks so much! You helped us a lot. Now we have 3.9 tons of high-pressure steam which we generated from incinerating 1.5 tons of trash!
                 >
