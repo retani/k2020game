@@ -86,3 +86,45 @@ angular.module('filters', [])
     }
   })
   */
+
+
+/*
+angular.element(document).ready(function() {
+
+  var myApplication = angular.module("K2020", []);
+
+  fetchData().then(bootstrapApplication);
+
+  function fetchData() {
+      var initInjector = angular.injector(["ng"]);
+      var $http = initInjector.get("$http");
+
+      return $http.get("yaml/game.yaml").then(function(response) {
+          myApplication.constant("yaml", response.data);
+      }, function(errorResponse) {
+          // Handle error case
+      });
+  }
+
+  function bootstrapApplication() {
+    angular.bootstrap(document.body, ["K2020"]);
+  }
+  
+});
+*/
+
+angular.element(document).ready(
+  function() {
+    var initInjector = angular.injector(['ng']);
+    var $http = initInjector.get('$http');
+    $http.get('yaml/game.yaml').then(
+      function(response) {
+        console.log("YAML loaded (" + response.data.length + " characters)")
+        app.constant('gameYaml', response.data);
+        angular.bootstrap(document.body, ['K2020']);
+      }
+    );
+  }
+);
+
+

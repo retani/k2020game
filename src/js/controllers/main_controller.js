@@ -1,6 +1,6 @@
 angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie', 'ngLocalize','ngLocalize.Events'])
 
-.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', 'ipCookie', '$filter', 'localeEvents', 'locale', '$analytics', '$timeout', function($scope, $http, $location, $route, $rootScope, $cookies, ipCookie, $filter, localeEvents, locale, $analytics, $timeout) {
+.controller('MainController', ['$scope', '$http', '$location', '$route', '$rootScope', '$cookies', 'ipCookie', '$filter', 'localeEvents', 'locale', '$analytics', '$timeout', 'gameYaml', function($scope, $http, $location, $route, $rootScope, $cookies, ipCookie, $filter, localeEvents, locale, $analytics, $timeout, gameYaml) {
   //'use strict';
 
   // language
@@ -32,9 +32,8 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie',
   });  
 
 
-  // load game data
-  $http.get("yaml/game.yaml").success(function (data) {
-    console.log("YAML loaded (" + data.length + " characters)")
+  // init with game data
+  initGameYaml = function(data) {
     var game = jsyaml.load(data)
     add_indexes(game)
     translate_markdown_nodes(game)
@@ -58,9 +57,11 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie',
       $scope.activeTask = $scope.game.introtask
       console.log("redirect to intro")
     }
-  }).error(function() {
+  }
+
+  /*).error(function() {
     alert("Game data not available")
-  })
+  })*/
 
   // game state
   gameReset = function() {
@@ -210,6 +211,8 @@ angular.module('K2020.controllers.Main', ['ngSanitize', 'ngCookies', 'ipCookie',
     }
     else return false
   }
+
+  initGameYaml(gameYaml)
 
   // regexp for condition
   regexForCondition = function(t) {
