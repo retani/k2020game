@@ -14,20 +14,20 @@ game:
         >
         > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt aber jeder kleine Beitrag hilft. Durch Eure Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß deutlich zu senken, wieder etwas näher gekommen. Das Klima dankt Euch!
         >
-        > Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de).
+        > Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de).
       en: |
          > Thank you for helping us to make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood. Our climate thanks you!
          >
-         > And now, if you want to continue to help, just stop in at the climate protection management office Klausenerplatz! [Here](http://www.k2020.berlin) you can find more information about climate protection management in the neighborhood.
+         > And now, if you want to continue to help, just stop in at the climate protection management office Klausenerplatz! [Here](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) you can find more information about climate protection management in the neighborhood.
       tr: |
         > Sevgili klima ajanları, iklim görevlerinizi yerine getirirken harika bir iş çıkarttınız. Uzman kodunu çözdünüz, rüzgarın ve güneş ışığının gücünü saptadınız, yüksek basınçlı buhar elde ettiniz ve koca bir ısı rezervuarını su ile doldurdunuz.
         >
         > Bu mahalleyi ve Berlin’i biraz daha fazla iklim dostu yapmamıza yardımcı olduğunuz için çok teşekkür ederiz. Önümüze koyduğumuz “Berlin’i 2050 yılında yüzde yüz iklime zarar vermeyecek hale getirme” hedefinden henüz oldukça uzak olsak ta, tüm küçük çabaların bu hedefe büyük katkıları olacağını biliyoruz. Sizin yardımlarınız sayesinde, Klausenerplatz Mahallesi’ndeki karbondioksit emisyonunu 2020 yılına kadar olabildiğince düşürme hedefimize daha da yaklaştık. Yalnızca biz değil, iklim de size teşekkür ediyor!
         >
         > Yardımlarınızı devam ettirmek istiyorsanız, Klausenerplatz’da bulunan İklim Koruma İdaresine başvurmanız yeter!
-        > Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutzmanagement.charlottenburg-wilmersdorf.de](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) internet adresinden ulaşabilirsiniz.
+        > Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutzmanagement.charlottenburg-wilmersdorf.de](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) internet adresinden ulaşabilirsiniz.
     dashboard:
-      de: "Dies ist deine **Auftragsmappe**. Deine erster Auftrag lautet: **%2**."
+      de: "Dies ist deine **Auftragsmappe**. Dein erster Auftrag lautet: **%2**."
       en: "This is your **Task Folder**. Your first Task is **%2**."
       tr: "Bu senin **görev dosyan**. İlk görevin **%2**."
   introtask:
@@ -132,7 +132,7 @@ game:
               en: |
                 > Welcome climate agents! Glad to have you here.
                 >
-                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO₂, we are currently testing electric buses. In 2015, we will convert a complete bus line – the #204 - to electricity. And we want to expand this in the future. However, for that we need more electric power.
+                > Taking the bus is already significantly better for the climate than driving by car, but in order to save even more CO₂, we are currently testing electric buses. In 2015, we will convert a complete bus line – the #204 – to electricity. And we want to expand this in the future. However, for that we need more electric power.
                 >
                 > This is where you come into play: can you go to the local energy supplier and provide more electricity?
                 >
@@ -232,9 +232,7 @@ game:
               tr: "Enerji tedarikçisi"
             pre:
               de: |
-                > Willkommen bei Vattenfall. Ihr seid hier, weil die BVG mehr Strom für Elektrobusse braucht?
-                >
-                > Super! Elektrobusse liegen natürlich ganz auf unserer Linie! Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle. Wusstet Ihr schon, dass wir nicht nur Strom, sondern auch Fernwärme erzeugen?  Und  dass diese Schule im Kiez von Vattenfall mit Fernwärme versorgt wird, so wie insgesamt rund eine Million Wohneinheiten in Berlin?
+                > Willkommen bei Vattenfall. Elektrobusse liegen natürlich ganz auf unserer Linie! Elektrische Energie kommt ja aus verschiedenen Quellen, unter anderem Sonne, Wind, Wasser, Gas und Kohle. Wusstet Ihr schon, dass wir nicht nur Strom, sondern auch Fernwärme erzeugen?  Und  dass diese Schule im Kiez von Vattenfall mit Fernwärme versorgt wird, so wie insgesamt rund eine Million Wohneinheiten in Berlin?
                 >
                 > Fernwärme wird nach dem umweltschonenden Prinzip der Kraft-Wärme-Kopplung (KWK) erzeugt. Dabei wird Strom und Wärme in einem Prozess produziert. Dadurch können Brennstoffe eingespart werden. Auch schont es die Umwelt, weil deutlich weniger CO₂ entsteht. Jede Wohnung, die neu an die Fernwärme angeschlossen wird, vermeidet über 1 Tonne CO₂ im Jahr.
                 >
@@ -298,7 +296,7 @@ game:
               tr: Fayansların sayısı
             post:
               de: |
-                > Danke. Leider reicht die Energie noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem ...
+                > Danke. Leider reicht die Energie noch nicht ganz. Der Wind weht gerade nicht stark genug. Aber kein Problem...
 
                 *Bitte wählt den nächsten Auftrag!*
               en: |
@@ -649,7 +647,7 @@ game:
              
                 > Danke, dass Ihr uns geholfen habt, den Kiez und ganz Berlin ein kleines Stück klimafreundlicher zu machen. Von dem großen Berliner Ziel, 2050 klimaneutral zu sein, sind wir noch entfernt aber jeder kleine Beitrag hilft. Durch Eure Hilfe sind wir jetzt dem Ziel, bis 2020 im Klausenerplatz-Kiez den Kohlendioxid-Ausstoß deutlich zu senken, wieder etwas näher gekommen. Das Klima dankt Euch!
                 >
-                > Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de).
+                > Wenn Ihr weiter helfen wollt, meldet Euch doch einfach beim Klimaschutzmanagement Klausenerplatz! Mehr Informationen über das Klimaschutzmanagement im Kiez findet Ihr [hier](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de).
               en: |
                 > Super, you did a great job solving your climate mission. You decoded the Expert Code, determined the strength of the wind and sun, secured high-pressure steam, connected your neighborhood’s living quarters to district heating, and extracted heat from wastewater.
                 
@@ -658,7 +656,7 @@ game:
               
                 > Thank you for helping us to make the neighborhood and all of Berlin just a bit more climate-friendly. We are still far away from the great Berlin goal of becoming climate-neutral by 2050, but every little contribution helps. Thanks to your help we have come just a bit closer to the goal of reducing carbon-dioxide emissions in the Klausenerplatz neighborhood. Our climate thanks you!
                 >
-                >And now, if you want to continue to help, just stop in at the climate protection management office Klausenerplatz! [Here](http://www.k2020.berlin) you can find more information about climate protection management in the neighborhood.
+                >And now, if you want to continue to help, just stop in at the climate protection management office Klausenerplatz! [Here](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) you can find more information about climate protection management in the neighborhood.
               tr: |
                 > Sevgili İklim Ajanları, üstlendiğiniz iklim görevini başarıyla yerine getirdiniz. Uzman Kodu’nu buldunuz, rüzgar şiddetini ve güneşin kuvvetini belirlediniz, yüksek basınçlı buhar tedarik ettiniz, mahallenizin evlerini bölgesel ısıtma sistemine bağladınız ve atık sudan ısı elde ettiniz.
                 
@@ -667,7 +665,7 @@ game:
                 > Bu mahalleyi ve Berlin’i biraz daha fazla iklim dostu yapmamıza yardımcı olduğunuz için çok teşekkür ederiz. Önümüze koyduğumuz “Berlin’i 2050 yılında yüzde yüz iklime zarar vermeyecek hale getirme” hedefinden henüz oldukça uzak olsak ta, tüm küçük çabaların bu hedefe büyük katkıları olacağını biliyoruz. Sizin yardımlarınız sayesinde, Klausenerplatz Mahallesi’ndeki karbondioksit emisyonunu 2020 yılına kadar olabildiğince düşürme hedefimize daha da yaklaştık. Yalnızca biz değil, iklim de size teşekkür ediyor!
                 >
                 > Yardımlarınızı devam ettirmek istiyorsanız, Klausenerplatz’da bulunan İklim Koruma İdaresine başvurmanız yeter!
-                > Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutzmanagement.charlottenburg-wilmersdorf.de](www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) internet adresinden ulaşabilirsiniz.
+                > Mahalledeki İklim Koruma İdaresi hakkında daha fazla bilgiye [www.klimaschutzmanagement.charlottenburg-wilmersdorf.de](http://www.klimaschutzmanagement.charlottenburg-wilmersdorf.de) internet adresinden ulaşabilirsiniz.
 translations:
   chooseLanguage:
     de: "Wählt eine Sprache"
