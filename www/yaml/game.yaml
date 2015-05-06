@@ -218,12 +218,12 @@ game:
                 text:
                   de: Um die Energieerzeugung zu optimieren
                   en: To optimize the energy supply
-                  tr: Enerji üretimini optimize ediyor.
+                  tr: Enerji üretimini optimize ediyor
               -
                 correct: true
                 text:
                   de: Um die Energieerzeugung zu flexibilisieren
-                  en: To optimize the energy supply
+                  en: To make the energy supply more flexible
                   tr: Enerji üretimini en uygun hale getirmek için
           text:
             title:
@@ -373,7 +373,7 @@ game:
                 ![](images/k2020Karte3.png)
                 Findet die Kontaktstation zur Berliner Stadtreinigung (BSR) und gebt dort den Agentencode ein.
               en: |
-                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009, wood chips have been used as part of the fuel mix. The plant is dimensioned for 30,000 tons of wood. Wood is a renewal and climate-neutral energy source because only as much CO₂ is released during burning as has been captured during its natural growth. The Berlin waste management company (BSR) also helps. Every hour about 125 tons of steam is piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you please ask BSR whether they can deliver some more steam?
+                > Vattenfall's Reuter heating plant delivers power and district heating. Since 2009, wood chips have been used as part of the fuel mix. The plant is dimensioned for 30,000 tons of wood. Wood is a renewable and climate-neutral energy source because only as much CO₂ is released during burning as has been captured during its natural growth. The Berlin waste management company (BSR) also helps. Every hour about 125 tons of steam is piped from the close-by Ruhleben waste incineration plant to the Reuter heating plant.  Could you please ask BSR whether they can deliver some more steam?
                 
                 ![](images/k2020Karte3.png)
                 Find the contact station for Berlin waste management company (BSR) and enter the Agent Code.
