@@ -27,11 +27,14 @@ Interface: src/yaml/template.yaml
 Spieltexte: src/yaml/game.yaml
 
 Danach: 
-- gulp build
+- gulp
 - [testen]
 - [commit to git repository]
+- [deploy]
 
 ##Deployment
 
-Deploy to Heroku at http://k2020game.herokuapp.com/
+Live Version läuft auf: http://k2020game.herokuapp.com/
+
+Zum deployen das git repository to heroku pushen (Siehe Anleitungen bei Heroku)
 
