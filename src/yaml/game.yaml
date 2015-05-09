@@ -33,7 +33,7 @@ game:
   introtask:
     condition:
       code input:
-        correct: 47928
+        correct: 31425
     text:
       pre:
         de: Sucht das K2020-Schild am Klausenerplatz und gebt den fünfstelligen Agentencode ein, um das Spiel zu starten
@@ -111,7 +111,7 @@ game:
           name: BVG
           condition:
             code input:
-              correct: 31425
+              correct: 47928
           text:
             title:
               de: Verkehr
